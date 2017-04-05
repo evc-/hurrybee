@@ -13,6 +13,7 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+	
 
     <!-- Custom CSS -->
     <style>
@@ -91,9 +92,40 @@
 
     </div>
     <!-- /.container -->
+	
+	
+	
+  <div id="simpleList" class="list-group">
+    <div data-id ="actBreakfast" class="list-group-item">Eat Breakfast</div>
+    <div data-id ="actCoffee" class="list-group-item">Make Coffee</div>
+    <div data-id="actClothes" class="list-group-item">Get dressed</div>
+    <div data-id="actWash" class="list-group-item">Wash face and brush teeth</div>
+    <div data-id="actPack" class="list-group-item">pack bag and lunch</div>
+  </div>
+	
+	
+	
+	
+	<!--Drag and Drop JS-->
+	<script src="js/Sortable.js"></script>
+	
+	
+	<script>
+	
+		
+	Sortable.create(simpleList, {
+		onUpdate: function (evt) {
+			console.log(this.toArray());
+		}
+	})
+
+	
+	</script>
 
     <!-- jQuery Version 1.11.1 -->
     <script src="js/jquery.js"></script>
+	
+	
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
