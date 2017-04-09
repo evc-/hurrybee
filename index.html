@@ -75,49 +75,142 @@
         <!-- /.container -->
     </nav>
 
-    <!-- Page Content -->
-    <div class="container">
+<br>
+	<br>
+	<br>
+	
+	
+  <ul id="simpleList" class="list-group">
+	  
+<!--
+    <li data-id ="actBreakfast" id ="actBreakfast" class="list-group-item">Eat Breakfast
+	  <input class="recommendedTime" type="number" value="15">
+		<i class="js-remove" onclick="deleteMe(actBreakfast)">✖</i>
+	</li>
+	  
+    <li data-id ="actCoffee" id ="actCoffee" class="list-group-item">Make Coffee
+	  <input class="recommendedTime" type="number" value="15">
+		<i class="js-remove" onclick="deleteMe(actCoffee)">✖</i>
+	</li>
+	  
+    <li data-id="actClothes" id="actClothes" class="list-group-item">Get dressed
+	  <input class="recommendedTime" type="number" value="15">
+		<i class="js-remove" onclick="deleteMe(actClothes)">✖</i>
+	</li>
+	  
+    <li data-id="actWash" id="actWash" class="list-group-item">Wash face and brush teeth
+	  <input class="recommendedTime" type="number" value="15">
+		<i class="js-remove" onclick="deleteMe(actWash)">✖</i>
+	</li>
+	  
+    <li data-id="actPack" id="actPack" class="list-group-item">pack bag and lunch
+	  <input class="recommendedTime" type="number" value="15">
+		<i class="js-remove" onclick="deleteMe(actPack)">✖</i>
+	</li>
+-->
+	  
+  </ul>
 
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1>A Bootstrap Starter Template</h1>
-                <p class="lead">Complete with pre-defined file paths that you won't have to change!!</p>
-                <ul class="list-unstyled">
-                    <li>Bootstrap v3.3.7</li>
-                    <li>jQuery v1.11.1</li>
-                </ul>
-            </div>
-        </div>
-        <!-- /.row -->
-
-    </div>
-    <!-- /.container -->
+	<div id ="addNew">
+		
+	<input type="text" id="customActName" placeholder="Enter your custom activity" value=""> 
+	<input type="number" id="customActTime" value="">
+	<button id="addNewAct" onclick="buttonAdd()">Add Custom Activity</button> 
 	
+	</div>
 	
-	
-  <div id="simpleList" class="list-group">
-    <div data-id ="actBreakfast" class="list-group-item">Eat Breakfast</div>
-    <div data-id ="actCoffee" class="list-group-item">Make Coffee</div>
-    <div data-id="actClothes" class="list-group-item">Get dressed</div>
-    <div data-id="actWash" class="list-group-item">Wash face and brush teeth</div>
-    <div data-id="actPack" class="list-group-item">pack bag and lunch</div>
-  </div>
-	
-	
-	
+	<div id ="timeEstimateContainer">
+	Your Estimated time is: <span id="timeEstimate"></span>
+	</div>
 	
 	<!--Drag and Drop JS-->
 	<script src="js/Sortable.js"></script>
 	
 	
 	<script>
-	
 		
-	Sortable.create(simpleList, {
-		onUpdate: function (evt) {
-			console.log(this.toArray());
+		var simpleList = document.getElementById("simpleList");
+		
+		function deleteMe(item){
+			item.parentNode.removeChild(item);
 		}
-	})
+		
+
+		var activityArr = [];
+		console.log(activityArr);
+		
+
+		Sortable.create(simpleList, {
+//generate array when list is updated/item is dropped
+			onUpdate: function (evt) {
+			activityArr = this.toArray();
+			console.log(this.toArray());
+			estimateTime();
+		},
+		
+//filter is for anything that should not be drag and dropped
+		filter: '.js-remove',
+							
+		})
+		
+		function buttonAdd(){
+			
+			var customActName = document.getElementById("customActName");
+			var customActTime = document.getElementById("customActTime");
+			addActivity(customActName.value, customActTime.value);
+			console.log(activityArr);
+			
+			
+		}
+		
+		function addActivity(name, time){
+
+			var customActivity= document.createElement("li");
+			customActivity.className = "list-group-item";
+			customActivity.setAttribute('data-id' , name); 
+			customActivity.id = name;
+			customActivity.innerHTML = name;
+			
+		
+			var customActTimeValue = document.createElement("input");
+			customActTimeValue.setAttribute('type', 'number');
+			customActTimeValue.value = time;
+			
+			customActivity.appendChild(customActTimeValue);
+			
+			var customActDelete = document.createElement("i");
+			customActDelete.className = "js-remove";
+			customActDelete.onclick = function(){deleteMe(customActivity)};
+			customActDelete.innerHTML = "✖";
+			
+			customActivity.appendChild(customActDelete);
+			
+			simpleList.appendChild(customActivity);
+			
+		}
+		
+		addActivity("Wash Face and Brush Teeth", 5);
+		addActivity("Eat Breakfast", 15);
+		addActivity("Get Dressed", 15);
+		addActivity("Make Coffee", 15);
+		addActivity("Pack Lunch and Bag", 10);
+		
+		function estimateTime(){
+			var timeSum = 0;
+			
+			for (i=0; i < activityArr.length; i ++){
+				var timeValue = document.getElementById(activityArr[i]).childNodes[1].value;
+				console.log(document.getElementById(activityArr[i]).childNodes[1].value);
+				timeSum = timeSum + parseInt(timeValue);
+				
+			}
+			
+			document.getElementById("timeEstimate").innerHTML = timeSum;
+		}
+		
+		
+	
+
 
 	
 	</script>
