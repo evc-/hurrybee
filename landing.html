@@ -66,6 +66,7 @@
 	.btn.outline {
 		background: none;
 		padding: 12px 22px;
+		
 		}
 		
 	.btn-primary.outline {
@@ -75,6 +76,7 @@
 		
 	.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary, .btn-lg.round:hover {
 		background-color: #F8DB01;
+		color: #14275E;
 		
 		}
 		
@@ -82,10 +84,12 @@
 		
 		background-color: #F8DB01;
 		box-shadow: none;
+		color: #14275E;
 		}	
 
 	.btn-lg.round {
 		border-radius: 24px;
+		color: #14275E;
 		}
 		
 	
@@ -93,9 +97,17 @@
 	h1{
 		font-size: 4em;
 		font-weight: 700;
+		color: #14275E;
+		}
+		
+	h2{
+		font-size: 2em;
+		font-weight: 700;
+		text-align: center;
+		color: #14275E;
 		}
 	
-		.info-bold{
+	.info-bold{
 			font-weight: 700;
 			font-size: 1.5em;
 		}
@@ -103,9 +115,49 @@
 	.info-landing{
 			padding-top: 40px;
 			background-color: white;
+			color: #14275E;
+			margin-bottom: -40px;
 			
 		}
 		
+	#how-it-works{
+			text-align: center;
+		}
+		
+	hr{
+			background-image: url(hr.png);
+			background-position: center;
+			border-style: none;
+			background-repeat: no-repeat;
+			height: 10px;
+			width: 742px;
+		}
+		
+	.infographic-container{
+			background-color: #DDDDDD;
+			margin-top: 0;
+		}
+		
+	.how-it-works-row{
+			margin-left: 40px;
+			margin-right: 40px;
+		}
+		
+	.ready-container{
+		text-align: center;
+			background-color: white;
+		}
+		
+		.page-footer{
+			background-color: #14275E;
+			color: white;
+			text-align: center;
+		}
+		
+		a, a:hover{
+			color: #14275E;
+			text-decoration: none;
+		}
 
 
 		
@@ -167,7 +219,7 @@
 					<h1>Hurry up, Honeybee!</h1>
 					<p class="info-bold">Keep on track every morning, and feel ready for your day.</p>
 				
-					<button type="button" class="btn btn-outline-primary  btn-lg round">How it Works</button>
+					<button type="button" class="btn btn-outline-primary  btn-lg round"><a href="#how-it-works-link">How it Works</a></button>
 					<button type="button" class="btn btn-outline-primary  btn-lg round">Restart my Morning</button>
 					
 				</div>
@@ -179,21 +231,170 @@
 	
 	<div class="container-fluid info-landing">
 		<div class="row">
-			<div class="col-sm-6">
+			
+			<div class="col-xs-2">
+			
+			</div>
+			
+			<div class="col-xs-4">
 			<h2>Always running late?</h2>
 				<p>Despite your best efforts, finding yourself running out the door in a frenzy?</p>
 			</div>	
 			
-			<div class="col-sm-6">
+			<div class="col-xs-4">
+				<img src="alarmclock.png" class="img-responsive" alt="Alarm Clock Graphic" width="200px">			
+			</div>
+			
+			<div class="col-xs-2">
+			
+			</div>
+
+			
+		</div>
+		
+		<br>
+		<br>
+		
+		
+		<div class="row">
+			
+			<div class="col-xs-2">
+			
+			</div>
+				
+			<div class="col-xs-2">
+				<img src="wallclock.png" class="img-responsive" alt="Alarm Clock Graphic" width="100px">			
+			</div>
+				
+			<div class="col-xs-6">
+			<h2>Honeybee will keep you on time!</h2>
+				<p>After pre-selecting everything you want to accomplish in the morning, Honeybee's timer will count you down through each activity. Never leave home unprepared or late again! </p>
+				<br>
+				<br>
+			</div>	
+
+			<div class="col-xs-2">
+			
+			</div>
+
+		</div>
+		
+	</div>
+	<a name="how-it-works-link"></a>
+		<br>
+		<br>
+	
+		
+	<div class="container-fluid infographic-container">
+		
+		
+		<div class="row">
+			
+			<div class="col-xs-1">
+			
+			</div>
+				
+			<div class="col-xs-10">
+				
+
+				<h1 id="how-it-works">How It Works</h1>
+				<hr class="center-block" size="30">
+				
+			</div>
+
+			<div class="col-xs-1">
 			
 			</div>
 			
 		</div>
+		
+		<div class="row how-it-works-row" name="how-it-works">
+			
+
+			<div class="col-md-3">
+				
+			<img src="numbers-01.png" class="img-responsive center-block" alt="number one" width= "100px";>
+				<h2> Set Up </h2>
+				<p>Open the set up page, and you'll see a list of suggested activities and times. Add your own custom activity, drag and drop to rearrange the order you want to do them in, or delete ones you don't want. Check your estimated time to make sure that's how long you want your morning routine to take. 
+				</p>
+			</div>	
+			
+			<div class="col-md-3">
+				
+			<img src="numbers-03.png" class="img-responsive center-block" alt="number one" width= "100px";>
+				<h2> Game Play </h2>
+				<p>Get set, go! The timer is set based on your choices from the set up, and the activities will come up based on the order you set. An alarm will sound when you've got one minute left. Hit the advance button when you're done the activity - if it's ahead of schedule, that time gets added to your "free time", otherwise the timer will start counting additional time.    
+				</p>
+			</div>
+			
+			<div class="col-md-3">
+				
+			<img src="numbers-02.png" class="img-responsive center-block" alt="number one" width= "100px";>
+				<h2> Challenges </h2>
+				<p>If you've completed your morning ahead of or on schedule, a challenges page will appear. Touch the icons to collect secret, random challenges to better your health and mood! Challenges do not add time to your tally. 
+				</p>
+			</div>
+			
+			<div class="col-md-3">
+				
+			<img src="numbers-04.png" class="img-responsive center-block" alt="number one" width= "100px";>
+				<h2> Results </h2>
+				<p>The results are in! Compare your performance to yesterday, and get an idea of if certain activities take you more or less time,so you can tweak it later. Admire your challenges trophies, and share your score with friends. 
+				</p>
+			</div>
+			
+			
+
+			
+		</div>
+		
+	</div>
+	
+	<div class="container-fluid ready-container">
+		<div class="row">
+			
+			<div class="col-xs-1">
+			</div>
+			
+			
+			<div class="col-xs-10">
+				<h1>Ready?</h1>
+				<br>
+				<br>
+				<button type="button" class="btn btn-outline-primary  btn-block btn-lg round">Let's Go!</button>
+				<br>
+				<br>
+				
+			</div>
+			
+			<div class="col-xs-1">
+			</div>
+		</div>
 	</div>
 	
 	
+	<!--Footer-->
+<footer class="page-footer">
+
+    <!--Footer Links-->
+    <div class="container-fluid">
+        <div class="row">
+			
+			<div class="col-xs-12">
+				<h5>Made for BCIT D3 - MDIA 2106</h5>
+				<span class="glyphicon glyphicon-education"></span>
+			</div>
 
 
+        </div>
+    </div>
+    <!--/.Footer Links-->
+
+</footer>
+<!--/.Footer-->
+	
+	
+	
 	
 	<script>
 		
