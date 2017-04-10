@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 2048 1536" style="enable-background:new 0 0 2048 1536;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:none;stroke:#FFDB58;stroke-width:2;stroke-miterlimit:10;}
+	.st2{fill:#FFF1A5;stroke:#000000;stroke-miterlimit:10;}
+	.st3{opacity:0.5;fill:url(#New_Pattern);}
+	.st4{fill:#F2F2F2;stroke:#132560;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	
+		.st5{fill:none;stroke:#132560;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:400,50,200,50,0,0;}
+	.st6{fill:#FFFFE4;stroke:#14275E;stroke-width:3;stroke-miterlimit:10;}
+	.st7{fill:#132560;stroke:#14275E;stroke-width:0.75;stroke-miterlimit:10;stroke-dasharray:480,30,200,30,0,0;}
+	
+		.st8{fill:#F2F2F2;stroke:#132560;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:480,30,200,30,0,0;}
+	.st9{fill:#132560;stroke:url(#SVGID_1_);stroke-width:0.75;stroke-miterlimit:10;stroke-dasharray:480,30,200,30,0,0;}
+	.st10{fill:#132560;stroke:url(#SVGID_2_);stroke-width:0.75;stroke-miterlimit:10;stroke-dasharray:480,30,200,30,0,0;}
+	.st11{fill:#132560;}
+	
+		.st12{fill:#FFFFE4;stroke:#132560;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:480,30,200,30,0,0;}
+	.st13{fill:#F2F2F2;stroke:#132560;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st14{fill:#F2F2F2;stroke:#14275E;stroke-width:3;stroke-miterlimit:10;}
+	.st15{fill:#132560;stroke:#14275E;stroke-width:0.75;stroke-miterlimit:10;}
+	.st16{fill:#F2F2F2;stroke:#132560;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st17{fill:none;stroke:#132560;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st18{fill:#FFFFE4;stroke:#14275E;stroke-width:4;stroke-miterlimit:10;}
+	.st19{fill:#132560;stroke:#14275E;stroke-width:4;stroke-miterlimit:10;}
+</style>
+<pattern  x="-80" y="147" width="102.1" height="97.7" patternUnits="userSpaceOnUse" id="New_Pattern" viewBox="51.1 -122.1 102.1 97.7" style="overflow:visible;">
+	<g>
+		<rect x="51.1" y="-122.1" class="st0" width="102.1" height="97.7"/>
+		<rect x="103.1" y="-47.9" class="st1" width="100.1" height="46.9"/>
+		<rect x="1" y="-47.9" class="st1" width="100.1" height="46.9"/>
+		<rect x="52.1" y="-96.7" class="st1" width="100.1" height="46.9"/>
+		<rect x="103.1" y="-145.6" class="st1" width="100.1" height="46.9"/>
+		<rect x="1" y="-145.6" class="st1" width="100.1" height="46.9"/>
+	</g>
+</pattern>
+<g id="Tablet">
+	<rect id="Background_1_" x="1" y="0.5" class="st2" width="2047" height="1535"/>
+	<rect id="Pattern_1_" x="130" y="215" class="st3" width="1821" height="1002"/>
+	<g id="Fridge_1_">
+		<path class="st4" d="M205.1,567.5h334.4c6.6,0,12,5.4,12,12v624.2c0,6.6-5.4,12-12,12H205.1c-6.6,0-12-5.4-12-12V579.5
+			C193.1,572.9,198.4,567.5,205.1,567.5z"/>
+		<line class="st5" x1="551.5" y1="841.9" x2="193.1" y2="841.9"/>
+		<line class="st5" x1="230.9" y1="708.9" x2="289.6" y2="708.9"/>
+		<line class="st5" x1="230.9" y1="962.3" x2="289.6" y2="962.3"/>
+	</g>
+	<g id="Middle">
+		<g id="MidCounter">
+			<rect x="877" y="880.4" class="st6" width="323.4" height="334.6"/>
+			<rect x="893" y="893.7" class="st7" width="140" height="308"/>
+			<rect x="1046.3" y="894.4" class="st7" width="140" height="70"/>
+			<rect x="1046.3" y="973.7" class="st7" width="140" height="70"/>
+			<rect x="1046.3" y="1053.1" class="st7" width="140" height="70"/>
+			<rect x="1046.3" y="1132.4" class="st7" width="140" height="70"/>
+			<rect x="921" y="911.2" class="st8" width="84" height="18.2"/>
+			<rect x="1074.3" y="991" class="st8" width="84" height="18.2"/>
+			<rect x="1074.3" y="911.2" class="st8" width="84" height="18.2"/>
+			<rect x="1074.3" y="1070.8" class="st8" width="84" height="18.2"/>
+			<rect x="1074.3" y="1149.2" class="st8" width="84" height="18.2"/>
+		</g>
+		<g id="MidTop">
+			<rect x="886.8" y="373.2" class="st6" width="323.4" height="277.9"/>
+			<rect x="902.8" y="384.3" class="st7" width="140" height="255.8"/>
+			<rect x="1056.2" y="383.7" class="st7" width="140" height="257"/>
+			<rect x="930.8" y="585" class="st8" width="84" height="18.2"/>
+			<rect x="1084.2" y="585" class="st8" width="84" height="18.2"/>
+		</g>
+	</g>
+	<g id="Right">
+		<g id="RightTop">
+			<rect x="1554.6" y="373.2" class="st6" width="323.4" height="277.9"/>
+			<rect x="1570.7" y="384.3" class="st7" width="140" height="255.8"/>
+			<rect x="1723.9" y="383.7" class="st7" width="140" height="257"/>
+			<rect x="1598.7" y="585" class="st8" width="84" height="18.2"/>
+			<rect x="1751.9" y="585" class="st8" width="84" height="18.2"/>
+		</g>
+		<g id="RightCounter">
+			<rect x="1551.8" y="881.8" class="st6" width="323.4" height="334.6"/>
+			<rect x="1566.1" y="895.1" class="st7" width="293.3" height="91"/>
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="1565.725" y1="1157.6" x2="1859.775" y2="1157.6">
+				<stop  offset="0" style="stop-color:#FFFFFF"/>
+				<stop  offset="1" style="stop-color:#000000"/>
+			</linearGradient>
+			<rect x="1566.1" y="1112.1" class="st9" width="293.3" height="91"/>
+			<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="1565.725" y1="1048.4" x2="1859.775" y2="1048.4">
+				<stop  offset="0" style="stop-color:#FFFFFF"/>
+				<stop  offset="1" style="stop-color:#000000"/>
+			</linearGradient>
+			<rect x="1566.1" y="1002.9" class="st10" width="293.3" height="91"/>
+			<rect x="1670.8" y="912.6" class="st8" width="84" height="18.2"/>
+			<rect x="1670.8" y="1023.2" class="st8" width="84" height="18.2"/>
+			<rect x="1670.8" y="1133.8" class="st8" width="84" height="18.2"/>
+		</g>
+	</g>
+	<g id="Oven">
+		<g id="Oven_1_">
+			<rect x="1201.8" y="915.4" class="st4" width="350" height="299.6"/>
+			
+				<rect x="1282.9" y="965.8" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 2461.55 -291.95)" class="st11" width="187.6" height="238"/>
+			<polyline class="st11" points="1336.8,912.6 1277.3,912.6 1277.3,898.6 1336.8,898.6 			"/>
+			<polyline class="st11" points="1475.4,912.6 1415.9,912.6 1415.9,898.6 1475.4,898.6 			"/>
+			<circle class="st12" cx="1268.9" cy="954.6" r="16.8"/>
+			<circle class="st12" cx="1340.3" cy="954.6" r="16.8"/>
+			<circle class="st12" cx="1411.8" cy="954.6" r="16.8"/>
+			<circle class="st12" cx="1483.2" cy="954.6" r="16.8"/>
+			<rect x="1241.7" y="1016.9" class="st13" width="271.6" height="26.6"/>
+		</g>
+		<path id="Oven_x5F_Top" class="st4" d="M1199.7,691.6h351.4v25.7h-351.4V691.6z M1269,593.6h212.6V279.1H1269V593.6z
+			 M1480.8,593.6h-211l-54.4,97.4h319.8L1480.8,593.6z"/>
+	</g>
+	<g id="Sink">
+		<g id="SinkCounter">
+			<rect x="553.5" y="915.4" class="st6" width="323.4" height="299.6"/>
+			<rect x="553.5" y="880.4" class="st14" width="323.4" height="35"/>
+			<rect x="567.9" y="928.7" class="st15" width="293.3" height="273.7"/>
+			<rect x="672.5" y="946.2" class="st16" width="84" height="18.2"/>
+			<g>
+				<polygon class="st11" points="713.2,816.7 711.8,816.7 692.2,816.7 692.2,827.9 711.8,827.9 711.8,878.3 723,878.3 723,816.7 
+									"/>
+				
+					<rect x="674.7" y="863.6" transform="matrix(1.551010e-11 -1 1 1.551010e-11 -193.85 1554.35)" class="st11" width="11.2" height="21"/>
+				
+					<rect x="744.7" y="863.6" transform="matrix(1.551010e-11 -1 1 1.551010e-11 -123.85 1624.35)" class="st11" width="11.2" height="21"/>
+			</g>
+		</g>
+		<g id="SinkTop">
+			<path id="Fork" class="st11" d="M789.5,717.3h-4.9v-64.4h-8.4v64.4h-4.9c-5.4,0-9.8,4.4-9.8,9.8v19.6c0,5.4,4.4,9.8,9.8,9.8h18.2
+				c5.4,0,9.8-4.4,9.8-9.8v-19.6C799.2,721.7,794.8,717.3,789.5,717.3z M772.7,747.4c0,1.2-0.9,2.1-2.1,2.1s-2.1-0.9-2.1-2.1v-21
+				c0-1.2,0.9-2.1,2.1-2.1s2.1,0.9,2.1,2.1V747.4z M782.5,747.4c0,1.2-0.9,2.1-2.1,2.1c-1.2,0-2.1-0.9-2.1-2.1v-21
+				c0-1.2,0.9-2.1,2.1-2.1c1.2,0,2.1,0.9,2.1,2.1V747.4z M792.2,747.4c0,1.2-0.9,2.1-2.1,2.1c-1.2,0-2.1-0.9-2.1-2.1v-21
+				c0-1.2,0.9-2.1,2.1-2.1c1.2,0,2.1,0.9,2.1,2.1V747.4z"/>
+			<path id="Spatula" class="st11" d="M838.5,717.3h-4.9v-64.4h-8.4v64.4h-4.9c-5.4,0-9.8,4.4-9.8,9.8v19.6c0,4.4,3,8.2,7,9.4V739
+				c0-1.2,0.9-2.1,2.1-2.1s2.1,0.9,2.1,2.1v17.5h5.6V739c0-1.2,0.9-2.1,2.1-2.1c1.2,0,2.1,0.9,2.1,2.1v17.5h5.6V739
+				c0-1.2,0.9-2.1,2.1-2.1c1.2,0,2.1,0.9,2.1,2.1v17.1c4-1.2,7-5,7-9.4v-19.6C848.2,721.7,843.8,717.3,838.5,717.3z"/>
+			<path id="Spoon" class="st11" d="M737.7,715.2v-62.3h-8.4v62.3c-7.2,2.5-12.6,11.2-12.6,21.7c0,12.4,7.5,22.4,16.8,22.4
+				c9.3,0,16.8-10,16.8-22.4C750.2,726.5,744.9,717.7,737.7,715.2z"/>
+			<rect id="Shelf" x="568.2" y="623.5" class="st4" width="292.6" height="28"/>
+		</g>
+	</g>
+</g>
+<g id="Mobile">
+</g>
+</svg>

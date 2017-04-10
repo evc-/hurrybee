@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1437 117" style="enable-background:new 0 0 1437 117;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFF1A5;}
+	.st1{opacity:0.46;}
+	.st2{fill:none;stroke:#FFDB58;stroke-width:3;stroke-miterlimit:10;}
+	.st3{fill:#14275E;}
+	.st4{fill:#FFFFFF;}
+	.st5{fill:#F9F9F9;stroke:#FF9C32;stroke-width:4;stroke-miterlimit:10;}
+	.st6{fill:#354E8C;}
+	.st7{fill:#FFFFFF;stroke:#14275E;stroke-width:2;stroke-miterlimit:10;}
+	.st8{fill:#FF9C32;}
+	.st9{fill:#FF9C32;stroke:#F9F9F9;stroke-width:4;stroke-miterlimit:10;}
+	.st10{fill:none;stroke:#FF9C32;stroke-width:4;stroke-miterlimit:10;}
+	.st11{fill:none;stroke:#14275E;stroke-width:5.8676;stroke-miterlimit:10;}
+	.st12{display:none;}
+	.st13{display:inline;fill:#14275E;}
+</style>
+<g id="tablet_x5F_teeth">
+</g>
+<g id="progressBar">
+	<line id="progressLine" class="st11" x1="1388" y1="55.5" x2="45.7" y2="55.5"/>
+	<g id="firstActivity">
+		<path class="st3" d="M69.9,31.5c6.2,6.2,10,14.7,10,24c0,18.7-15.3,34-34,34c-8.9,0-17-3.4-23-9"/>
+		<path class="st6" d="M22.9,80.5c-6.7-6.2-10.9-15.1-10.9-25c0-18.7,15.3-34,34-34c9.4,0,17.9,3.8,24,10"/>
+	</g>
+	<g id="secondActivity">
+		<path class="st3" d="M412.9,31.5c6.2,6.2,10,14.7,10,24c0,18.7-15.3,34-34,34c-8.9,0-17-3.4-23-9"/>
+		<path class="st6" d="M365.9,80.5c-6.7-6.2-10.9-15.1-10.9-25c0-18.7,15.3-34,34-34c9.4,0,17.9,3.8,24,10L365.9,80.5z"/>
+	</g>
+	<g id="thirdActivity">
+		<path class="st3" d="M754.9,31.5c6.2,6.2,10,14.7,10,24c0,18.7-15.3,34-34,34c-8.9,0-17-3.4-23-9L754.9,31.5z"/>
+		<path class="st6" d="M707.9,80.5c-6.7-6.2-10.9-15.1-10.9-25c0-18.7,15.3-34,34-34c9.4,0,17.9,3.8,24,10L707.9,80.5z"/>
+	</g>
+	<g id="fourthActivity">
+		<path class="st3" d="M1411.9,31.5c6.2,6.2,10,14.7,10,24c0,18.7-15.3,34-34,34c-8.9,0-17-3.4-23-9L1411.9,31.5z"/>
+		<path class="st6" d="M1364.9,80.5c-6.7-6.2-10.9-15.1-10.9-25c0-18.7,15.3-34,34-34c9.4,0,17.9,3.8,24,10L1364.9,80.5z"/>
+	</g>
+	<g id="fifthActivity">
+		<path class="st3" d="M1082.9,31.5c6.2,6.2,10,14.7,10,24c0,18.7-15.3,34-34,34c-8.9,0-17-3.4-23-9L1082.9,31.5z"/>
+		<path class="st6" d="M1035.9,80.5c-6.7-6.2-10.9-15.1-10.9-25c0-18.7,15.3-34,34-34c9.4,0,17.9,3.8,24,10L1035.9,80.5z"/>
+	</g>
+	<circle id="completed" class="st8" cx="45.6" cy="55.6" r="23.7"/>
+</g>
+<g id="mobile_x5F_teeth">
+</g>
+</svg>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1440 1024" style="enable-background:new 0 0 1440 1024;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:#F9DDAF;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+	.st2{fill:#FFFFE8;}
+	.st3{opacity:0.25;fill:url(#HoneyComb_1_);}
+</style>
+<pattern  x="80" width="145.4" height="83.9" patternUnits="userSpaceOnUse" id="HoneyComb" viewBox="48.5 -125.9 145.4 83.9" style="overflow:visible;">
+	<g>
+		<rect x="48.5" y="-125.9" class="st0" width="145.4" height="83.9"/>
+		<polygon class="st1" points="217.5,-82.9 170.2,-82.9 146.6,-42 170.2,-1 217.5,-1 241.2,-42 		"/>
+		<polygon class="st1" points="72.1,-82.9 24.8,-82.9 1.2,-42 24.8,-1 72.1,-1 95.8,-42 		"/>
+		<polygon class="st1" points="217.5,-166.9 170.2,-166.9 146.6,-125.9 170.2,-84.9 217.5,-84.9 241.2,-125.9 		"/>
+		<polygon class="st1" points="144.8,-124.9 97.5,-124.9 73.9,-83.9 97.5,-43 144.8,-43 168.5,-83.9 		"/>
+		<polygon class="st1" points="72.1,-166.9 24.8,-166.9 1.2,-125.9 24.8,-84.9 72.1,-84.9 95.8,-125.9 		"/>
+	</g>
+</pattern>
+<g id="BACKGROUND_2_">
+	<rect id="BG_2_" x="3" y="3" class="st2" width="1438" height="1020"/>
+	<pattern  id="HoneyComb_1_" xlink:href="#HoneyComb" patternTransform="matrix(1 0 0 1 119.5976 -71.0519)">
+	</pattern>
+	<rect id="HoneyComb_2_" x="3" y="3" class="st3" width="1438" height="1020"/>
+</g>
+</svg>
