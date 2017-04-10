@@ -1,0 +1,82 @@
+/* COFFEE SCENE ANIMATIONS */
+        
+.lid-animation {
+    animation: lidAnim linear 2s;
+    animation-iteration-count: infinite;
+    transform-origin:  0% 50%;
+}
+        
+@keyframes lidAnim {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(-25deg); }
+    100% { transform: rotate(0deg); }
+}         
+
+.meterLine-anim {
+    animation: meterLineAnim linear 3s;
+    animation-iteration-count: infinite;
+    transform-origin: right;
+}
+
+@keyframes meterLineAnim {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-40deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-40deg); }
+    100% { transform: rotate(0deg); }
+}         
+
+.lHandle-anim {
+    animation: lHandleAnim linear 5s;
+    animation-iteration-count: infinite;
+    transform-origin: right;
+}
+
+@keyframes lHandleAnim {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-25deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-25deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.button-anim-on {
+    animation: buttonOnAnim 10s; 
+    animation-iteration-count: infinite;
+}
+
+@keyframes buttonOnAnim {
+    0% { fill: #FFF1A5; }
+    25% { fill: green; }
+    50% { fill: #FFF1A5; }
+    75% { fill: green; }
+    100% { fill: #FFF1A5; }
+}
+
+.button-anim-off {
+    animation: buttonOffAnim 10s; 
+    animation-iteration-count: infinite;
+}
+
+@keyframes buttonOffAnim {
+    0% { fill: #FFF1A5; }
+    25% { fill: red; }
+    50% { fill: #FFF1A5; }
+    75% { fill: red; }
+    100% { fill: #FFF1A5; }
+}
+
+.button-anim {
+    animation: whiteButton-anim 10s; 
+    animation-iteration-count: infinite;
+}
+
+@keyframes whiteButton-anim {
+    0% { fill: #FFF1A5; }
+    25% { fill: #B3B3B3; }
+    50% { fill: #FFF1A5;}
+    75% { fill: #B3B3B3;}
+    100% { fill: #FFF1A5; }
+}
+
+
