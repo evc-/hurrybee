@@ -1,103 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1242 2208" style="enable-background:new 0 0 1242 2208;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;}
 	.st1{fill:none;stroke:#FFDB58;stroke-width:2;stroke-miterlimit:10;}
-	.st2{fill:#FFF1A5;stroke:#000000;stroke-miterlimit:10;}
-	.st3{opacity:0.5;fill:url(#New_Pattern);}
+	.st2{fill:#FFF1A5;}
+	.st3{opacity:0.5;fill:url(#Pattern_1_);enable-background:new    ;}
 	.st4{fill:#F2F2F2;stroke:#132560;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#132560;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st6{fill:#132560;}
+	.st7{fill:#F2F2F2;stroke:#132560;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	
-		.st5{fill:none;stroke:#132560;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:400,50,200,50,0,0;}
-	.st6{fill:#FFFFE4;stroke:#14275E;stroke-width:3;stroke-miterlimit:10;}
-	.st7{fill:#132560;stroke:#14275E;stroke-width:0.75;stroke-miterlimit:10;stroke-dasharray:480,30,200,30,0,0;}
-	
-		.st8{fill:#F2F2F2;stroke:#132560;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:480,30,200,30,0,0;}
-	.st9{fill:#132560;stroke:url(#SVGID_1_);stroke-width:0.75;stroke-miterlimit:10;stroke-dasharray:480,30,200,30,0,0;}
-	.st10{fill:#132560;stroke:url(#SVGID_2_);stroke-width:0.75;stroke-miterlimit:10;stroke-dasharray:480,30,200,30,0,0;}
-	.st11{fill:#132560;}
-	
-		.st12{fill:#FFFFE4;stroke:#132560;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:480,30,200,30,0,0;}
-	.st13{fill:#F2F2F2;stroke:#132560;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st14{fill:#F2F2F2;stroke:#14275E;stroke-width:3;stroke-miterlimit:10;}
-	.st15{fill:#132560;stroke:#14275E;stroke-width:0.75;stroke-miterlimit:10;}
-	.st16{fill:#F2F2F2;stroke:#132560;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st17{fill:none;stroke:#132560;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st18{fill:#FFFFE4;stroke:#14275E;stroke-width:4;stroke-miterlimit:10;}
-	.st19{fill:#132560;stroke:#14275E;stroke-width:4;stroke-miterlimit:10;}
+		.st8{fill:#FFFFE4;stroke:#132560;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:480,30,200,30,0,0;}
+	.st9{fill:#FFFFE4;stroke:#14275E;stroke-width:3;stroke-miterlimit:10;}
+	.st10{fill:#F2F2F2;stroke:#14275E;stroke-width:3;stroke-miterlimit:10;}
+	.st11{fill:#132560;stroke:#14275E;stroke-width:0.75;stroke-miterlimit:10;}
+	.st12{fill:#F2F2F2;stroke:#132560;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st13{fill:#FFFFE4;stroke:#14275E;stroke-width:4;stroke-miterlimit:10;}
+	.st14{fill:#132560;stroke:#14275E;stroke-width:4;stroke-miterlimit:10;}
 </style>
-<pattern  x="-2332" y="534" width="102.1" height="97.7" patternUnits="userSpaceOnUse" id="New_Pattern" viewBox="51.1 -122.1 102.1 97.7" style="overflow:visible;">
+<pattern  y="2208" width="102.1" height="97.7" patternUnits="userSpaceOnUse" id="New_Pattern" viewBox="51.1 -122.2 102.1 97.7" style="overflow:visible;">
 	<g>
-		<rect x="51.1" y="-122.1" class="st0" width="102.1" height="97.7"/>
-		<rect x="103.1" y="-47.9" class="st1" width="100.1" height="46.9"/>
-		<rect x="1" y="-47.9" class="st1" width="100.1" height="46.9"/>
-		<rect x="52.1" y="-96.7" class="st1" width="100.1" height="46.9"/>
-		<rect x="103.1" y="-145.6" class="st1" width="100.1" height="46.9"/>
-		<rect x="1" y="-145.6" class="st1" width="100.1" height="46.9"/>
+		<rect x="51.1" y="-122.2" class="st0" width="102.1" height="97.7"/>
+		<g>
+			<rect x="51.1" y="-122.2" class="st0" width="102.1" height="97.7"/>
+			<rect x="103.1" y="-145.6" class="st1" width="100.1" height="46.9"/>
+			<rect x="1" y="-145.6" class="st1" width="100.1" height="46.9"/>
+			<rect x="52.1" y="-96.8" class="st1" width="100.1" height="46.9"/>
+			<rect x="103.1" y="-47.9" class="st1" width="100.1" height="46.9"/>
+			<rect x="1" y="-47.9" class="st1" width="100.1" height="46.9"/>
+		</g>
 	</g>
 </pattern>
-<g id="Tablet">
-</g>
 <g id="Mobile">
-	
-		<rect id="Background" x="-481" y="487" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 1725.5 485.5)" class="st2" width="2202" height="1237"/>
+	<rect id="Background" x="1.5" y="4.5" class="st2" width="1237" height="2202"/>
+	<pattern  id="Pattern_1_" xlink:href="#New_Pattern" patternTransform="matrix(1 0 0 -1 -2391.8 -18724.5996)">
+	</pattern>
 	<rect id="Pattern" x="95.2" y="182.6" class="st3" width="1066.5" height="1665.9"/>
 	<g id="Fridge_2_">
 		<path class="st4" d="M130,1201.1h330.8c6.6,0,12,5.4,12,12v617.7c0,6.6-5.4,12-12,12H130c-6.6,0-12-5.4-12-12v-617.7
 			C118,1206.5,123.4,1201.1,130,1201.1z"/>
-		<line class="st17" x1="472.8" y1="1472.8" x2="118" y2="1472.8"/>
-		<line class="st17" x1="155.5" y1="1341.1" x2="213.7" y2="1341.1"/>
-		<line class="st17" x1="155.5" y1="1592" x2="213.7" y2="1592"/>
+		<line class="st5" x1="472.8" y1="1472.8" x2="118" y2="1472.8"/>
+		<line class="st5" x1="155.5" y1="1341.1" x2="213.7" y2="1341.1"/>
+		<line class="st5" x1="155.5" y1="1592" x2="213.7" y2="1592"/>
 	</g>
 	<g id="Oven_2_">
 		<g id="Oven_3_">
 			<rect x="795.9" y="1546.2" class="st4" width="346.5" height="296.6"/>
-			
-				<rect x="876.3" y="1596.1" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 2683.0815 744.8085)" class="st11" width="185.7" height="235.6"/>
-			<polyline class="st11" points="929.6,1543.5 870.7,1543.5 870.7,1529.6 929.6,1529.6 			"/>
-			<polyline class="st11" points="1066.8,1543.5 1007.9,1543.5 1007.9,1529.6 1066.8,1529.6 			"/>
-			<rect x="835.4" y="1646.7" class="st13" width="268.9" height="26.3"/>
-			<circle class="st12" cx="862.4" cy="1585" r="16.6"/>
-			<circle class="st12" cx="933.1" cy="1585" r="16.6"/>
-			<circle class="st12" cx="1003.8" cy="1585" r="16.6"/>
-			<circle class="st12" cx="1074.5" cy="1585" r="16.6"/>
+			<rect x="851.4" y="1621.1" class="st6" width="235.6" height="185.7"/>
+			<polyline class="st6" points="929.6,1543.5 870.7,1543.5 870.7,1529.6 929.6,1529.6 			"/>
+			<polyline class="st6" points="1066.8,1543.5 1007.9,1543.5 1007.9,1529.6 1066.8,1529.6 			"/>
+			<rect x="835.4" y="1646.7" class="st7" width="268.9" height="26.3"/>
+			<circle class="st8" cx="862.4" cy="1585" r="16.6"/>
+			<circle class="st8" cx="933.1" cy="1585" r="16.6"/>
+			<circle class="st8" cx="1003.8" cy="1585" r="16.6"/>
+			<circle class="st8" cx="1074.5" cy="1585" r="16.6"/>
 		</g>
 		<path id="OvenTop_1_" class="st4" d="M793.8,1324.7h347.9v25.4H793.8V1324.7z M862.5,1227.7H1073V916.3H862.5V1227.7z
 			 M1072.2,1227.7H863.3l-53.9,96.4H1126L1072.2,1227.7z"/>
 	</g>
 	<g id="Middle_1_">
 		<g id="MidCounter_1_">
-			<rect x="474.9" y="1546.7" class="st6" width="320.2" height="296.6"/>
-			<rect x="474.9" y="1512.1" class="st14" width="320.2" height="34.7"/>
-			<rect x="489.1" y="1559.9" class="st15" width="290.4" height="271"/>
-			<rect x="592.7" y="1577.2" class="st16" width="83.2" height="18"/>
+			<rect x="474.9" y="1546.7" class="st9" width="320.2" height="296.6"/>
+			<rect x="474.9" y="1512.1" class="st10" width="320.2" height="34.7"/>
+			<rect x="489.1" y="1559.9" class="st11" width="290.4" height="271"/>
+			<rect x="592.7" y="1577.2" class="st12" width="83.2" height="18"/>
 			<g>
-				<polygon class="st11" points="632.9,1449 631.5,1449 612.1,1449 612.1,1460.1 631.5,1460.1 631.5,1510 642.6,1510 642.6,1449 
+				<polygon class="st6" points="632.9,1449 631.5,1449 612.1,1449 612.1,1460.1 631.5,1460.1 631.5,1510 642.6,1510 642.6,1449 
 									"/>
-				
-					<rect x="594.8" y="1495.5" transform="matrix(1.525675e-11 -1 1 1.525675e-11 -905.4855 2106.2085)" class="st11" width="11.1" height="20.8"/>
-				
-					<rect x="664.1" y="1495.5" transform="matrix(1.607698e-11 -1 1 1.607698e-11 -836.1855 2175.5085)" class="st11" width="11.1" height="20.8"/>
+				<rect x="590" y="1500.3" class="st6" width="20.8" height="11.1"/>
+				<rect x="659.3" y="1500.3" class="st6" width="20.8" height="11.1"/>
 			</g>
 		</g>
 		<g id="MidShelf">
-			<path id="Spatula_1_" class="st11" d="M708.5,1299.9h-4.9v-63.8h-8.3v63.8h-4.9c-5.3,0-9.7,4.4-9.7,9.7v19.4
+			<path id="Spatula_1_" class="st6" d="M708.5,1299.9h-4.9v-63.8h-8.3v63.8h-4.9c-5.3,0-9.7,4.4-9.7,9.7v19.4
 				c0,5.3,4.4,9.7,9.7,9.7h18c5.3,0,9.7-4.4,9.7-9.7v-19.4C718.2,1304.3,713.8,1299.9,708.5,1299.9z M691.8,1329.7
 				c0,1.1-0.9,2.1-2.1,2.1c-1.1,0-2.1-0.9-2.1-2.1v-20.8c0-1.1,0.9-2.1,2.1-2.1c1.1,0,2.1,0.9,2.1,2.1V1329.7z M701.5,1329.7
 				c0,1.1-0.9,2.1-2.1,2.1c-1.1,0-2.1-0.9-2.1-2.1v-20.8c0-1.1,0.9-2.1,2.1-2.1c1.1,0,2.1,0.9,2.1,2.1V1329.7z M711.2,1329.7
 				c0,1.1-0.9,2.1-2.1,2.1c-1.1,0-2.1-0.9-2.1-2.1v-20.8c0-1.1,0.9-2.1,2.1-2.1c1.1,0,2.1,0.9,2.1,2.1V1329.7z"/>
-			<path id="Fork_1_" class="st11" d="M757,1299.9h-4.9v-63.8h-8.3v63.8H739c-5.3,0-9.7,4.4-9.7,9.7v19.4c0,4.4,2.9,8.1,6.9,9.3
+			<path id="Fork_1_" class="st6" d="M757,1299.9h-4.9v-63.8h-8.3v63.8H739c-5.3,0-9.7,4.4-9.7,9.7v19.4c0,4.4,2.9,8.1,6.9,9.3
 				v-16.9c0-1.1,0.9-2.1,2.1-2.1c1.1,0,2.1,0.9,2.1,2.1v17.3h5.5v-17.3c0-1.1,0.9-2.1,2.1-2.1c1.1,0,2.1,0.9,2.1,2.1v17.3h5.5v-17.3
 				c0-1.1,0.9-2.1,2.1-2.1c1.1,0,2.1,0.9,2.1,2.1v16.9c4-1.2,6.9-4.9,6.9-9.3v-19.4C766.7,1304.3,762.3,1299.9,757,1299.9z"/>
-			<path id="Spoon_1_" class="st11" d="M657.2,1297.9v-61.7h-8.3v61.7c-7.2,2.5-12.5,11.1-12.5,21.4c0,12.2,7.4,22.2,16.6,22.2
+			<path id="Spoon_1_" class="st6" d="M657.2,1297.9v-61.7h-8.3v61.7c-7.2,2.5-12.5,11.1-12.5,21.4c0,12.2,7.4,22.2,16.6,22.2
 				c9.2,0,16.6-9.9,16.6-22.2C669.7,1309,664.4,1300.3,657.2,1297.9z"/>
 			<rect id="Shelf_1_" x="489.5" y="1207" class="st4" width="289.7" height="27.7"/>
 		</g>
 		<g id="MidTop_2_">
-			<rect x="488.8" y="921.7" class="st18" width="291.1" height="250.1"/>
-			<rect x="503.3" y="931.6" class="st19" width="126" height="230.2"/>
-			<rect x="641.2" y="931.1" class="st19" width="126" height="231.3"/>
+			<rect x="488.8" y="921.7" class="st13" width="291.1" height="250.1"/>
+			<rect x="503.3" y="931.6" class="st14" width="126" height="230.2"/>
+			<rect x="641.2" y="931.1" class="st14" width="126" height="231.3"/>
 			<rect x="528.5" y="1112.2" class="st4" width="75.6" height="16.4"/>
 			<rect x="666.4" y="1112.2" class="st4" width="75.6" height="16.4"/>
 		</g>

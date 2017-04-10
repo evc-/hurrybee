@@ -14,10 +14,10 @@
 
 		Sortable.create(simpleList, {
 //generate array when list is updated/item is dropped
-			setData: function (evt) {
+			onUpdate: function (evt) {
 			activityArr = this.toArray();
 			console.log(activityArr);
-//			estimateTime();
+			estimateTime();
 		},
 		
 //filter is for anything that should not be drag and dropped
@@ -81,7 +81,7 @@
 		addActivity("Get Dressed", 15);
 		addActivity("Make Coffee", 15);
 		addActivity("Pack Lunch and Bag", 10);
-		estimateTime();
+
 		
 		
 	
