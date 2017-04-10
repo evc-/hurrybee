@@ -84,8 +84,6 @@
 			addActivity("Make Coffee", 15);
 			addActivity("Pack Lunch and Bag", 10);
 		}
-
-		
 //		function fillCustom(){
 //			
 //		}
