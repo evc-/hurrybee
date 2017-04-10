@@ -14,10 +14,10 @@
 
 		Sortable.create(simpleList, {
 //generate array when list is updated/item is dropped
-			setData: function (evt) {
+			onUpdate: function (evt) {
 			activityArr = this.toArray();
 			console.log(activityArr);
-//			estimateTime();
+			estimateTime();
 		},
 		
 //filter is for anything that should not be drag and dropped
@@ -76,31 +76,24 @@
 			document.getElementById("timeEstimate").innerHTML = timeSum;
 		}
 
-		addActivity("Wash Face and Brush Teeth", 5);
-		addActivity("Eat Breakfast", 15);
-		addActivity("Get Dressed", 15);
-		addActivity("Make Coffee", 15);
-		addActivity("Pack Lunch and Bag", 10);
-		estimateTime();
-		
-		
-	
+		function fillDefault(){
+			
+			addActivity("Wash Face and Brush Teeth", 5);
+			addActivity("Eat Breakfast", 15);
+			addActivity("Get Dressed", 15);
+			addActivity("Make Coffee", 15);
+			addActivity("Pack Lunch and Bag", 10);
+		}
 
-		//function startRoutine(){
-			//get the list
-				//function createList
-			//store the list into local storage
-				//function storeList
-			//go to the start page
-				//link to game page
-		//}
-	
+		
+//		function fillCustom(){
+//			
+//		}
+
 
 		
 		function createList(){
-			
-			
-			
+
 			for (i=0; i < activityArr.length; i ++){
 				
 				activityObjects[i] = {name: activityArr[i], time: document.getElementById(activityArr[i]).childNodes[1].value};
@@ -109,16 +102,63 @@
 					
 			}
 		}
+
+		function storeList(){
+			
+			var saveActivities = JSON.stringify(activityObjects);
+			console.log(saveActivities);
+			localStorage.setItem("mySavedActivities", saveActivities);
+			
+		}
+
+
+	var startGame = document.getElementById("startGame");
+
+		startGame.addEventListener("click", function(){
+			createList();
+			storeList();
+		})
+		
+	
+		
+		//////////////////////
+
+var saveActivities = localStorage.getItem("mySavedActivities");
+
+		function getList(){
+				
+				if (saveActivities != null){
+				activityObjects = JSON.parse(saveActivities);
+				return activityObjects;	
+			}
+			
+			
+		if (saveActivities == null){
+			fillDefault();
+			console.log(fillDefault());
+		}
+			
+		}
+
+	var testGetList = document.getElementById("testGetList");
+
+		testGetList.addEventListener("click", function(){
+			getList();
+			console.log(activityObjects);
+		})
+		
+	var testClearStorage = document.getElementById("testClearStorage");
+
+		testClearStorage.addEventListener("click", function(){
+			saveActivities = null;
+			console.log(saveActivities);
+	})
+		
+	
+		
 		
 
-//		
-//		then a function storeList(list) {
-//\\stores the list to local storage
-//}
-// 
-// then a function getList(){
-//returns list from local storage
-//}
-//yeah, let me know if you have any issues or questions.
-
-
+		
+		
+		
+	
