@@ -1,109 +1,131 @@
 //game js 
 
 		var simpleList = document.getElementById("simpleList");
-		
-		function deleteMe(item){
-			item.parentNode.removeChild(item);
-		}
+
+//when the page loads, the list should be the user's custom list - if they have been there before, and have saved a custom list to local storage 
+
+		var saveActivities = localStorage.getItem("mySavedActivities");		
+
+//these are the arrays that handle the list 
+
+		var activityArr = [];  //this is the array of activities as string form that is generated when the list isrearranged 
+		var activityObjects = []; //this is the array of objects that have a name, time, and pic. the create, store, and get list functions all use it
 		
 
-		var activityArr = [];
-		var activityObjects = [];
-		
-		console.log(activityArr);
-		
+//this is the list from the sortable library (https://github.com/RubaXa/Sortable)
 
 		Sortable.create(simpleList, {
-//generate array when list is updated/item is dropped
-			onUpdate: function (evt) {
-			activityArr = this.toArray();
-			console.log(activityArr);
-			estimateTime();
+			onUpdate: function (evt) { 
+			activityArr = this.toArray(); //generate array of strings when list is updated
+			estimateTime(); //estimate time when list is updated 
 		},
 		
-//filter is for anything that should not be drag and dropped
-		filter: '.js-remove',
+		filter: '.js-remove', //filter is for anything that should not be drag and dropped
 							
 		})
+		
+
+//this is for adding custom activities 
 		
 		function buttonAdd(){
 			
 			var customActName = document.getElementById("customActName");
 			var customActTime = document.getElementById("customActTime");
-			addActivity(customActName.value, customActTime.value);
-			console.log(activityArr);
-			
-			
+			addActivity(customActName.value, customActTime.value);	//give the custom activity a name and a time value 	
 		}
+
+//this is for generating a single list item that gets added to the end of the list 
 		
 		function addActivity(name, time, pic){
 
-			var customActivity= document.createElement("li");
-			customActivity.className = "list-group-item";
-			customActivity.setAttribute('data-id' , name); 
-			customActivity.id = name;
-			customActivity.innerHTML = name;
+			var newActivity= document.createElement("li"); //create list item
+			newActivity.className = "list-group-item";
+			newActivity.setAttribute('data-id' , name);  //give it a name 
+			newActivity.id = name; //make the id the same as the name
+			newActivity.innerHTML = name; //show the name in the list items inner html 
 			
 			
-		
-			var customActTimeValue = document.createElement("input");
-			customActTimeValue.setAttribute('type', 'number');
-			customActTimeValue.value = time;
-			customActTimeValue.dataset.pic = pic;
+			var activityLength = document.createElement("input"); //set the time for the activity 
+			activityLength.setAttribute('type', 'number');
+			activityLength.value = time; //give it a time value 
 			
-			customActivity.appendChild(customActTimeValue);
+			newActivity.dataset.pic = pic; //add the visual scene associated with the activity 
 			
-			var customActDelete = document.createElement("i");
-			customActDelete.className = "js-remove";
-			customActDelete.onclick = function(){deleteMe(customActivity)};
-			customActDelete.innerHTML = "✖";
+			newActivity.appendChild(activityLength); 
 			
-			customActivity.appendChild(customActDelete);
+			var deleteButton = document.createElement("i"); //add an X and an ability to delete the item 
+			deleteButton.className = "js-remove";
+			deleteButton.onclick = function(){deleteMe(newActivity)};
+			deleteButton.innerHTML = "✖"; 
 			
-			simpleList.appendChild(customActivity);
+			newActivity.appendChild(deleteButton);
+			
+			simpleList.appendChild(newActivity); //append the new activity to the list 
 			
 		}
+
+//this function is used to delete an item off the list 
+
+		function deleteMe(item){
+			item.parentNode.removeChild(item);
+		}
 		
-		
+	
+//this function is for adding up all the time values and getting a sum. it gets time values from activityArr, which is currently only generated when the list is updated 
 		
 		function estimateTime(){
 			var timeSum = 0;
 			
-			for (i=0; i < activityArr.length; i ++){
+			for (i=0; i < activityArr.length; i ++){  
 				var timeValue = document.getElementById(activityArr[i]).childNodes[1].value;
-				console.log(document.getElementById(activityArr[i]).childNodes[1].value);
-				timeSum = timeSum + parseInt(timeValue);
-				
+				timeSum = timeSum + parseInt(timeValue); //need parseInt otherwise timevalue is a string 
 			}
 			
 			document.getElementById("timeEstimate").innerHTML = timeSum;
 		}
 
-		function fillDefault(){
+//this array is all the default objects/activities.
+//todo: add associated pics 
+
+	var defaultActivities = [{"name":"Wash Face and Brush Teeth","time":"5"},
+							 {"name":"Make Coffee","time":"15"},
+							 {"name":"Eat Breakfast","time":"15"},
+							 {"name":"Get Dressed","time":"15"},
+							 {"name":"Pack Lunch and Bag","time":"10"}];
+
+//this loops over the default activities and uses the "add activity" function to generate the visual list 
+
+	function fillDefault(){
+			for (i=0; i < defaultActivities.length; i ++){
+				addActivity(defaultActivities[i].name, defaultActivities[i].time, defaultActivities[i].pic);
+			}
 			
-			addActivity("Wash Face and Brush Teeth", 5, "1.svg");
-			addActivity("Eat Breakfast", 15, "2.svg");
-			addActivity("Get Dressed", 15, "3.svg");
-			addActivity("Make Coffee", 15, "4.svg");
-			addActivity("Pack Lunch and Bag", 10, "5.svg");
 		}
 
-//		function fillCustom(){
-//			
-//		}
+//this loops over the saved activity objects and does the same as above - uses the "add activity" function to generate the list 
+	function fillCustom(){
+		for(i=0; i < activityObjects.length; i ++){
+			addActivity(activityObjects[i].name, activityObjects[i].time, activityObjects[i].pic);
+		}
+			
+	}
 
 
-		
+//this function loops over activityArr, an array of strings, and generates activityObjects, an array of objects. this is not visual - it is preparing a list that can be stored and used 
+
 		function createList(){
 
 			for (i=0; i < activityArr.length; i ++){
 				
 				activityObjects[i] = {name: activityArr[i], time: document.getElementById(activityArr[i]).childNodes[1].value, pic:document.getElementById(activityArr[i]).childNodes[1].dataset.pic};
-				
-				console.log(activityObjects);
 					
 			}
+			console.log(activityObjects);
 		}
+
+
+
+//this function stringifies the new array of objects, and saves them in the local storage as "mySavedActivities" 
 
 		function storeList(){
 			
@@ -113,6 +135,7 @@
 			
 		}
 
+//when you click the start game button, activityArr (array of strings) --> acitvityObjects (array of objects), then gets saved in local storage 
 
 	var startGame = document.getElementById("startGame");
 
@@ -122,30 +145,25 @@
 		})
 		
 	
+//this function checks if there is a custom list saved in the local storage. if there is a custom list, the list should be generated with the addActivity function. if there is no custom list stored, a default list should be generated. 
 		
-		//////////////////////
-
-		var saveActivities = localStorage.getItem("mySavedActivities");
-
-
-		function getList(){
-			console.log(saveActivities);
-			if (saveActivities != null){
+	function getList(){
+			
+			if (saveActivities == null){
+				fillDefault();
+				
+			} else {
 				activityObjects = JSON.parse(saveActivities);
-				return activityObjects;	
-			}
-			
-			
-		if (saveActivities == null){
-			fillDefault();
-			console.log(fillDefault);
+				fillCustom();
+				console.log(activityObjects);
+				
 		}
 			
 		}
 
 
 
-		var testGetList = document.getElementById("testGetList");
+	var testGetList = document.getElementById("testGetList");
 		getList();
 		testGetList.addEventListener("click", function(){
 			getList();
@@ -161,6 +179,8 @@
 	})
 		
 		
+		
+	
 
 	
 		
