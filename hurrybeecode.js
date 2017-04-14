@@ -9,6 +9,7 @@
 
 		var activityArr = [];
 		var activityObjects = [];
+		
 		console.log(activityArr);
 		
 
@@ -35,7 +36,7 @@
 			
 		}
 		
-		function addActivity(name, time){
+		function addActivity(name, time, pic){
 
 			var customActivity= document.createElement("li");
 			customActivity.className = "list-group-item";
@@ -43,10 +44,12 @@
 			customActivity.id = name;
 			customActivity.innerHTML = name;
 			
+			
 		
 			var customActTimeValue = document.createElement("input");
 			customActTimeValue.setAttribute('type', 'number');
 			customActTimeValue.value = time;
+			customActTimeValue.dataset.pic = pic;
 			
 			customActivity.appendChild(customActTimeValue);
 			
@@ -78,12 +81,13 @@
 
 		function fillDefault(){
 			
-			addActivity("Wash Face and Brush Teeth", 5);
-			addActivity("Eat Breakfast", 15);
-			addActivity("Get Dressed", 15);
-			addActivity("Make Coffee", 15);
-			addActivity("Pack Lunch and Bag", 10);
+			addActivity("Wash Face and Brush Teeth", 5, "1.svg");
+			addActivity("Eat Breakfast", 15, "2.svg");
+			addActivity("Get Dressed", 15, "3.svg");
+			addActivity("Make Coffee", 15, "4.svg");
+			addActivity("Pack Lunch and Bag", 10, "5.svg");
 		}
+
 //		function fillCustom(){
 //			
 //		}
@@ -94,7 +98,7 @@
 
 			for (i=0; i < activityArr.length; i ++){
 				
-				activityObjects[i] = {name: activityArr[i], time: document.getElementById(activityArr[i]).childNodes[1].value};
+				activityObjects[i] = {name: activityArr[i], time: document.getElementById(activityArr[i]).childNodes[1].value, pic:document.getElementById(activityArr[i]).childNodes[1].dataset.pic};
 				
 				console.log(activityObjects);
 					
@@ -121,11 +125,12 @@
 		
 		//////////////////////
 
-var saveActivities = localStorage.getItem("mySavedActivities");
+		var saveActivities = localStorage.getItem("mySavedActivities");
+
 
 		function getList(){
-				
-				if (saveActivities != null){
+			console.log(saveActivities);
+			if (saveActivities != null){
 				activityObjects = JSON.parse(saveActivities);
 				return activityObjects;	
 			}
@@ -133,13 +138,15 @@ var saveActivities = localStorage.getItem("mySavedActivities");
 			
 		if (saveActivities == null){
 			fillDefault();
-			console.log(fillDefault());
+			console.log(fillDefault);
 		}
 			
 		}
 
-	var testGetList = document.getElementById("testGetList");
 
+
+		var testGetList = document.getElementById("testGetList");
+		getList();
 		testGetList.addEventListener("click", function(){
 			getList();
 			console.log(activityObjects);
@@ -149,9 +156,12 @@ var saveActivities = localStorage.getItem("mySavedActivities");
 
 		testClearStorage.addEventListener("click", function(){
 			saveActivities = null;
+			localStorage.removeItem("mySavedActivities");
 			console.log(saveActivities);
 	})
 		
+		
+
 	
 		
 		
