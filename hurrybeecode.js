@@ -102,11 +102,11 @@
 //this array is all the default objects/activities.
 //todo: add associated pics 
 
-	var defaultActivities = [{"name":"Wash Face and Brush Teeth ","time":"5", pic:"washtest.svg"},
-							 {"name":"Make Coffee ","time":"15", pic:"coffeetest.svg"},
-							 {"name":"Eat Breakfast ","time":"15", pic:"breakfasttest.svg"},
+	var defaultActivities = [{"name":"Wash Face and Brush Teeth ","time":"5", pic:"./assets/game/Tablet/teethbrush_tablet.svg"},
+							 {"name":"Make Coffee ","time":"15", pic:"./assets/game/Tablet/coffee_tablet.svg"},
+							 {"name":"Eat Breakfast ","time":"15", pic:"./assets/game/Tablet/breakfast_tablet.svg"},
 							 {"name":"Get Dressed ","time":"15", pic:"dressedtest.svg"},
-							 {"name":"Pack Lunch and Bag ","time":"10", pic:"packtest.svg"}];
+							 {"name":"Pack Lunch and Bag ","time":"10", pic:"./assets/game/Tablet/lunch_tablet.svg"}];
 
 //this loops over the default activities and uses the "add activity" function to generate the visual list 
 
