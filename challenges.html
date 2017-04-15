@@ -52,11 +52,49 @@
 			text-align: center;
 		}
     
-    .how-it-works-row{
-			margin-left: 40px;
-			margin-right: 40px;
-		}
-        
+    .img-margin{
+        padding: 0px;
+        }
+    
+    .ndiv-style{
+        width: 150px;
+        height: 100px;
+        background-color: rgba(255,255,255,0.8);
+        position: absolute;
+        margin: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        }
+    
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background-color: rgba(255,255,255,0.8);
+    }
+    
+    #modal-content {
+        margin: 15% auto;
+        padding: 20px;
+        background-color: #ffdb58;
+        width: 350px;
+        height: 450px;
+        position: absolute;
+        margin:auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .exit-button {
+        width: 30px;
+        }
     </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -103,51 +141,83 @@
     
 	<div class="container-fluid congrats-container">
 		
-		
 		<div class="row">
 			<div class="col-xs-1">
-			</div>
-				
-			<div class="col-xs-10" id="congrats">
-				<h2>Congrats! Hope you had a good morning!</h2>
-                <p>Touch the icons below for challenges to improve your health and well-being!</p>
-            </div>
-				<br>
+        </div>
+		<div class="col-xs-10" id="congrats">
+		  <h2>Congrats! Hope you had a good morning!</h2>
+          <p>Touch the icons below for challenges to improve your health and well-being!</p>
+        </div>
+		
+        <br>
 
         </div>
 			<div class="col-xs-1">	
 			</div>
         
     </div>
-		
+    
+    <div id="myModal" class="modal">
+        <div id="modal-content">
+            <img src="assets/challenges/exit.svg" class="exit-button" id="exit">
+            <img src="assets/challenges/exercise.svg" class="exerciseIcon" id="modal-icon">
+            <br/><br/>
+            <p id="modal-text"></p>
+            <br/>
+        </div>
+    </div>
+
+    <div class="container">
 		<div class="row" name="icons">
 			
-			<div class="col-xs-6 col-md-3">
+			<div class="col-xs-6">
 				
-			<img src="assets/other/Icons/challenge_icon.svg" class="img-responsive center-block" alt="number one" width= "150px";>
+			<img src="assets/other/Icons/challenge_icon.svg" id="c1" class="img-responsive center-block" alt="challenge-icon" width= "150px";>
 
 			</div>
 			
-			<div class="col-xs-6 col-md-3">
+			<div class="col-xs-6">
 				
-			<img src="assets/other/Icons/challenge_icon.svg" class="img-responsive center-block" alt="number one" width= "150px";>
+			<img src="assets/other/Icons/challenge_icon.svg" class="img-responsive center-block" alt="challenge-icon" width= "150px";>
+
+            </div>	
+        </div>
+		<div class="row" name="icons">
+			
+			<div class="col-xs-4">
+				
+			<img src="assets/other/Icons/challenge_icon.svg" class="img-responsive center-block img-margin" alt="challenge-icon" width= "150px";>
 
 			</div>
 			
-			<div class="col-xs- col-md-3">
+			<div class="col-xs-4">
 				
-			<img src="assets/other/Icons/challenge_icon.svg" class="img-responsive center-block" alt="number one" width= "150px";>
+			<img src="assets/other/Icons/challenge_icon.svg" class="img-responsive center-block img-margin" alt="challenge-icon" width= "150px";>
 
-			</div>
+            </div>	
             
-            <div class="col-xs-6 col-md-3">
+			<div class="col-xs-4">
 				
-			<img src="assets/other/Icons/challenge_icon.svg" class="img-responsive center-block" alt="number one" width= "150px";>
+			<img src="assets/other/Icons/challenge_icon.svg" class="img-responsive center-block img-margin" alt="challenge-icon" width= "150px";>
+
+            </div>	 
+        </div>
+        
+		<div class="row" name="icons">
+			
+			<div class="col-xs-6">
+				
+			<img src="assets/other/Icons/challenge_icon.svg" class="img-responsive center-block" alt="challenge-icon" width= "150px";>
 
 			</div>
 			
-		</div>
-		
+			<div class="col-xs-6">
+				
+			<img src="assets/other/Icons/challenge_icon.svg" class="img-responsive center-block" alt="challenge-icon" width= "150px";>
+
+            </div>	
+        </div>
+            
 	</div>
     <br>
     <br>
