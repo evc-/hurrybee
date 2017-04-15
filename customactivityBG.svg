@@ -1,0 +1,16 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11in" height="8.5in" viewBox="0 0 792 612">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Turquoise);
+      }
+    </style>
+    <linearGradient id="Turquoise" y1="306" x2="792" y2="306" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00bcc5"/>
+      <stop offset="0.49" stop-color="#9ed8d5"/>
+      <stop offset="1" stop-color="#00617c"/>
+    </linearGradient>
+  </defs>
+  <title>customactivityBG</title>
+  <rect class="cls-1" width="792" height="612"/>
+</svg>

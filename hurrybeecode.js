@@ -42,9 +42,14 @@
 			newActivity.className = "list-group-item";
 			newActivity.setAttribute('data-id' , name);  //give it a name 
 			newActivity.id = name; //make the id the same as the name
-			newActivity.innerHTML = name; //show the name in the list items inner html
+			
 			newActivity.style.marginTop = "20px";
 			
+			var dragHandle = document.createElement("span");
+			dragHandle.className = "glyphicon glyphicon-resize-vertical grabbable";
+			newActivity.appendChild(dragHandle);
+			
+			newActivity.innerHTML += name; //show the name in the list items inner html
 			
 			var activityLength = document.createElement("input"); //set the time for the activity 
 			activityLength.setAttribute('type', 'number');
@@ -61,10 +66,14 @@
 			
 			var deleteButton = document.createElement("i"); //add an X and an ability to delete the item 
 			deleteButton.className = "js-remove";
+			deleteButton.style.textAlign = "right";
 			deleteButton.onclick = function(){deleteMe(newActivity)};
 			deleteButton.innerHTML = "  <span class='glyphicon glyphicon-remove'></span>"; 
 			
 			newActivity.appendChild(deleteButton);
+			
+			
+			
 			
 			simpleList.appendChild(newActivity); //append the new activity to the list 
 			
@@ -83,7 +92,7 @@
 			var timeSum = 0;
 			
 			for (i=0; i < activityArr.length; i ++){  
-				var timeValue = document.getElementById(activityArr[i]).childNodes[1].value;
+				var timeValue = document.getElementById(activityArr[i]).childNodes[2].value;
 				timeSum = timeSum + parseInt(timeValue); //need parseInt otherwise timevalue is a string 
 			}
 			
@@ -93,11 +102,11 @@
 //this array is all the default objects/activities.
 //todo: add associated pics 
 
-	var defaultActivities = [{"name":"Wash Face and Brush Teeth ","time":"5"},
-							 {"name":"Make Coffee ","time":"15"},
-							 {"name":"Eat Breakfast ","time":"15"},
-							 {"name":"Get Dressed ","time":"15"},
-							 {"name":"Pack Lunch and Bag ","time":"10"}];
+	var defaultActivities = [{"name":"Wash Face and Brush Teeth ","time":"5", pic:"washtest.svg"},
+							 {"name":"Make Coffee ","time":"15", pic:"coffeetest.svg"},
+							 {"name":"Eat Breakfast ","time":"15", pic:"breakfasttest.svg"},
+							 {"name":"Get Dressed ","time":"15", pic:"dressedtest.svg"},
+							 {"name":"Pack Lunch and Bag ","time":"10", pic:"packtest.svg"}];
 
 //this loops over the default activities and uses the "add activity" function to generate the visual list 
 
@@ -123,7 +132,7 @@
 
 			for (i=0; i < activityArr.length; i ++){
 				
-				activityObjects[i] = {name: activityArr[i], time: document.getElementById(activityArr[i]).childNodes[1].value, pic:document.getElementById(activityArr[i]).childNodes[1].dataset.pic};
+				activityObjects[i] = {name: activityArr[i], time: document.getElementById(activityArr[i]).childNodes[1].value, pic:document.getElementById(activityArr[i]).dataset.pic};
 					
 			}
 			console.log(activityObjects);
@@ -148,6 +157,7 @@
 		startGame.addEventListener("click", function(){
 			createList();
 			storeList();
+			window.location.href = "game.html";
 		})
 		
 	

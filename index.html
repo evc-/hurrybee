@@ -14,52 +14,11 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	
+	<!--Custom Css-->
+	<link href="hurrybeecss.css" rel="stylesheet">
+	
 	<link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
 	
-
-    <!-- Custom CSS -->
-    <style>
-    body {
-        padding-top: 70px;
-		font-family: 'Nunito', sans-serif;
-        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    }
-		
-	.logo{
-		height: 70px;
-		width: 70px;
-		margin-bottom: 10px;
-		}
-		
-	.navbar{
-		height: 80px;
-		background-color: #ffffe6;
-		}
-		
-	#welcome{
-		position:relative;
-		left: 0;
-		right: 0;
-		top: 0;
-		bottom: 0;
-		margin: auto;
-		text-align: center;
-		
-		}
-		
-	#listcontainer{
-			width: 50vw;
-			height: auto;
-			position:relative;
-			left: 0;
-			right: 0;
-			top: 0;
-			bottom: 0;
-			margin: auto;
-			text-align: left;
-		}
-		
-    </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -105,50 +64,112 @@
 	<br>
 	<br>
 	
-	
-	<div id="welcome">
-	<h2 id="goodMorning">Good Morning</h2>
-		<p id="introText">
-			
-		<span id="welcomeMsg"></span>
-		<br>
-		Drag and drop the activities to change the order you want to do them in this morning.<br>
-		Delete any activites you don't want to do.<br>
-		Adjust the times as needed, and check the estimated time to see if you'll be ready on time.<br>
-			
-		</p>
-	
-	</div>
-	
-	
-	<div id="listcontainer">
-		  <ul id="simpleList" class="list-group">
-
-		  </ul>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-1"></div>
+		<div class="col-xs-10">
+			<div id="welcome">
+				<h2 id="goodMorning">Good Morning</h2>
+					<p id="introText">
+					<span id="welcomeMsg"></span>
+					<br>
+						Drag and drop the activities to change the order you want to do them in this morning.<br>
+						Delete any activites you don't want to do.<br>
+						Adjust the times as needed, and check the estimated time to see if you'll be ready on time.<br>
+					</p>
+			</div>
 		</div>
+		<div class="col-xs-1"></div>
+	</div>
+</div>
+	
+<div class="container">
+	<div class="row">
+		<div class="col-xs-1"></div>
+		<div class="col-xs-10">
+			<div id="listcontainer">
+		  		<ul id="simpleList" class="list-group">
+		  		</ul>
+			</div>
+		</div>
+		<div class="col-xs-1"></div>
+	</div>
+</div>
+	
+<div class="container">
+	<div class="row">
+		<div class="col-xs-1"></div>
+		<div class="col-xs-10">
+				<div id ="addNew">
+					<p>Add your own activity: </p>
+					<br>
+		</div>
+		<div class="col-xs-1"></div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-xs-6">
+						<div class="input-group input-group-lg">
+							<label>Activity Name</label>
+  						<input type="text" id="customActName" placeholder="Do a dance" class="form-control" aria-describedby="sizing-addon1">
+						</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="input-group input-group-lg">
+				<label>Duration</label>
+						<input type="number" id="customActTime"  value="" min=0 max=60 class="form-control" aria-describedby="sizing-addon1">
+			</div>
+		</div>
+		<button type="button" class="btn btn-outline-primary  btn-lg round" id="addNewAct" onclick="buttonAdd()">Add to Morning</button>
+	</div>
+</div>
+
+	
+	
+<div class="container">
+	<div class="row">
+		<div class="col-xs-1"></div>
+		<div class="col-xs-10">
+			<div id ="timeEstimateContainer">
+				Your Estimated time is: <span id="timeEstimate"></span> Minutes
+			</div>
+			<br>
+			<br>
+		</div>
+		<div class="col-xs-1"></div>
+	</div>
+</div>
+	
+<div class="container">
+	<div class="row">
+		<div class="col-xs-1"></div>
+		<div class="col-xs-10">
+				<button type="button" id="startGame" class="btn btn-outline-primary  btn-block btn-lg round">Let's Go!</button>
+			<br>
+			<br>
+		</div>
+		<div class="col-xs-1"></div>
+	</div>
+</div>
 	
 
-	<div id ="addNew">
-		
-	<input type="text" id="customActName" placeholder="Enter your custom activity" value=""> 
-	<input type="number" id="customActTime" value="">
-	<button id="addNewAct" onclick="buttonAdd()">Add Custom Activity</button> 
-	
+<div class="container">
+	<div class="row">
+		<div class="col-xs-1"></div>
+		<div class="col-xs-10">
+			<button id="testGetList">Test Get List</button>
+			<button id="testClearStorage">Test Clear Storage</button>			
+			<br>
+			<br>
+		</div>
+		<div class="col-xs-1"></div>
 	</div>
-	
-	<div id ="timeEstimateContainer">
-	Your Estimated time is: <span id="timeEstimate"></span>
-	</div>
-	
-	<br>
-	<br>
-	
-<!--	<a href="game.html">-->
-	<button id="startGame">Start Game</button>
-<!--	</a>-->
-	
-	<button id="testGetList">Test Get List</button>
-	<button id="testClearStorage">Test Clear Storage</button>
+</div>
+
+
 	
 	<!--Drag and Drop JS-->
 	<script src="js/Sortable.js"></script>
