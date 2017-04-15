@@ -14,11 +14,14 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
+	
 
     <!-- Custom CSS -->
     <style>
     body {
         padding-top: 70px;
+		font-family: 'Nunito', sans-serif;
         /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     }
 		
@@ -31,6 +34,29 @@
 	.navbar{
 		height: 80px;
 		background-color: #ffffe6;
+		}
+		
+	#welcome{
+		position:relative;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		text-align: center;
+		
+		}
+		
+	#listcontainer{
+			width: 50vw;
+			height: auto;
+			position:relative;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			text-align: left;
 		}
 		
     </style>
@@ -80,11 +106,27 @@
 	<br>
 	
 	
-  <ul id="simpleList" class="list-group">
-	  
+	<div id="welcome">
+	<h2 id="goodMorning">Good Morning</h2>
+		<p id="introText">
+			
+		<span id="welcomeMsg"></span>
+		<br>
+		Drag and drop the activities to change the order you want to do them in this morning.<br>
+		Delete any activites you don't want to do.<br>
+		Adjust the times as needed, and check the estimated time to see if you'll be ready on time.<br>
+			
+		</p>
+	
+	</div>
+	
+	
+	<div id="listcontainer">
+		  <ul id="simpleList" class="list-group">
 
-	  
-  </ul>
+		  </ul>
+		</div>
+	
 
 	<div id ="addNew">
 		
@@ -97,6 +139,9 @@
 	<div id ="timeEstimateContainer">
 	Your Estimated time is: <span id="timeEstimate"></span>
 	</div>
+	
+	<br>
+	<br>
 	
 <!--	<a href="game.html">-->
 	<button id="startGame">Start Game</button>

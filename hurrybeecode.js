@@ -42,11 +42,17 @@
 			newActivity.className = "list-group-item";
 			newActivity.setAttribute('data-id' , name);  //give it a name 
 			newActivity.id = name; //make the id the same as the name
-			newActivity.innerHTML = name; //show the name in the list items inner html 
+			newActivity.innerHTML = name; //show the name in the list items inner html
+			newActivity.style.marginTop = "20px";
 			
 			
 			var activityLength = document.createElement("input"); //set the time for the activity 
 			activityLength.setAttribute('type', 'number');
+			activityLength.style.borderLeftStyle = "none";
+			activityLength.style.borderRightStyle = "none";
+			activityLength.style.borderTopStyle = "none";
+			activityLength.min = 1;
+			activityLength.max = 60;
 			activityLength.value = time; //give it a time value 
 			
 			newActivity.dataset.pic = pic; //add the visual scene associated with the activity 
@@ -56,7 +62,7 @@
 			var deleteButton = document.createElement("i"); //add an X and an ability to delete the item 
 			deleteButton.className = "js-remove";
 			deleteButton.onclick = function(){deleteMe(newActivity)};
-			deleteButton.innerHTML = "✖"; 
+			deleteButton.innerHTML = "  <span class='glyphicon glyphicon-remove'></span>"; 
 			
 			newActivity.appendChild(deleteButton);
 			
@@ -87,11 +93,11 @@
 //this array is all the default objects/activities.
 //todo: add associated pics 
 
-	var defaultActivities = [{"name":"Wash Face and Brush Teeth","time":"5"},
-							 {"name":"Make Coffee","time":"15"},
-							 {"name":"Eat Breakfast","time":"15"},
-							 {"name":"Get Dressed","time":"15"},
-							 {"name":"Pack Lunch and Bag","time":"10"}];
+	var defaultActivities = [{"name":"Wash Face and Brush Teeth ","time":"5"},
+							 {"name":"Make Coffee ","time":"15"},
+							 {"name":"Eat Breakfast ","time":"15"},
+							 {"name":"Get Dressed ","time":"15"},
+							 {"name":"Pack Lunch and Bag ","time":"10"}];
 
 //this loops over the default activities and uses the "add activity" function to generate the visual list 
 
@@ -147,15 +153,20 @@
 	
 //this function checks if there is a custom list saved in the local storage. if there is a custom list, the list should be generated with the addActivity function. if there is no custom list stored, a default list should be generated. 
 		
+		
+var welcomeMsg = document.getElementById("welcomeMsg");
+
 	function getList(){
 			
 			if (saveActivities == null){
 				fillDefault();
+				welcomeMsg.innerHTML = "Here's what we think might make for a good morning - but feel free to change it up! <br>"
 				
 			} else {
 				activityObjects = JSON.parse(saveActivities);
 				fillCustom();
 				console.log(activityObjects);
+				welcomeMsg.innerHTML = "Welcome back! Here's your custom morning set up. How's it look?<br>"
 				
 		}
 			
@@ -177,16 +188,5 @@
 			localStorage.removeItem("mySavedActivities");
 			console.log(saveActivities);
 	})
-		
-		
-		
-	
-
-	
-		
-		
-
-		
-		
 		
 	
