@@ -61,6 +61,36 @@
 		color: #14275E;
 		}
 
+/*
 #introText{
 	background-color: #F8DB01;
 }
+*/
+
+.sidebar{
+/*	background-color: #F8DB01;*/
+	text-align: center;
+}
+
+.mainform{
+	background-color: #FFFFE5;
+}
+
+#goodMorning{
+	text-align: center;
+	font-weight: 700;
+	font-size: 3em;
+}
+
+#welcomeMsg{
+	text-align: center;
+}
+
+.formSectionHeader{
+	background-color: #FF9C32;
+	color: white;
+	padding: 7px;
+	font-weight: 700;
+	border-radius: 6px;
+}
+
