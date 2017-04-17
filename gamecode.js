@@ -1,17 +1,21 @@
-//var timePassed = 0;
+//set tablet or mobile display based on screen size 
 
-//setInterval(function(){
-//	console.log(timePassed);
-//	console.log(parseInt(saveActivities[index].time), saveActivities[index].pic, saveActivities[index].name );
-//	
-//	if (parseInt(saveActivities[index].time) < timePassed){
-//		index ++;
-//		timePassed = 0;
-//	} else {
-//		timePassed ++;
-//	}
-//}, 1000);
-
+	if (screen.width < 576){
+		
+		var gameScenes = ["./assets/game/Mobile/teethbrush_mobile.svg",
+					"./assets/game/Mobile/coffee_mobile.svg",
+					"./assets/game/Mobile/breakfast_mobile.svg",
+					"dressedtest.svg",
+					"./assets/game/Mobile/lunch_mobile.svg"];
+		
+	} else {
+		var gameScenes = ["./assets/game/Tablet/teethbrush_tablet.svg",
+					"./assets/game/Tablet/coffee_tablet.svg",
+					"./assets/game/Tablet/breakfast_Tablet.svg",
+					"dressedtest.svg",
+					"./assets/game/Tablet/lunch_Tablet.svg"];
+	}
+	
 
 var saveActivities = localStorage.getItem("mySavedActivities");
 saveActivities = JSON.parse(saveActivities);
@@ -32,7 +36,7 @@ var SVGplaceholder = document.getElementById("SVGplaceholder");
 			document.body.appendChild(customActTitle);
 			
 		} else {
-			SVGplaceholder.data = saveActivities[index].pic;
+			SVGplaceholder.data = gameScenes[saveActivities[index].pic];
 		}
 	}
 

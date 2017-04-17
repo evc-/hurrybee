@@ -14,7 +14,7 @@
 
 //this is the list from the sortable library (https://github.com/RubaXa/Sortable)
 
-		Sortable.create(simpleList, {
+var myList = Sortable.create(simpleList, {
 			onUpdate: function (evt) { 
 			activityArr = this.toArray(); //generate array of strings when list is updated
 			estimateTime(); //estimate time when list is updated 
@@ -22,7 +22,15 @@
 		
 		filter: '.js-remove', //filter is for anything that should not be drag and dropped
 							
-		})
+		});
+
+setTimeout(function(){
+	activityArr = myList.toArray(); //generate array of strings when list is updated
+	console.log(activityArr);
+estimateTime(); //estimate time when list is updated 
+}, 100);
+
+
 		
 
 //this is for adding custom activities 
@@ -53,6 +61,10 @@
 			
 			var activityLength = document.createElement("input"); //set the time for the activity 
 			activityLength.setAttribute('type', 'number');
+			activityLength.addEventListener("change", function(){
+				activityArr = myList.toArray();
+				estimateTime();
+			});
 			activityLength.style.borderLeftStyle = "none";
 			activityLength.style.borderRightStyle = "none";
 			activityLength.style.borderTopStyle = "none";
@@ -100,13 +112,15 @@
 		}
 
 //this array is all the default objects/activities.
-//todo: add associated pics 
 
-	var defaultActivities = [{"name":"Wash Face and Brush Teeth ","time":"5", pic:"./assets/game/Tablet/teethbrush_tablet.svg"},
-							 {"name":"Make Coffee ","time":"15", pic:"./assets/game/Tablet/coffee_tablet.svg"},
-							 {"name":"Eat Breakfast ","time":"15", pic:"./assets/game/Tablet/breakfast_tablet.svg"},
-							 {"name":"Get Dressed ","time":"15", pic:"dressedtest.svg"},
-							 {"name":"Pack Lunch and Bag ","time":"10", pic:"./assets/game/Tablet/lunch_tablet.svg"}];
+//pic is a number so that you can change from mobile to tablet when you load the page 
+
+		var defaultActivities = [{"name":"Wash Face and Brush Teeth ","time":"5", pic:0},
+							 {"name":"Make Coffee ","time":"15", pic:1},
+							 {"name":"Eat Breakfast ","time":"15", pic:2},
+							 {"name":"Get Dressed ","time":"15", pic:3},
+							 {"name":"Pack Lunch and Bag ","time":"10", pic:4}];
+	 
 
 //this loops over the default activities and uses the "add activity" function to generate the visual list 
 
