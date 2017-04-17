@@ -13,29 +13,21 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="hurrybeecss.css" rel="stylesheet">
-	
-	<link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
+    
+    <!-- Navigation CSS -->
+    <link href="nav-style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
     
     <!-- Custom CSS -->
     <style>
     body {
-        padding-top: 70px;
+        padding-top: 60px;
         /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
         font-family: 'Nunito', sans-serif;
     }
 		
-	.logo{
-		height: 70px;
-		width: 70px;
-		margin-bottom: 10px;
-        }
-		
-	.navbar{
-		height: 80px;
-		background-color: #ffffe6;
-		}
-    
 	h1{
 		font-size: 4em;
 		font-weight: 700;
@@ -100,6 +92,24 @@
     .complete-icon {
         display: none;
     }
+        
+    	.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary, .btn-lg.round:hover {
+		background-color: #F8DB01;
+		color: #14275E;
+		
+		}
+		
+	.btn-primary.outline:active, .btn-primary.outline.active, .btn-lg.round:active {
+		
+		background-color: #F8DB01;
+		box-shadow: none;
+		color: #14275E;
+		}	
+
+	.btn-lg.round {
+		border-radius: 24px;
+		color: #14275E;
+		}
     </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -113,35 +123,35 @@
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-				<a class="navbar-brand" href="#">
-        			<img class= "logo" alt="Brand" src="logo-01.png">
-      			</a>
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Hurrybee</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#">Help</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+    <!-- navigation -->
+<nav class="navbar navbar-fixed-top" role="navigation">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>    
+    <a class="navbar-brand" href="#">hurrybee</a>
+    <a class="navbar-logo" href="#"><img class="logo" src="logo-01.png" alt="Brand"></a>
+  </div>
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <li id="about"><a href="#about">About</a></li>
+    </ul>
+  </div>
+</nav>
 
+    <!-- navigation modals/overlay 
+<script src="nav-js.js"></script>
+
+<div id="navModal" class="modal">
+    <div id="aboutDiv">
+        <img src="assets/challenges/exit.svg" class="exit-button" id="navExit">
+        <h2>About Hurrybee</h2>
+        <p>Info</p>
+    </div>
+</div> -->
+    
     <!-- Content -->
     
 	<div class="container-fluid congrats-container">
@@ -263,7 +273,7 @@
 	<!--Drag and Drop JS-->
 <!--	<script src="js/Sortable.js"></script>-->
 	
-	<!-- Custom Game Code-->
+	<!-- Challenges Code-->
 	<script src= "challengescode.js"></script>
 
     <!-- jQuery Version 1.11.1 -->
