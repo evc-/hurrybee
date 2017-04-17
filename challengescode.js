@@ -13,8 +13,14 @@ var cExercise = document.getElementById("c1"),
     cJournal = document.getElementById("c6"),
     cBed = document.getElementById("c7");
 
+var exitBtn = document.getElementById("exit"),
+    completeBtn = document.getElementById("completeBut");
+
+var completeArr = [];
+
 cExercise.addEventListener("click", function(){
     curClick = "exercise";
+    console.log(curClick);
     modal.style.display = "block";
     
     if (curClick == "exercise"){
@@ -31,6 +37,7 @@ cExercise.addEventListener("click", function(){
 
 cNews.addEventListener("click", function(){
     curClick = "news";
+    console.log(curClick);
     modal.style.display = "block";
     
     if (curClick == "news"){
@@ -47,22 +54,24 @@ cNews.addEventListener("click", function(){
 
 cWater.addEventListener("click", function(){
     curClick = "water";
+    console.log(curClick);
     modal.style.display = "block";
     
     if (curClick == "water"){
         modalIcon.innerHTML = "";
         
-      /*  var nImg = document.createElement("img");
-        nImg.src = "assets/challenges/news.svg";
+        var nImg = document.createElement("img");
+        nImg.src = "assets/challenges/water.svg";
         modalIcon.appendChild(nImg);
-       */             
-        modalText.innerHTML = "Drink more water! It helps you feel more alert, rehydrates your body, and kick-start your metabolism.";
+                    
+        modalText.innerHTML = "Drink more water! It helps you feel more alert, rehydrates your body, and kick-starts your metabolism.";
     }
 
 });
 
 cVitamin.addEventListener("click", function(){
     curClick = "vitamin";
+    console.log(curClick);
     modal.style.display = "block";
     
     if (curClick == "vitamin"){
@@ -79,15 +88,16 @@ cVitamin.addEventListener("click", function(){
 
 cMeditate.addEventListener("click", function(){
     curClick = "meditate";
+    console.log(curClick);
     modal.style.display = "block";
     
     if (curClick == "meditate"){
         modalIcon.innerHTML = "";
         
-      /*  var nImg = document.createElement("img");
-        nImg.src = "assets/challenges/news.svg";
+        var nImg = document.createElement("img");
+        nImg.src = "assets/challenges/meditate.svg";
         modalIcon.appendChild(nImg);
-       */             
+                  
         modalText.innerHTML = "Meditate! Devote yourself to a spiritual practice such as meditation or a prayer to prepare yourself for the rush of the day.";
     }
 
@@ -95,6 +105,7 @@ cMeditate.addEventListener("click", function(){
 
 cJournal.addEventListener("click", function(){
     curClick = "journal";
+    console.log(curClick);
     modal.style.display = "block";
     
     if (curClick == "journal"){
@@ -111,21 +122,97 @@ cJournal.addEventListener("click", function(){
 
 cBed.addEventListener("click", function(){
     curClick = "bed";
+    console.log(curClick);
     modal.style.display = "block";
     
     if (curClick == "bed"){
         modalIcon.innerHTML = "";
         
-      /*  var nImg = document.createElement("img");
-        nImg.src = "assets/challenges/news.svg";
+        var nImg = document.createElement("img");
+        nImg.src = "assets/challenges/bed.svg";
         modalIcon.appendChild(nImg);
-       */             
+                    
         modalText.innerHTML = "Make your bed! This one minute habit can make you happier and more productive all day long.";
     }
 
 });
 
-var exitBut = document.getElementById("exit");
-exitBut.addEventListener("click", function(){
+exitBtn.addEventListener("click", function(){
     modal.style.display = "none";
+});
+
+
+completeBtn.addEventListener("click", function(){
+    modal.style.display = "none";
+    
+    if (curClick == "exercise"){
+        // push completed challenge to array
+        completeArr.push("exercise");
+        console.log(completeArr);
+        
+        // change cExercise icon to different colour
+        cExercise.style.display = "none";
+        document.getElementById("c1-complete").style.display = "block";
+        
+    } 
+    
+    else if (curClick == "news"){
+        // push completed challenge to array
+        completeArr.push("news");
+        console.log(completeArr);
+        
+        // change cExercise icon to different colour
+        cNews.style.display = "none";
+        document.getElementById("c2-complete").style.display = "block";
+    }
+    
+    else if (curClick == "water"){
+        // push completed challenge to array
+        completeArr.push("water");
+        console.log(completeArr);
+        
+        // change cExercise icon to different colour
+        cWater.style.display = "none";
+        document.getElementById("c3-complete").style.display = "block";
+    }
+    
+    else if (curClick == "vitamin"){
+        // push completed challenge to array
+        completeArr.push("vitamin");
+        console.log(completeArr);
+        
+        // change cExercise icon to different colour
+        cVitamin.style.display = "none";
+        document.getElementById("c4-complete").style.display = "block";
+    }
+    
+    else if (curClick == "meditate"){
+        // push completed challenge to array
+        completeArr.push("meditate");
+        console.log(completeArr);
+        
+        // change cExercise icon to different colour
+        cMeditate.style.display = "none";
+        document.getElementById("c5-complete").style.display = "block";
+    }
+    
+    else if (curClick == "journal"){
+        // push completed challenge to array
+        completeArr.push("journal");
+        console.log(completeArr);
+        
+        // change cExercise icon to different colour
+        cJournal.style.display = "none";
+        document.getElementById("c6-complete").style.display = "block";
+    }
+    
+    else if (curClick == "bed"){
+        // push completed challenge to array
+        completeArr.push("bed");
+        console.log(completeArr);
+        
+        // change cExercise icon to different colour
+        cBed.style.display = "none";
+        document.getElementById("c7-complete").style.display = "block";
+    }
 });
