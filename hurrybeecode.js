@@ -146,7 +146,7 @@ estimateTime(); //estimate time when list is updated
 
 			for (i=0; i < activityArr.length; i ++){
 				
-				activityObjects[i] = {name: activityArr[i], time: document.getElementById(activityArr[i]).childNodes[1].value, pic:document.getElementById(activityArr[i]).dataset.pic};
+				activityObjects[i] = {name: activityArr[i], time: document.getElementById(activityArr[i]).childNodes[2].value, pic:document.getElementById(activityArr[i]).dataset.pic};
 					
 			}
 			console.log(activityObjects);
