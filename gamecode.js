@@ -24,6 +24,12 @@ console.log(saveActivities);
 var index = 0;
 var SVGplaceholder = document.getElementById("SVGplaceholder");
 
+var activityTime = 0;
+var timeDif = [];
+var countdownTimer;
+var freeTime = document.getElementById("freeTime");
+var timeRemainingAct = document.getElementById("timeRemainingAct");
+
 //this function loads the visual (by changing the svg data) to the "pic" value associated with the array object 
 
 	function loadScene(){
@@ -51,53 +57,78 @@ var SVGplaceholder = document.getElementById("SVGplaceholder");
 			SVGplaceholder.data = gameScenes[saveActivities[index].pic];
 			
 		} 
+		
+		startTimer();
+		showSchedule();
 	}
 
 	loadScene();
 
 //this function advances the game to the next scene by increasing the index by 1 and running the load scene function again
 
-	function advanceGame(){
-		index ++
+function advanceGame(){
+		index ++;
+		stopTimer();
+		saveTime();
 		loadScene();
 	}
 
 
 
-
-var seconds = 60;
+//doing something every time 1 second passes 
 function secondPassed() {
-    var minutes = Math.round((seconds - 30)/60);
-    var remainingSeconds = seconds % 60;
-    if (remainingSeconds < 10) {
+	
+	timeRemainingAct.innerHTML = getDisplayTime(activityTime);
+
+	//this takes away a second from the activity 
+    activityTime--;
+}
+
+
+function startTimer(){
+	//take time property of the index activity and turn it into seconds 
+	activityTime = (saveActivities[index].time * 60)
+	//this runs the seconds passed function every 1 second 
+	countdownTimer = setInterval('secondPassed()', 1000);
+} 
+
+function stopTimer(){
+	clearInterval(countdownTimer);
+}
+
+//when the user clicks next, we want to store their time to see if they're ahead or behind schedule.
+function saveTime(){
+	timeDif.push(activityTime);
+}
+
+function showSchedule(){
+	var freeTimeSum = 0;
+	
+	for (i=0; i < timeDif.length; i++){
+		freeTimeSum = freeTimeSum + timeDif[i];
+	}
+	
+
+	freeTime.innerHTML = getDisplayTime(freeTimeSum);
+	console.log(freeTimeSum);
+}
+
+function getDisplayTime(timeSeconds){
+		//turn it into minutes
+    var minutes = Math.floor(Math.abs(timeSeconds)/60);
+	//giving the seconds part 
+    var remainingSeconds = Math.abs(timeSeconds) % 60;
+	
+	if (remainingSeconds < 10) {
         remainingSeconds = "0" + remainingSeconds;  
     }
-    document.getElementById('countdown').innerHTML = minutes + ":" + remainingSeconds;
-    if (seconds == 0) {
-        clearInterval(countdownTimer);
-        document.getElementById('countdown').innerHTML = "Buzz Buzz";
-    } else {
-        seconds--;
-    }
+	
+	if (timeSeconds < 0){
+		return "-" + minutes + ":" + remainingSeconds
+	} else {
+		return minutes + ":" + remainingSeconds
+	}
+	
+	
 }
- 
-var countdownTimer = setInterval('secondPassed()', 1000);
-
-
-var activityTimes = [saveActivities[index].time];
-console.log(saveActivities[index]);
-
-
-
-
-//so ... need to create a visual timer holder
-//make it so that it starts with the saveActivitiies[index].time property 
-//counts down 
-//when it reaches zero, it counts into the negatives 
-//if next is clicked, time value is saved 
-//when array is finished, add up all new saved time properties 
-//if that is less than the estimated time, show free time remaining 
-//if its more than estimated time, bad result
-
-
 
