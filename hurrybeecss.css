@@ -14,12 +14,17 @@
 		}
 		
 		
-	#timeEstimate{
+	#timeEstimate, #timeFinish{
 			font-size: 6em;
 		}
 		
 #addNewAct{
-	margin-top: 10px;
+	text-align: center;
+	font-weight: 600;
+	font-size: 14pt;
+	color: #FF9C32;
+	margin-bottom: 10px;
+	padding-top: -10px;
 }
 		
 	.btn.outline {
@@ -126,6 +131,7 @@
 	font-weight: 600;
 	font-size: 16pt;
 	color: #FF9C32;
+	padding-top: 5px;
 }
 
 .deleteButton{

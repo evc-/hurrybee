@@ -11,6 +11,7 @@
 		var activityArr = [];  //this is the array of activities as string form that is generated when the list isrearranged 
 		var activityObjects = []; //this is the array of objects that have a name, time, and pic. the create, store, and get list functions all use it
 		
+		var timeSum = 0;
 
 //this is the list from the sortable library (https://github.com/RubaXa/Sortable)
 
@@ -28,6 +29,7 @@ setTimeout(function(){
 	activityArr = myList.toArray(); //generate array of strings when list is updated
 	console.log(activityArr);
 estimateTime(); //estimate time when list is updated 
+
 }, 100);
 
 
@@ -40,6 +42,7 @@ estimateTime(); //estimate time when list is updated
 			var customActName = document.getElementById("customActName");
 			var customActTime = document.getElementById("customActTime");
 			addActivity(customActName.value, customActTime.value);	//give the custom activity a name and a time value 	
+//			estimateTime();
 		}
 
 //this is for generating a single list item that gets added to the end of the list 
@@ -92,6 +95,8 @@ estimateTime(); //estimate time when list is updated
 			
 			simpleList.appendChild(newActivity); //append the new activity to the list 
 			
+//			
+			
 		}
 
 //this function is used to delete an item off the list 
@@ -107,14 +112,14 @@ estimateTime(); //estimate time when list is updated
 //this function is for adding up all the time values and getting a sum. it gets time values from activityArr, which is currently only generated when the list is updated 
 		
 		function estimateTime(){
-			var timeSum = 0;
-			
+			timeSum= 0;
 			for (i=0; i < activityArr.length; i ++){  
 				var timeValue = document.getElementById(activityArr[i]).childNodes[2].value;
 				timeSum = timeSum + parseInt(timeValue); //need parseInt otherwise timevalue is a string 
 			}
 			
 			document.getElementById("timeEstimate").innerHTML = timeSum;
+			getFinishTime();
 		}
 
 //this array is all the default objects/activities.
@@ -219,4 +224,38 @@ var welcomeMsg = document.getElementById("welcomeMsg");
 			console.log(saveActivities);
 	})
 		
+		
+		
 	
+	function getFinishTime(){
+		
+		//finish time
+	var myDate = new Date();
+
+	var currentMins = myDate.getMinutes();
+	var currentHours = myDate.getHours();
+
+	console.log(currentHours);
+	console.log(currentMins);
+
+	var currentTime = document.getElementById("currentTime");
+	var timeFinish = document.getElementById("timeFinish");
+
+	currentTime.innerHTML = currentHours + ":" + currentMins;
+		
+	var finishMins = currentMins + timeSum;
+	var finishHours = currentHours + Math.floor(finishMins/60);
+	finishMins = finishMins % 60;
+		
+		if (finishHours > 12) {
+			finishHours = finishHours - 12;
+		}
+		
+		if (finishMins < 10){
+		finishMins = "0" + finishMins;
+		}
+		
+		timeFinish.innerHTML = finishHours + ":" + finishMins;
+		
+	}
+
