@@ -1,6 +1,12 @@
+/* put this xml code in svg to reference the css animations:
+
+<?xml-stylesheet type="text/css" href="../../../gameanim.css"?>
+
+*/
+
 /* COFFEE SCENE ANIMATIONS */
         
-#Jar_x5F_Lid {
+#Jar_x5F_Lid, #bottleLid {
     animation: lidAnim linear 2s;
     animation-iteration-count: infinite;
     transform-origin:  0% 50%;
@@ -80,3 +86,111 @@
 }
 
 
+/* PACKING LUNCH SCENE ANIMATIONS */
+
+.float {
+    animation: floatAnim linear 5s;
+    animation-iteration-count: infinite;
+    transform-origin: right;
+}
+
+@keyframes floatAnim {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(25deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(25deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.float2 {
+    animation: floatAnim linear 5s;
+    animation-iteration-count: infinite;
+    transform-origin: left;
+}
+
+@keyframes floatAnim2 {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-90deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-90deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.rotate {
+    animation: rotateAnim linear 5s;
+    animation-iteration-count: infinite;
+    transform-origin: left;
+}
+
+@keyframes rotateAnim {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-20deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-20deg); }
+    100% { transform: rotate(0deg); }
+}
+
+#lBreadBottom, #rBreadBottom {
+  animation: breadBottom 10s infinite ease-in-out; 
+}
+
+@keyframes breadBottom {
+    0%  { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+} 
+
+#lHam, #rHam {
+  animation: ham 10s infinite ease-in-out; 
+}
+
+@keyframes ham {
+    0%  { opacity: 0; }
+    10%  { opacity: 0; }
+    20% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+#lCheese, #rCheese {
+  animation: cheese 10s infinite ease-in-out; 
+}
+
+@keyframes cheese {
+    0%  { opacity: 0; }
+    10%  { opacity: 0; }
+    20% { opacity: 0; }
+    30% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+#lLettuce, #rLettuce {
+  animation: lettuce 10s infinite ease-in-out; 
+}
+
+@keyframes lettuce {
+    0%  { opacity: 0; }
+    10%  { opacity: 0; }
+    20% { opacity: 0; }
+    30% { opacity: 0; }
+    40% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+#lBreadTop, #rBreadTop {
+  animation: breadTop 10s infinite ease-in-out; 
+}
+
+@keyframes breadTop {
+    0%  { opacity: 0; }
+    10%  { opacity: 0; }
+    20% { opacity: 0; }
+    30% { opacity: 0; }
+    40% { opacity: 0; }
+    50% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
