@@ -269,3 +269,246 @@
     75% { transform: rotate(25deg); }
     100% { transform: rotate(0deg); }
 }
+
+/* BRUSHING TEETH ANIMATIONS */
+
+#b1 {
+  animation: bubbles-rise 3s infinite;
+}
+
+#b2 {
+  animation: bubbles-rise 3s infinite;
+}
+
+#b3 {
+  animation: bubbles-rise 2.2s infinite;
+  animation-delay: 0.25s;
+}
+
+#b4 {
+  animation: bubbles-rise 2.5s infinite;
+  animation-delay: 0.15s;
+}
+
+#b5 {
+  animation: bubbles-rise 1.75s infinite;
+}
+
+#b6 {
+  animation: bubbles-rise 2.5s infinite;
+  animation-delay: 0.1s;
+}
+
+#b7 {
+  animation: bubbles-rise 2s infinite;
+  animation-delay: 0.1s;
+}
+
+#b8 {
+  animation: bubbles-rise 3s infinite;
+  animation-delay: 0.2s;
+}
+
+#b9 {
+  animation: bubbles-rise 3.5s infinite;
+  animation-delay: 0.2s;
+}
+
+#b10 {
+  animation: bubbles-rise 2s infinite;
+  animation-delay: 0.25s;
+}
+
+#b11 {
+  animation: bubbles-rise 3.5s infinite;
+  animation-delay: 0.25s;
+}
+
+@keyframes bubbles-rise {
+    100% {
+        transform: translate(-20px,-20px) scale(0.5);
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+}
+
+#sparkle_bottom {
+    animation: sparkle 5s ease-in-out;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+}
+
+#sparkle_middle {
+    animation: sparkle 4s ease-in-out;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    animation-delay: 0.5s;
+}
+
+#sparkle_top {
+    animation: sparkle 3.5s ease-in-out;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    animation-delay: 0.8s;
+}
+
+@keyframes sparkle {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(80deg);
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+}
+
+#toothbrush {
+    animation: brush 4s ease-in-out;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+}
+
+@keyframes brush {
+    0% { transform: translateY(0px); }
+    30% { transform: translateY(-100px); }
+    90% { transform: translateY (-100px); }
+    100% { transform: translateY(0px); }
+}
+
+/* BREAKFAST SCENE ANIMATIONS */
+#ovenLight {
+    animation: ovenlight 5s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ovenlight {
+    0% { opacity: 0; }
+    20% { opacity: 0; }
+    25% { opacity: 0.5; }
+    30% { opacity: 0.5; }
+    35% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+#button2 {
+    animation: button2 5s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes button2 {
+    0% { fill: #FFFFE4; }
+    20% { fill: #FFFFE4; }
+    25% { fill: #DBDBD2; }
+    30% { fill: #DBDBD2; }
+    35% { fill: #FFFFE4; }
+    100% { fill: #FFFFE4; }
+}
+
+#rightFire {
+    animation: rightfire 5s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rightfire {
+    0% { opacity: 0; }
+    50% { opacity: 0.9; }
+    100% { opacity: 0; }
+}
+
+#leftFire {
+    animation: leftfire 5s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes leftfire {
+    0% { opacity: 0.9; }
+    50% { opacity: 0; }
+    100% { opacity: 0.9; }
+}
+
+#button1 {
+    animation: button1 5s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes button1 {
+    0% { fill: #DBDBD2; }
+    50% { fill: #FFFFE4; }
+    100% { fill: #DBDBD2; }
+}
+
+#button4 {
+    animation: button4 5s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes button4 {
+    0% { fill: #FFFFE4; }
+    50% { fill: #DBDBD2; }
+    100% { fill: #FFFFE4; }
+}
+
+#Spoon {
+    animation: cutlery 4s ease-in-out;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+}
+
+@keyframes cutlery {
+    0% { transform: translateY(0px); }
+    30% { transform: translateY(20px); }
+    70% { transform: translateY (20px); }
+    100% { transform: translateY(0px); }
+}
+
+#Spatula {
+    animation: cutlery 4s ease-in-out;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+    animation-delay: 2s;
+}
+
+#Fork {
+    animation: cutlery 4s ease-in-out;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+    animation-delay: 1s;
+}
+
+#water1 {
+  animation: water-drop 2.2s infinite;
+  animation-delay: 0.25s;
+}
+
+#water2 {
+  animation: water-drop 2.5s infinite;
+  animation-delay: 0.15s;
+}
+
+#water3 {
+  animation: water-drop 1.75s infinite;
+}
+
+#water4 {
+  animation: water-drop 3.5s infinite;
+  animation-delay: 0.2s;
+}
+
+#water5 {
+  animation: water-drop 2s infinite;
+  animation-delay: 0.25s;
+}
+
+
+@keyframes water-drop {
+    100% {
+        transform: translate(-10px,20px); scale(0.5);
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+}
