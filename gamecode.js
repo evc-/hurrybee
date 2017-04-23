@@ -1,6 +1,24 @@
-//set tablet or mobile display based on screen size 
 
-	if (screen.width < 576){
+
+var saveActivities = localStorage.getItem("mySavedActivities");
+saveActivities = JSON.parse(saveActivities);
+console.log(saveActivities);
+
+var index = 0;
+var SVGplaceholder = document.getElementById("SVGplaceholder");
+
+var activityTime = 0;
+var timeDif = [];
+var countdownTimer;
+var freeTime = document.getElementById("freeTime");
+var timeRemainingAct = document.getElementById("timeRemainingAct");
+
+
+function loadPic(){
+	console.log(window.innerWidth);
+	//set tablet or mobile display based on screen size 
+
+	if (window.innerWidth < 576){
 		
 		var gameScenes = ["./assets/game/Mobile/teethbrush_mobile.svg",
 					"./assets/game/Mobile/coffee_mobile.svg",
@@ -16,19 +34,22 @@
 					"./assets/game/Tablet/lunch_Tablet.svg"];
 	}
 	
+	if (saveActivities[index].pic == "undefined"){
+			SVGplaceholder.data = "customactivityBG.svg";
+			var customActTitle = document.createElement("DIV");
+			customActTitle.style.fontSize = "70pt";
+			customActTitle.innerHTML = saveActivities[index].name;
+			document.body.appendChild(customActTitle);
+			
+		//if both of those are untrue, show the pic associated with the activity 
+			
+		} else {
+			SVGplaceholder.data = gameScenes[saveActivities[index].pic];
+			
+		} 
+	
+}
 
-var saveActivities = localStorage.getItem("mySavedActivities");
-saveActivities = JSON.parse(saveActivities);
-console.log(saveActivities);
-
-var index = 0;
-var SVGplaceholder = document.getElementById("SVGplaceholder");
-
-var activityTime = 0;
-var timeDif = [];
-var countdownTimer;
-var freeTime = document.getElementById("freeTime");
-var timeRemainingAct = document.getElementById("timeRemainingAct");
 
 //this function loads the visual (by changing the svg data) to the "pic" value associated with the array object 
 
@@ -44,18 +65,8 @@ var timeRemainingAct = document.getElementById("timeRemainingAct");
 			
 		//else if the pic is undefined, create a placeholder image 
 			
-		} else if (saveActivities[index].pic == "undefined"){
-			SVGplaceholder.data = "customactivityBG.svg";
-			var customActTitle = document.createElement("DIV");
-			customActTitle.style.fontSize = "70pt";
-			customActTitle.innerHTML = saveActivities[index].name;
-			document.body.appendChild(customActTitle);
-			
-		//if both of those are untrue, show the pic associated with the activity 
-			
 		} else {
-			SVGplaceholder.data = gameScenes[saveActivities[index].pic];
-			
+			loadPic();
 		} 
 		
 		startTimer();

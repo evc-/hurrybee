@@ -57,10 +57,11 @@ estimateTime(); //estimate time when list is updated
 			dragHandle.className = "glyphicon glyphicon-resize-vertical grabbable";
 			newActivity.appendChild(dragHandle);
 			
-			newActivity.innerHTML += name; //show the name in the list items inner html
+			newActivity.innerHTML += name + " for "; //show the name in the list items inner html
 			
 			var activityLength = document.createElement("input"); //set the time for the activity 
 			activityLength.setAttribute('type', 'number');
+			activityLength.className = "activityLength";
 			activityLength.addEventListener("change", function(){
 				activityArr = myList.toArray();
 				estimateTime();
@@ -74,18 +75,20 @@ estimateTime(); //estimate time when list is updated
 			
 			newActivity.dataset.pic = pic; //add the visual scene associated with the activity 
 			
-			newActivity.appendChild(activityLength); 
+			newActivity.appendChild(activityLength);
+			
+			minutesTxt = document.createElement("span");
+			minutesTxt.innerHTML ="  minutes";
+			newActivity.appendChild(minutesTxt);
 			
 			var deleteButton = document.createElement("i"); //add an X and an ability to delete the item 
 			deleteButton.className = "js-remove";
+			deleteButton.className = "deleteButton";
 			deleteButton.style.textAlign = "right";
 			deleteButton.onclick = function(){deleteMe(newActivity)};
 			deleteButton.innerHTML = "  <span class='glyphicon glyphicon-remove'></span>"; 
 			
 			newActivity.appendChild(deleteButton);
-			
-			
-			
 			
 			simpleList.appendChild(newActivity); //append the new activity to the list 
 			

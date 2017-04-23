@@ -20,6 +20,7 @@
 
     <!-- Navigation CSS -->
     <link href="nav-style.css" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
     
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
     
@@ -33,9 +34,25 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+	<style>
+		
+	body{
+		overflow: hidden;
+		width: 100vw;
+		height: 100vh;
+		
+	
+		}
+	
+	</style>
+		
+	
+	
 </head>
+	
 
-<body>
+
+<body onresize="loadPic()">
 
     <!-- navigation -->
 <nav class="navbar navbar-fixed-top" role="navigation">
@@ -54,51 +71,64 @@
     </ul>
   </div>
 </nav>
-<br>
-		
-	<object id ="SVGplaceholder" type="image/svg+xml" data=" ">
-	</object>
 	
-	<div id="timerContainer">
-	<p>Time Remaining in Activity </p>
-		<span id="timeRemainingAct"></span>
-	<br>
+	
+<br>
+	<div class="container-fluid" id="gameContainer">
+		<div class="row">
+			<div class="col-xs-12">
 		
-	<p>Total time remaining</p>
-		<span id="timeRemainingTotal"></span>
-	<br>
 		
-		<p>Free Time accumulated</p>
-		<span id="freeTime"></span>
-	<br>
+		<object id ="SVGplaceholder" type="image/svg+xml" data=" ">
+		</object>
+
+		<div id="timerContainer">
+			<p>Time Remaining in Activity </p>
+				<span id="timeRemainingAct"></span>
+			<br>
+
+				
+		</div>
+		
+		
+
+		<span id="countdown"></span>
+<!--		<button id = "advanceButton" onclick = "advanceGame()">NEXT</button>-->
+				<span id="advanceButton" onclick="advanceGame()"></span>
+				
+				
+			
+		</div>
+		</div>
 	</div>
 	
-	
-	
-	<span id="countdown"></span>
 
 	
-	<button id = "advanceButton" onclick = "advanceGame()">NEXT</button>
 	
-
-	-->
-    
-	<br>
-	<br>
-
+	<div class="footerInfo">
+					
+					<div id="freeTimerContainer">
+					<span id="freeTime"></span>
+				<p>Free Time accumulated</p>
+				
+				<br>
+				</div>
+				
+				
+				</div>
 	
-	<!--Drag and Drop JS-->
+		<!--Drag and Drop JS-->
 <!--	<script src="js/Sortable.js"></script>-->
-	
+
 	<!-- Custom Game Code-->
 	<script src= "gamecode.js"></script>
-
+	
     <!-- jQuery Version 1.11.1 -->
     <script src="js/jquery.js"></script>
 	
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
+	
 </body>
 
 </html>
