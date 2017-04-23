@@ -69,6 +69,7 @@ function loadPic(){
 			loadPic();
 			startTimer();
 			showSchedule();
+			animateProgress();
 		} 
 		
 		
@@ -83,6 +84,7 @@ function advanceGame(){
 		stopTimer();
 		saveTime();
 		loadScene();
+//		animateProgress();
 	}
 
 
@@ -150,11 +152,13 @@ function getDisplayTime(timeSeconds){
 	
 }
 
-window.onload = function onLoad() {
+function animateProgress() {
     var circle = new ProgressBar.Circle('#progress', {
         color: '#FCB03C',
-        duration: 3000,
-        easing: 'easeInOut'
+		strokeWidth: 6,
+//		trailWidth: 0.8,
+        duration: (saveActivities[index].time) * 60000,
+        easing: 'linear'
     });
 
     circle.animate(1);

@@ -165,7 +165,7 @@
 }
 
 #timerContainer{
-	background-color: #14275E;
+	background-color: #FFFFE5;
 	height: 200px;
 	width: 200px;
 	z-index: 1;
@@ -186,6 +186,9 @@
 	background-color: transparent;
 	text-align: center;
 	border-radius: 50%;
+	border-width: 0px;
+	border-style: none;
+	box-shadow: none;
 }
 
 .progress > svg {
@@ -196,7 +199,7 @@
 #timeRemainingAct{
 	font-size: 5em;
 	font-weight: 600;
-	color: white;
+	color: #FF9C32;
 	text-align: center;
 }
 
