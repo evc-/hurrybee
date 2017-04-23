@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<?xml-stylesheet type="text/css" href="../../../gameanim.css"?>
+
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 2048 1536" style="enable-background:new 0 0 2048 1536;" xml:space="preserve">
 <style type="text/css">
@@ -520,12 +523,12 @@
 			<polygon class="st4" points="788.9,188.5 606.6,188.5 606.6,368.5 			"/>
 			<polygon class="st4" points="606.6,638.5 606.6,777.5 1049.4,777.5 1049.4,201.3 			"/>
 		</g>
-		<g id="mirror_x5F_sparkles">
-			<polygon id="sparkle_x5F_middle_1_" class="st3" points="964.9,446.2 958.1,406.6 918.6,415.8 949.9,390.2 922.1,361 960.2,375 
+		<g id="mirror_sparkles">
+			<polygon id="sparkle_middle" class="st3" points="964.9,446.2 958.1,406.6 918.6,415.8 949.9,390.2 922.1,361 960.2,375 
 				971.9,336.6 978.7,376.2 1018.2,367 986.9,392.6 1014.7,421.8 976.6,407.8 			"/>
-			<polygon id="sparkle_x5F_bottom_1_" class="st3" points="880.9,490.9 876.6,465.9 851.7,471.7 871.5,455.6 853.9,437.2 
+			<polygon id="sparkle_bottom" class="st3" points="880.9,490.9 876.6,465.9 851.7,471.7 871.5,455.6 853.9,437.2 
 				877.9,446 885.3,421.8 889.6,446.7 914.5,440.9 894.8,457 912.3,475.5 888.3,466.7 			"/>
-			<polygon id="sparkle_x5F_top_1_" class="st3" points="866.9,392.9 871.3,373.5 851.4,370.4 870.6,364.4 863.4,345.9 878.2,359.3 
+			<polygon id="sparkle_top" class="st3" points="866.9,392.9 871.3,373.5 851.4,370.4 870.6,364.4 863.4,345.9 878.2,359.3 
 				890.8,343.9 886.5,363.3 906.3,366.3 887.1,372.3 894.4,390.8 879.6,377.4 			"/>
 		</g>
 	</g>
@@ -552,7 +555,7 @@
 	<g id="bubbles">
 		<path id="b9" class="st3" d="M654.1,795.3c-12.1-11.9-31.7-11.9-43.8,0c-12.1,11.9-12.1,31.3,0,43.3c12.1,11.9,31.7,11.9,43.8,0
 			C666.2,826.6,666.2,807.3,654.1,795.3z"/>
-		<ellipse id="b10_1_" class="st5" cx="710.1" cy="785.6" rx="27.4" ry="27"/>
+		<ellipse id="b10" class="st5" cx="710.1" cy="785.6" rx="27.4" ry="27"/>
 		<ellipse id="b3" class="st5" cx="648.2" cy="691.5" rx="27.4" ry="27"/>
 		<ellipse id="b7" class="st3" cx="584.5" cy="762.4" rx="27.4" ry="27"/>
 		<ellipse id="b4" class="st3" cx="704.7" cy="666.3" rx="13.7" ry="13.5"/>

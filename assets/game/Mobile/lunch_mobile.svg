@@ -1,223 +1,462 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<?xml-stylesheet type="text/css" href="../../../gameanim.css"?>
+
 <svg version="1.1" id="lunchSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1242 2208" style="enable-background:new 0 0 1242 2208;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;}
-	.st1{fill:#F9BE78;}
-	.st2{fill:#A58460;}
-	.st3{fill:#FF9D1C;}
-	.st4{fill:#FFFFFF;}
+	.st1{fill:#FF9D1C;}
+	.st2{fill:#FFFFFF;}
+	.st3{fill:#F9BE78;}
+	.st4{fill:#A58460;}
 	.st5{fill:#FFFFE4;}
 	.st6{fill:none;stroke:#FFDC4A;stroke-width:2;stroke-miterlimit:10;}
-	.st7{opacity:0.5;fill:url(#pattern_1_);enable-background:new    ;}
-	.st8{fill:#FFF2A1;}
+	.st7{opacity:0.5;fill:url(#pattern_2_);enable-background:new    ;}
+	.st8{fill:#FFF1A5;}
 	.st9{fill:#14275E;}
-	.st10{fill:url(#SVGID_1_);}
-	.st11{fill:none;stroke:#14275E;stroke-width:4;stroke-miterlimit:10;stroke-dasharray:5.0049,0;}
-	.st12{fill:none;stroke:#14275E;stroke-width:4;stroke-miterlimit:10;stroke-dasharray:5.0255,0;}
-	.st13{fill:#F2F2F2;}
-	.st14{fill:#FFE67B;}
-	.st15{fill:#FFF1A5;}
-	.st16{fill:none;stroke:#14275E;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st17{fill:#4E892C;}
-	.st18{fill:#4E892C;stroke:#14275E;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st19{fill:#20397F;}
-	.st20{fill:#A58460;stroke:#14275E;stroke-width:4;stroke-miterlimit:10;}
-	.st21{fill:url(#SVGID_2_);stroke:#14275E;stroke-width:4;stroke-miterlimit:10;}
-	.st22{fill:#FFFFE4;stroke:#14275E;stroke-width:4;stroke-miterlimit:10;}
-	.st23{fill:#FFDC4A;stroke:#14275E;stroke-width:4;stroke-miterlimit:10;}
-	.st24{fill:#4E892C;stroke:#14275E;stroke-width:4;stroke-miterlimit:10;}
-	.st25{fill:url(#SVGID_3_);stroke:#14275E;stroke-width:4;stroke-miterlimit:10;}
-	.st26{fill:url(#SVGID_4_);stroke:#14275E;stroke-width:4;stroke-miterlimit:10;}
-	.st27{fill:url(#SVGID_5_);stroke:#14275E;stroke-width:4;stroke-miterlimit:10;}
+	.st10{fill:#FFE67B;}
+	.st11{fill:none;stroke:#14275E;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st12{fill:#4E892C;}
+	.st13{fill:#4E892C;stroke:#14275E;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st14{fill:#20397F;}
+	.st15{fill:#A58460;stroke:#14275E;stroke-width:4;stroke-miterlimit:10;}
+	.st16{fill:url(#SVGID_6_);stroke:#14275E;stroke-width:4;stroke-miterlimit:10;}
+	.st17{fill:#FFFFE4;stroke:#14275E;stroke-width:4;stroke-miterlimit:10;}
+	.st18{fill:#FFDC4A;stroke:#14275E;stroke-width:4;stroke-miterlimit:10;}
+	.st19{fill:#4E892C;stroke:#14275E;stroke-width:4;stroke-miterlimit:10;}
+	.st20{fill:url(#SVGID_7_);stroke:#14275E;stroke-width:4;stroke-miterlimit:10;}
+	.st21{fill:url(#SVGID_8_);stroke:#14275E;stroke-width:4;stroke-miterlimit:10;}
+	.st22{fill:url(#SVGID_9_);stroke:#14275E;stroke-width:4;stroke-miterlimit:10;}
+	.st23{fill:#F2F2F2;}
+	.st24{fill:#FFF2A1;stroke:#14275E;stroke-width:4;stroke-miterlimit:10;}
+	.st25{fill:url(#SVGID_10_);stroke:#14275E;stroke-width:4;stroke-miterlimit:10;}
+	.st26{fill:url(#SVGID_11_);stroke:#14275E;stroke-width:4;stroke-miterlimit:10;}
+	.st27{fill:url(#SVGID_12_);stroke:#14275E;stroke-width:4;stroke-miterlimit:10;}
+	.st28{fill:url(#SVGID_13_);stroke:#14275E;stroke-width:4;stroke-miterlimit:10;}
 </style>
-<pattern  y="2208" width="334" height="240" patternUnits="userSpaceOnUse" id="New_Pattern_3" viewBox="83.5 -300 334 240" style="overflow:visible;">
-	<g>
-		<rect x="83.5" y="-300" class="st0" width="334" height="240"/>
-		<g>
-			<rect x="83.5" y="-300" class="st0" width="334" height="240"/>
-			<g>
-				<rect x="334" y="-300" class="st1" width="167" height="120"/>
-				<circle class="st2" cx="371" cy="-270" r="8"/>
-				<circle class="st2" cx="416" cy="-222" r="8"/>
-			</g>
-			<g>
-				<rect x="167" y="-360" class="st1" width="167" height="120"/>
-				<circle class="st2" cx="249" cy="-282" r="8"/>
-			</g>
-			<g>
-				<rect y="-300" class="st1" width="167" height="120"/>
-				<circle class="st2" cx="82" cy="-222" r="8"/>
-				<circle class="st2" cx="133" cy="-260" r="8"/>
-			</g>
-			<g>
-				<rect x="334" y="-180" class="st1" width="167" height="120"/>
-				<circle class="st2" cx="371" cy="-150" r="8"/>
-				<circle class="st2" cx="416" cy="-102" r="8"/>
-			</g>
-			<g>
-				<rect x="167" y="-240" class="st1" width="167" height="120"/>
-				<circle class="st2" cx="204" cy="-210" r="8"/>
-				<circle class="st2" cx="249" cy="-162" r="8"/>
-				<circle class="st2" cx="300" cy="-200" r="8"/>
-			</g>
-			<g>
-				<rect y="-180" class="st1" width="167" height="120"/>
-				<circle class="st2" cx="82" cy="-102" r="8"/>
-				<circle class="st2" cx="133" cy="-140" r="8"/>
-			</g>
-			<g>
-				<rect x="167" y="-120" class="st1" width="167" height="120"/>
-				<circle class="st2" cx="204" cy="-90" r="8"/>
-				<circle class="st2" cx="300" cy="-80" r="8"/>
-			</g>
-		</g>
-	</g>
-</pattern>
-<pattern  y="2208" width="246" height="320" patternUnits="userSpaceOnUse" id="New_Pattern_4" viewBox="61.5 -400 246 320" style="overflow:visible;">
+<pattern  y="2208" width="246" height="320" patternUnits="userSpaceOnUse" id="SVGID_1_" viewBox="61.5 -400 246 320" style="overflow:visible;">
 	<g>
 		<rect x="61.5" y="-400" class="st0" width="246" height="320"/>
 		<g>
 			<rect x="61.5" y="-400" class="st0" width="246" height="320"/>
 			<g>
-				<rect x="184.5" y="-480" class="st3" width="123" height="160"/>
-				<circle class="st4" cx="218.5" cy="-356" r="6"/>
-				<circle class="st4" cx="274.5" cy="-392" r="6"/>
-			</g>
-			<g>
-				<rect x="61.5" y="-480" class="st3" width="123" height="160"/>
-				<circle class="st4" cx="95.5" cy="-356" r="6"/>
-				<circle class="st4" cx="151.5" cy="-392" r="6"/>
-			</g>
-			<g>
-				<rect x="246" y="-320" class="st3" width="123" height="160"/>
-				<circle class="st4" cx="280" cy="-196" r="6"/>
-				<circle class="st4" cx="286" cy="-274" r="6"/>
-			</g>
-			<g>
-				<rect x="123" y="-320" class="st3" width="123" height="160"/>
-				<circle class="st4" cx="157" cy="-196" r="6"/>
-				<circle class="st4" cx="213" cy="-232" r="6"/>
-				<circle class="st4" cx="163" cy="-274" r="6"/>
-			</g>
-			<g>
-				<rect y="-320" class="st3" width="123" height="160"/>
-				<circle class="st4" cx="90" cy="-232" r="6"/>
-			</g>
-			<g>
-				<rect x="184.5" y="-160" class="st3" width="123" height="160"/>
-				<circle class="st4" cx="224.5" cy="-114" r="6"/>
-			</g>
-			<g>
-				<rect x="61.5" y="-160" class="st3" width="123" height="160"/>
-				<circle class="st4" cx="101.5" cy="-114" r="6"/>
+				<rect x="61.5" y="-400" class="st0" width="246" height="320"/>
+				<g>
+					<rect x="184.5" y="-160" class="st1" width="123" height="160"/>
+					<circle class="st2" cx="218.5" cy="-124" r="6"/>
+					<circle class="st2" cx="274.5" cy="-88" r="6"/>
+				</g>
+				<g>
+					<rect x="61.5" y="-160" class="st1" width="123" height="160"/>
+					<circle class="st2" cx="95.5" cy="-124" r="6"/>
+					<circle class="st2" cx="151.5" cy="-88" r="6"/>
+				</g>
+				<g>
+					<rect x="246" y="-320" class="st1" width="123" height="160"/>
+					<circle class="st2" cx="280" cy="-284" r="6"/>
+					<circle class="st2" cx="286" cy="-206" r="6"/>
+				</g>
+				<g>
+					<rect x="123" y="-320" class="st1" width="123" height="160"/>
+					<circle class="st2" cx="157" cy="-284" r="6"/>
+					<circle class="st2" cx="213" cy="-248" r="6"/>
+					<circle class="st2" cx="163" cy="-206" r="6"/>
+				</g>
+				<g>
+					<rect y="-320" class="st1" width="123" height="160"/>
+					<circle class="st2" cx="90" cy="-248" r="6"/>
+				</g>
+				<g>
+					<rect x="184.5" y="-480" class="st1" width="123" height="160"/>
+					<circle class="st2" cx="224.5" cy="-366" r="6"/>
+				</g>
+				<g>
+					<rect x="61.5" y="-480" class="st1" width="123" height="160"/>
+					<circle class="st2" cx="101.5" cy="-366" r="6"/>
+				</g>
 			</g>
 		</g>
 	</g>
 </pattern>
-<pattern  y="2208" width="264" height="264" patternUnits="userSpaceOnUse" id="New_Pattern_7" viewBox="66 -330 264 264" style="overflow:visible;">
+<pattern  y="2208" width="334" height="240" patternUnits="userSpaceOnUse" id="SVGID_2_" viewBox="83.5 -300 334 240" style="overflow:visible;">
+	<g>
+		<rect x="83.5" y="-300" class="st0" width="334" height="240"/>
+		<g>
+			<rect x="83.5" y="-300" class="st0" width="334" height="240"/>
+			<g>
+				<rect x="83.5" y="-300" class="st0" width="334" height="240"/>
+				<g>
+					<rect x="334" y="-180" class="st3" width="167" height="120"/>
+					<circle class="st4" cx="371" cy="-90" r="8"/>
+					<circle class="st4" cx="416" cy="-138" r="8"/>
+				</g>
+				<g>
+					<rect x="167" y="-120" class="st3" width="167" height="120"/>
+					<circle class="st4" cx="249" cy="-78" r="8"/>
+				</g>
+				<g>
+					<rect y="-180" class="st3" width="167" height="120"/>
+					<circle class="st4" cx="82" cy="-138" r="8"/>
+					<circle class="st4" cx="133" cy="-100" r="8"/>
+				</g>
+				<g>
+					<rect x="334" y="-300" class="st3" width="167" height="120"/>
+					<circle class="st4" cx="371" cy="-210" r="8"/>
+					<circle class="st4" cx="416" cy="-258" r="8"/>
+				</g>
+				<g>
+					<rect x="167" y="-240" class="st3" width="167" height="120"/>
+					<circle class="st4" cx="204" cy="-150" r="8"/>
+					<circle class="st4" cx="249" cy="-198" r="8"/>
+					<circle class="st4" cx="300" cy="-160" r="8"/>
+				</g>
+				<g>
+					<rect y="-300" class="st3" width="167" height="120"/>
+					<circle class="st4" cx="82" cy="-258" r="8"/>
+					<circle class="st4" cx="133" cy="-220" r="8"/>
+				</g>
+				<g>
+					<rect x="167" y="-360" class="st3" width="167" height="120"/>
+					<circle class="st4" cx="204" cy="-270" r="8"/>
+					<circle class="st4" cx="300" cy="-280" r="8"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</pattern>
+<pattern  y="2208" width="246" height="320" patternUnits="userSpaceOnUse" id="SVGID_2_2" viewBox="61.5 -400 246 320" style="overflow:visible;">
+	<g>
+		<rect x="61.5" y="-400" class="st0" width="246" height="320"/>
+		<g>
+			<rect x="61.5" y="-400" class="st0" width="246" height="320"/>
+			<g>
+				<rect x="61.5" y="-400" class="st0" width="246" height="320"/>
+				<g>
+					<rect x="184.5" y="-160" class="st1" width="123" height="160"/>
+					<circle class="st2" cx="218.5" cy="-124" r="6"/>
+					<circle class="st2" cx="274.5" cy="-88" r="6"/>
+				</g>
+				<g>
+					<rect x="61.5" y="-160" class="st1" width="123" height="160"/>
+					<circle class="st2" cx="95.5" cy="-124" r="6"/>
+					<circle class="st2" cx="151.5" cy="-88" r="6"/>
+				</g>
+				<g>
+					<rect x="246" y="-320" class="st1" width="123" height="160"/>
+					<circle class="st2" cx="280" cy="-284" r="6"/>
+					<circle class="st2" cx="286" cy="-206" r="6"/>
+				</g>
+				<g>
+					<rect x="123" y="-320" class="st1" width="123" height="160"/>
+					<circle class="st2" cx="157" cy="-284" r="6"/>
+					<circle class="st2" cx="213" cy="-248" r="6"/>
+					<circle class="st2" cx="163" cy="-206" r="6"/>
+				</g>
+				<g>
+					<rect y="-320" class="st1" width="123" height="160"/>
+					<circle class="st2" cx="90" cy="-248" r="6"/>
+				</g>
+				<g>
+					<rect x="184.5" y="-480" class="st1" width="123" height="160"/>
+					<circle class="st2" cx="224.5" cy="-366" r="6"/>
+				</g>
+				<g>
+					<rect x="61.5" y="-480" class="st1" width="123" height="160"/>
+					<circle class="st2" cx="101.5" cy="-366" r="6"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</pattern>
+<pattern  y="2208" width="334" height="240" patternUnits="userSpaceOnUse" id="SVGID_3_" viewBox="83.5 -300 334 240" style="overflow:visible;">
+	<g>
+		<rect x="83.5" y="-300" class="st0" width="334" height="240"/>
+		<g>
+			<rect x="83.5" y="-300" class="st0" width="334" height="240"/>
+			<g>
+				<rect x="83.5" y="-300" class="st0" width="334" height="240"/>
+				<g>
+					<rect x="334" y="-180" class="st3" width="167" height="120"/>
+					<circle class="st4" cx="371" cy="-90" r="8"/>
+					<circle class="st4" cx="416" cy="-138" r="8"/>
+				</g>
+				<g>
+					<rect x="167" y="-120" class="st3" width="167" height="120"/>
+					<circle class="st4" cx="249" cy="-78" r="8"/>
+				</g>
+				<g>
+					<rect y="-180" class="st3" width="167" height="120"/>
+					<circle class="st4" cx="82" cy="-138" r="8"/>
+					<circle class="st4" cx="133" cy="-100" r="8"/>
+				</g>
+				<g>
+					<rect x="334" y="-300" class="st3" width="167" height="120"/>
+					<circle class="st4" cx="371" cy="-210" r="8"/>
+					<circle class="st4" cx="416" cy="-258" r="8"/>
+				</g>
+				<g>
+					<rect x="167" y="-240" class="st3" width="167" height="120"/>
+					<circle class="st4" cx="204" cy="-150" r="8"/>
+					<circle class="st4" cx="249" cy="-198" r="8"/>
+					<circle class="st4" cx="300" cy="-160" r="8"/>
+				</g>
+				<g>
+					<rect y="-300" class="st3" width="167" height="120"/>
+					<circle class="st4" cx="82" cy="-258" r="8"/>
+					<circle class="st4" cx="133" cy="-220" r="8"/>
+				</g>
+				<g>
+					<rect x="167" y="-360" class="st3" width="167" height="120"/>
+					<circle class="st4" cx="204" cy="-270" r="8"/>
+					<circle class="st4" cx="300" cy="-280" r="8"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</pattern>
+<pattern  y="2208" width="246" height="320" patternUnits="userSpaceOnUse" id="SVGID_3_2" viewBox="61.5 -400 246 320" style="overflow:visible;">
+	<g>
+		<rect x="61.5" y="-400" class="st0" width="246" height="320"/>
+		<g>
+			<rect x="61.5" y="-400" class="st0" width="246" height="320"/>
+			<g>
+				<rect x="61.5" y="-400" class="st0" width="246" height="320"/>
+				<g>
+					<rect x="184.5" y="-160" class="st1" width="123" height="160"/>
+					<circle class="st2" cx="218.5" cy="-124" r="6"/>
+					<circle class="st2" cx="274.5" cy="-88" r="6"/>
+				</g>
+				<g>
+					<rect x="61.5" y="-160" class="st1" width="123" height="160"/>
+					<circle class="st2" cx="95.5" cy="-124" r="6"/>
+					<circle class="st2" cx="151.5" cy="-88" r="6"/>
+				</g>
+				<g>
+					<rect x="246" y="-320" class="st1" width="123" height="160"/>
+					<circle class="st2" cx="280" cy="-284" r="6"/>
+					<circle class="st2" cx="286" cy="-206" r="6"/>
+				</g>
+				<g>
+					<rect x="123" y="-320" class="st1" width="123" height="160"/>
+					<circle class="st2" cx="157" cy="-284" r="6"/>
+					<circle class="st2" cx="213" cy="-248" r="6"/>
+					<circle class="st2" cx="163" cy="-206" r="6"/>
+				</g>
+				<g>
+					<rect y="-320" class="st1" width="123" height="160"/>
+					<circle class="st2" cx="90" cy="-248" r="6"/>
+				</g>
+				<g>
+					<rect x="184.5" y="-480" class="st1" width="123" height="160"/>
+					<circle class="st2" cx="224.5" cy="-366" r="6"/>
+				</g>
+				<g>
+					<rect x="61.5" y="-480" class="st1" width="123" height="160"/>
+					<circle class="st2" cx="101.5" cy="-366" r="6"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</pattern>
+<pattern  y="2208" width="334" height="240" patternUnits="userSpaceOnUse" id="SVGID_4_" viewBox="83.5 -300 334 240" style="overflow:visible;">
+	<g>
+		<rect x="83.5" y="-300" class="st0" width="334" height="240"/>
+		<g>
+			<rect x="83.5" y="-300" class="st0" width="334" height="240"/>
+			<g>
+				<rect x="83.5" y="-300" class="st0" width="334" height="240"/>
+				<g>
+					<rect x="334" y="-180" class="st3" width="167" height="120"/>
+					<circle class="st4" cx="371" cy="-90" r="8"/>
+					<circle class="st4" cx="416" cy="-138" r="8"/>
+				</g>
+				<g>
+					<rect x="167" y="-120" class="st3" width="167" height="120"/>
+					<circle class="st4" cx="249" cy="-78" r="8"/>
+				</g>
+				<g>
+					<rect y="-180" class="st3" width="167" height="120"/>
+					<circle class="st4" cx="82" cy="-138" r="8"/>
+					<circle class="st4" cx="133" cy="-100" r="8"/>
+				</g>
+				<g>
+					<rect x="334" y="-300" class="st3" width="167" height="120"/>
+					<circle class="st4" cx="371" cy="-210" r="8"/>
+					<circle class="st4" cx="416" cy="-258" r="8"/>
+				</g>
+				<g>
+					<rect x="167" y="-240" class="st3" width="167" height="120"/>
+					<circle class="st4" cx="204" cy="-150" r="8"/>
+					<circle class="st4" cx="249" cy="-198" r="8"/>
+					<circle class="st4" cx="300" cy="-160" r="8"/>
+				</g>
+				<g>
+					<rect y="-300" class="st3" width="167" height="120"/>
+					<circle class="st4" cx="82" cy="-258" r="8"/>
+					<circle class="st4" cx="133" cy="-220" r="8"/>
+				</g>
+				<g>
+					<rect x="167" y="-360" class="st3" width="167" height="120"/>
+					<circle class="st4" cx="204" cy="-270" r="8"/>
+					<circle class="st4" cx="300" cy="-280" r="8"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</pattern>
+<pattern  y="2208" width="246" height="320" patternUnits="userSpaceOnUse" id="SVGID_4_2" viewBox="61.5 -400 246 320" style="overflow:visible;">
+	<g>
+		<rect x="61.5" y="-400" class="st0" width="246" height="320"/>
+		<g>
+			<rect x="61.5" y="-400" class="st0" width="246" height="320"/>
+			<g>
+				<rect x="61.5" y="-400" class="st0" width="246" height="320"/>
+				<g>
+					<rect x="184.5" y="-160" class="st1" width="123" height="160"/>
+					<circle class="st2" cx="218.5" cy="-124" r="6"/>
+					<circle class="st2" cx="274.5" cy="-88" r="6"/>
+				</g>
+				<g>
+					<rect x="61.5" y="-160" class="st1" width="123" height="160"/>
+					<circle class="st2" cx="95.5" cy="-124" r="6"/>
+					<circle class="st2" cx="151.5" cy="-88" r="6"/>
+				</g>
+				<g>
+					<rect x="246" y="-320" class="st1" width="123" height="160"/>
+					<circle class="st2" cx="280" cy="-284" r="6"/>
+					<circle class="st2" cx="286" cy="-206" r="6"/>
+				</g>
+				<g>
+					<rect x="123" y="-320" class="st1" width="123" height="160"/>
+					<circle class="st2" cx="157" cy="-284" r="6"/>
+					<circle class="st2" cx="213" cy="-248" r="6"/>
+					<circle class="st2" cx="163" cy="-206" r="6"/>
+				</g>
+				<g>
+					<rect y="-320" class="st1" width="123" height="160"/>
+					<circle class="st2" cx="90" cy="-248" r="6"/>
+				</g>
+				<g>
+					<rect x="184.5" y="-480" class="st1" width="123" height="160"/>
+					<circle class="st2" cx="224.5" cy="-366" r="6"/>
+				</g>
+				<g>
+					<rect x="61.5" y="-480" class="st1" width="123" height="160"/>
+					<circle class="st2" cx="101.5" cy="-366" r="6"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</pattern>
+<pattern  y="2208" width="334" height="240" patternUnits="userSpaceOnUse" id="SVGID_5_" viewBox="83.5 -300 334 240" style="overflow:visible;">
+	<g>
+		<rect x="83.5" y="-300" class="st0" width="334" height="240"/>
+		<g>
+			<rect x="83.5" y="-300" class="st0" width="334" height="240"/>
+			<g>
+				<rect x="83.5" y="-300" class="st0" width="334" height="240"/>
+				<g>
+					<rect x="334" y="-180" class="st3" width="167" height="120"/>
+					<circle class="st4" cx="371" cy="-90" r="8"/>
+					<circle class="st4" cx="416" cy="-138" r="8"/>
+				</g>
+				<g>
+					<rect x="167" y="-120" class="st3" width="167" height="120"/>
+					<circle class="st4" cx="249" cy="-78" r="8"/>
+				</g>
+				<g>
+					<rect y="-180" class="st3" width="167" height="120"/>
+					<circle class="st4" cx="82" cy="-138" r="8"/>
+					<circle class="st4" cx="133" cy="-100" r="8"/>
+				</g>
+				<g>
+					<rect x="334" y="-300" class="st3" width="167" height="120"/>
+					<circle class="st4" cx="371" cy="-210" r="8"/>
+					<circle class="st4" cx="416" cy="-258" r="8"/>
+				</g>
+				<g>
+					<rect x="167" y="-240" class="st3" width="167" height="120"/>
+					<circle class="st4" cx="204" cy="-150" r="8"/>
+					<circle class="st4" cx="249" cy="-198" r="8"/>
+					<circle class="st4" cx="300" cy="-160" r="8"/>
+				</g>
+				<g>
+					<rect y="-300" class="st3" width="167" height="120"/>
+					<circle class="st4" cx="82" cy="-258" r="8"/>
+					<circle class="st4" cx="133" cy="-220" r="8"/>
+				</g>
+				<g>
+					<rect x="167" y="-360" class="st3" width="167" height="120"/>
+					<circle class="st4" cx="204" cy="-270" r="8"/>
+					<circle class="st4" cx="300" cy="-280" r="8"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</pattern>
+<pattern  y="2208" width="264" height="264" patternUnits="userSpaceOnUse" id="pattern_1_" viewBox="66 -330 264 264" style="overflow:visible;">
 	<g>
 		<rect x="66" y="-330" class="st0" width="264" height="264"/>
 		<g>
 			<rect x="66" y="-330" class="st0" width="264" height="264"/>
 			<g>
-				<rect x="132" y="-132" class="st5" width="132" height="132"/>
-				<rect x="143" y="-121" class="st6" width="110" height="110"/>
-			</g>
-			<g>
-				<rect x="264" y="-198" class="st5" width="132" height="132"/>
-				<rect x="275" y="-187" class="st6" width="110" height="110"/>
-			</g>
-			<g>
-				<rect x="132" y="-264" class="st5" width="132" height="132"/>
-				<rect x="143" y="-253" class="st6" width="110" height="110"/>
-			</g>
-			<g>
-				<rect y="-198" class="st5" width="132" height="132"/>
-				<rect x="11" y="-187" class="st6" width="110" height="110"/>
-			</g>
-			<g>
-				<rect x="264" y="-330" class="st5" width="132" height="132"/>
-				<rect x="275" y="-319" class="st6" width="110" height="110"/>
-			</g>
-			<g>
-				<rect x="132" y="-396" class="st5" width="132" height="132"/>
-				<rect x="143" y="-385" class="st6" width="110" height="110"/>
-			</g>
-			<g>
-				<rect y="-330" class="st5" width="132" height="132"/>
-				<rect x="11" y="-319" class="st6" width="110" height="110"/>
+				<rect x="66" y="-330" class="st0" width="264" height="264"/>
+				<g>
+					<rect x="132" y="-396" class="st5" width="132" height="132"/>
+					<rect x="143" y="-385" class="st6" width="110" height="110"/>
+				</g>
+				<g>
+					<rect x="264" y="-330" class="st5" width="132" height="132"/>
+					<rect x="275" y="-319" class="st6" width="110" height="110"/>
+				</g>
+				<g>
+					<rect x="132" y="-264" class="st5" width="132" height="132"/>
+					<rect x="143" y="-253" class="st6" width="110" height="110"/>
+				</g>
+				<g>
+					<rect y="-330" class="st5" width="132" height="132"/>
+					<rect x="11" y="-319" class="st6" width="110" height="110"/>
+				</g>
+				<g>
+					<rect x="264" y="-198" class="st5" width="132" height="132"/>
+					<rect x="275" y="-187" class="st6" width="110" height="110"/>
+				</g>
+				<g>
+					<rect x="132" y="-132" class="st5" width="132" height="132"/>
+					<rect x="143" y="-121" class="st6" width="110" height="110"/>
+				</g>
+				<g>
+					<rect y="-198" class="st5" width="132" height="132"/>
+					<rect x="11" y="-187" class="st6" width="110" height="110"/>
+				</g>
 			</g>
 		</g>
 	</g>
 </pattern>
 <rect id="background" x="2" y="2" class="st5" width="1237" height="2189"/>
-<pattern  id="pattern_1_" xlink:href="#New_Pattern_7" patternTransform="matrix(1 0 0 -1 -2449 -19504)">
+<pattern  id="pattern_2_" xlink:href="#pattern_1_" patternTransform="matrix(1 0 0 1 -2761 18127)">
 </pattern>
 <polygon id="pattern" class="st7" points="93.6,1968 93.6,92 1147.4,92 1147.4,1968 "/>
-<g id="Donut_1_">
-	<g>
-		<path class="st8" d="M850,1117.8c-59.8,0-116.1-23.3-158.4-65.6c-42.3-42.3-65.6-98.6-65.6-158.4s23.3-116.1,65.6-158.4
-			c42.3-42.3,98.6-65.6,158.4-65.6s116.1,23.3,158.4,65.6S1074,834,1074,893.8s-23.3,116.1-65.6,158.4
-			C966.1,1094.5,909.8,1117.8,850,1117.8z M850,815.8c-43,0-78,35-78,78s35,78,78,78s78-35,78-78S893,815.8,850,815.8z"/>
-		<path class="st9" d="M850,671.8c30,0,59,5.9,86.4,17.4c26.4,11.2,50.2,27.2,70.6,47.6c20.4,20.4,36.4,44.1,47.6,70.6
-			c11.6,27.4,17.4,56.4,17.4,86.4s-5.9,59-17.4,86.4c-11.2,26.4-27.2,50.2-47.6,70.6s-44.1,36.4-70.6,47.6
-			c-27.4,11.6-56.4,17.4-86.4,17.4s-59-5.9-86.4-17.4c-26.4-11.2-50.2-27.2-70.6-47.6s-36.4-44.1-47.6-70.6
-			c-11.6-27.4-17.4-56.4-17.4-86.4s5.9-59,17.4-86.4c11.2-26.4,27.2-50.2,47.6-70.6c20.4-20.4,44.1-36.4,70.6-47.6
-			C791,677.6,820,671.8,850,671.8 M850,973.8c44.1,0,80-35.9,80-80s-35.9-80-80-80s-80,35.9-80,80S805.9,973.8,850,973.8 M850,667.8
-			c-124.8,0-226,101.2-226,226s101.2,226,226,226s226-101.2,226-226S974.8,667.8,850,667.8L850,667.8z M850,969.8
-			c-41.9,0-76-34.1-76-76s34.1-76,76-76s76,34.1,76,76S891.9,969.8,850,969.8L850,969.8z"/>
-	</g>
-	<g>
-		<pattern  id="SVGID_1_" xlink:href="#New_Pattern_4" patternTransform="matrix(1 0 0 -1 -2462.5 -19602)">
-		</pattern>
-		<path class="st10" d="M1030.2,807l-55.5-69.6l-80.2-38.6h-89l-80.2,38.6L669.8,807L650,893.8l19.8,86.8l55.5,69.6l80.2,38.6h89
-			l80.2-38.6l55.5-69.6l19.8-86.8L1030.2,807z M850,969.8c-41.9,0-76-34.1-76-76s34.1-76,76-76s76,34.1,76,76S891.9,969.8,850,969.8
-			z"/>
-		<g>
-			<polygon class="st11" points="1030.2,807 974.7,737.4 894.5,698.8 805.5,698.8 725.3,737.4 669.8,807 650,893.8 669.8,980.6 
-				725.3,1050.1 805.5,1088.8 894.5,1088.8 974.7,1050.1 1030.2,980.6 1050,893.8 			"/>
-			<path class="st12" d="M850,969.8c-41.9,0-76-34.1-76-76s34.1-76,76-76s76,34.1,76,76S891.9,969.8,850,969.8z"/>
-		</g>
-	</g>
-</g>
-<g id="Water_Bottle_1_">
-	<g>
-		<path class="st13" d="M219.9,1113.9V710.5c0-25,13.6-48.6,37.4-64.7c23.8-14.9,38.6-40.9,38.6-68V367.6h104.7v210.2
-			c0,27.7,13.6,53.7,36.3,69.7c25.3,16.1,39.8,42,39.8,71V1114L219.9,1113.9L219.9,1113.9z"/>
-		<path class="st9" d="M398.6,369.6v208.2c0,28.3,13.9,55,37.2,71.3c0.1,0,0.1,0.1,0.2,0.1c24.6,15.7,38.8,40.9,38.8,69.3V1112
-			H221.9V710.5c0-12.5,3.4-24.5,10-35.6c6.2-10.4,15.4-19.9,26.5-27.4c24.4-15.3,39.6-42,39.6-69.7V369.6H398.6 M402.6,365.6H294
-			v212.2c0,26.9-14.9,52-37.7,66.3C233.4,659.5,218,683,218,710.4v405.5h260.8V718.5c0-30.3-15.4-56.6-40.6-72.6
-			c-21.2-14.9-35.5-40-35.5-68.1L402.6,365.6L402.6,365.6z"/>
-	</g>
-	<g>
-		<rect x="296" y="367.4" class="st14" width="104.8" height="28.8"/>
-		<path class="st9" d="M398.8,369.4v24.8H297.9v-24.8H398.8 M402.8,365.4H293.9v32.8h108.8L402.8,365.4L402.8,365.4z"/>
-	</g>
-	<g>
-		<rect x="220" y="812.2" class="st14" width="256.8" height="104.8"/>
-		<path class="st9" d="M474.8,814.2V915H221.9V814.2H474.8 M478.8,810.2H217.9V919h260.8V810.2H478.8z"/>
-	</g>
-</g>
 <g id="Lunch_1_">
 	<g id="Box_1_">
 		<g>
-			<path class="st15" d="M214.5,1969.6c-40.3,0-73-32.7-73-73v-506.2c0-40.3,32.7-73,73-73h830c40.3,0,73,32.7,73,73v506.2
+			<path class="st8" d="M214.5,1969.6c-40.3,0-73-32.7-73-73v-506.2c0-40.3,32.7-73,73-73h830c40.3,0,73,32.7,73,73v506.2
 				c0,40.3-32.7,73-73,73L214.5,1969.6L214.5,1969.6z"/>
 			<path class="st9" d="M1044.5,1319.3c39.1,0,71,31.9,71,71v506.2c0,39.1-31.9,71-71,71h-830c-39.1,0-71-31.9-71-71v-506.2
 				c0-39.1,31.9-71,71-71H1044.5 M1044.5,1315.3h-830c-41.4,0-75,33.6-75,75v506.2c0,41.4,33.6,75,75,75h830c41.4,0,75-33.6,75-75
 				v-506.2C1119.5,1348.9,1085.9,1315.3,1044.5,1315.3L1044.5,1315.3z"/>
 		</g>
 		<g>
-			<path class="st14" d="M204.5,1929.6c-12.7,0-23-10.3-23-23v-526.2c0-12.7,10.3-23,23-23h850c12.7,0,23,10.3,23,23v526.2
+			<path class="st10" d="M204.5,1929.6c-12.7,0-23-10.3-23-23v-526.2c0-12.7,10.3-23,23-23h850c12.7,0,23,10.3,23,23v526.2
 				c0,12.7-10.3,23-23,23L204.5,1929.6L204.5,1929.6z"/>
 			<path class="st9" d="M1054.5,1359.3c11.6,0,21,9.4,21,21v526.2c0,11.6-9.4,21-21,21h-850c-11.6,0-21-9.4-21-21v-526.2
 				c0-11.6,9.4-21,21-21H1054.5 M1054.5,1355.3h-850c-13.8,0-25,11.2-25,25v526.2c0,13.8,11.2,25,25,25h850c13.8,0,25-11.2,25-25
 				v-526.2C1079.5,1366.6,1068.2,1355.3,1054.5,1355.3L1054.5,1355.3z"/>
 		</g>
 		<g>
-			<path class="st14" d="M794.3,1318.2c-4.2,0-7.6-3.4-7.6-7.6v-4c0-4.2,3.4-7.6,7.6-7.6h40c1.1,0,2-0.9,2-2v-4.8
+			<path class="st10" d="M794.3,1318.2c-4.2,0-7.6-3.4-7.6-7.6v-4c0-4.2,3.4-7.6,7.6-7.6h40c1.1,0,2-0.9,2-2v-4.8
 				c0-23.2-18.8-42-42-42H469.5c-23.2,0-42,18.8-42,42v4.8c0,1.1,0.9,2,2,2h35.2c4.2,0,7.6,3.4,7.6,7.6v4c0,4.2-3.4,7.6-7.6,7.6
 				H347.9c-4.2,0-7.6-3.4-7.6-7.6v-4c0-4.2,3.4-7.6,7.6-7.6h41.6c1.1,0,2-0.9,2-2v-4.8c0-43,35-78,78-78h324.8c43,0,78,35,78,78v4.8
 				c0,1.1,0.9,2,2,2h36.8c4.2,0,7.6,3.4,7.6,7.6v4c0,4.2-3.4,7.6-7.6,7.6H794.3z"/>
@@ -233,26 +472,26 @@
 	</g>
 	<g id="Orange_1_">
 		<g>
-			<path class="st3" d="M871,1903c-77.7,0-141-63.3-141-141s63.3-141,141-141s141,63.3,141,141S948.7,1903,871,1903z"/>
+			<path class="st1" d="M871,1903c-77.7,0-141-63.3-141-141s63.3-141,141-141s141,63.3,141,141S948.7,1903,871,1903z"/>
 			<path class="st9" d="M871,1623c37.1,0,72,14.5,98.3,40.7s40.7,61.2,40.7,98.3s-14.5,72-40.7,98.3S908.1,1901,871,1901
 				s-72-14.5-98.3-40.7S732,1799.1,732,1762s14.5-72,40.7-98.3S833.9,1623,871,1623 M871,1619c-79,0-143,64-143,143s64,143,143,143
 				s143-64,143-143S950,1619,871,1619L871,1619z"/>
 		</g>
-		<path class="st16" d="M846.4,1652.4c16.2,4.9,16.2,10.1,60.1,2.3 M846.4,1579.6c12.7,0,34.8,52.9,34.8,76.2"/>
+		<path class="st11" d="M846.4,1652.4c16.2,4.9,16.2,10.1,60.1,2.3 M846.4,1579.6c12.7,0,34.8,52.9,34.8,76.2"/>
 		<g>
 			<g>
-				<path class="st17" d="M883.1,1624.4c-5.6-6.3-7.8-13.1-6.5-20c3.5-18.4,30.2-34,39.5-38.9c-4.9,57.6-18.9,58.2-31.3,58.8
+				<path class="st12" d="M883.1,1624.4c-5.6-6.3-7.8-13.1-6.5-20c3.5-18.4,30.2-34,39.5-38.9c-4.9,57.6-18.9,58.2-31.3,58.8
 					C884.2,1624.4,883.7,1624.4,883.1,1624.4z"/>
 				<path class="st9" d="M913.7,1569.1c-2.2,23.1-6.2,38.3-12.1,46.1c-5,6.6-10.5,6.9-16.9,7.1c-0.3,0-0.5,0-0.8,0
 					c-4.8-5.7-6.5-11.4-5.4-17.5C881.6,1589.1,902.9,1575.2,913.7,1569.1 M918.4,1562.1L918.4,1562.1L918.4,1562.1z M918.4,1562.1
 					c0,0-66.7,31.5-36.1,64.3C896.1,1625.5,913.3,1629.2,918.4,1562.1L918.4,1562.1z"/>
 			</g>
-			<path class="st18" d="M897.1,1593.1c0,0,0,17.6-16.7,32.4"/>
+			<path class="st13" d="M897.1,1593.1c0,0,0,17.6-16.7,32.4"/>
 		</g>
 	</g>
-	<g id="Carrot_1_">
+	<g id="Carrot">
 		<g>
-			<path class="st17" d="M826.7,1461c-5.8,0-11.7-1.4-17.2-4.2c-11.1-5.5-18.8-15.5-19.7-25.5c-0.1-0.6-0.4-1.2-1-1.5
+			<path class="st12" d="M826.7,1461c-5.8,0-11.7-1.4-17.2-4.2c-11.1-5.5-18.8-15.5-19.7-25.5c-0.1-0.6-0.4-1.2-1-1.5
 				c-7.9-4.8-10.9-15-6.8-23.4c3.1-6.2,9.2-10,16.2-10c2.8,0,5.4,0.6,8,1.9c3,1.5,5.6,3.8,7.4,6.7c0.3,0.5,0.9,0.9,1.5,0.9
 				c0.1,0,0.1,0,0.2,0c0.6,0,1.1-0.3,1.5-0.7c3.4-4,8.4-6.3,13.7-6.3c2.8,0,5.4,0.6,7.9,1.9c7.4,3.6,11.3,11.8,9.6,19.9
 				c-0.1,0.6,0,1.3,0.5,1.8c0.4,0.4,0.9,0.7,1.5,0.7c0.1,0,0.1,0,0.2,0c0.6-0.1,1.3-0.1,1.9-0.1c2.8,0,5.4,0.6,7.9,1.8
@@ -272,7 +511,7 @@
 			</g>
 		</g>
 		<g>
-			<path class="st3" d="M733.7,1602.8c0.9-26,8.7-168.5,67.4-168.5c6.2,0,13,1.6,20,4.8c13.8,7.4,21.2,17.4,22,29.8
+			<path class="st1" d="M733.7,1602.8c0.9-26,8.7-168.5,67.4-168.5c6.2,0,13,1.6,20,4.8c13.8,7.4,21.2,17.4,22,29.8
 				C846.1,1517.1,752.5,1588.9,733.7,1602.8z"/>
 			<path class="st9" d="M801,1436.3c5.9,0,12.4,1.6,19.1,4.6c13.3,7.1,20.1,16.3,20.9,28.1c1.4,21.3-17.4,51.2-54.1,86.4
 				c-20.2,19.4-40.8,35.5-51.1,43.2c0.6-14.6,2.7-46.7,9.3-78.4c5.1-24.9,12-44.6,20.3-58.7C775.3,1444.8,787.3,1436.3,801,1436.3
@@ -280,12 +519,12 @@
 				/>
 		</g>
 		<g>
-			<path class="st16" d="M762.6,1464.9l67.2,33.2 M793.7,1512.6l27.8,13.7 M743.2,1522.3L771,1536 M755.9,1559.8l18.8,9.3"/>
+			<path class="st11" d="M762.6,1464.9l67.2,33.2 M793.7,1512.6l27.8,13.7 M743.2,1522.3L771,1536 M755.9,1559.8l18.8,9.3"/>
 		</g>
 	</g>
-	<g id="Berry_x5F_Left_1_">
+	<g id="Berry_x5F_Left_1_" class="float">
 		<g>
-			<path class="st19" d="M940,1457c-17.1,0-31-13.9-31-31s13.9-31,31-31s31,13.9,31,31S957.1,1457,940,1457z"/>
+			<path class="st14" d="M940,1457c-17.1,0-31-13.9-31-31s13.9-31,31-31s31,13.9,31,31S957.1,1457,940,1457z"/>
 			<path class="st9" d="M940,1397c16,0,29,13,29,29s-13,29-29,29s-29-13-29-29S924,1397,940,1397 M940,1393c-18.2,0-33,14.8-33,33
 				s14.8,33,33,33s33-14.8,33-33S958.2,1393,940,1393L940,1393z"/>
 		</g>
@@ -296,9 +535,9 @@
 				C926,1408.4,927,1408.3,927.2,1409z"/>
 		</g>
 	</g>
-	<g id="Berry_x5F_Right_1_">
+	<g id="Berry_x5F_Right_1_" class="float2">
 		<g>
-			<path class="st19" d="M1017.5,1486c-8.3-0.1-16-3.5-21.8-9.4s-8.9-13.8-8.7-22.1c0.3-16.8,14.2-30.5,31-30.5h0.5
+			<path class="st14" d="M1017.5,1486c-8.3-0.1-16-3.5-21.8-9.4s-8.9-13.8-8.7-22.1c0.3-16.8,14.2-30.5,31-30.5h0.5
 				c8.3,0.1,16,3.5,21.8,9.4s8.9,13.8,8.7,22.1c-0.3,16.8-14.2,30.5-31,30.5H1017.5z"/>
 			<path class="st9" d="M1018,1422v4c0.2,0,0.3,0,0.5,0c7.7,0.1,15,3.3,20.4,8.8c5.4,5.6,8.3,12.9,8.2,20.6
 				c-0.2,15.7-13.3,28.5-29,28.5c-0.2,0-0.3,0-0.5,0c-7.7-0.1-15-3.3-20.4-8.8c-5.4-5.6-8.3-12.9-8.2-20.6
@@ -312,9 +551,9 @@
 				C1035.9,1441.2,1035.9,1442.2,1035.2,1442.4z"/>
 		</g>
 	</g>
-	<g id="Berry_x5F_Middle_1_">
+	<g id="Berry_x5F_Middle_1_" class="lHandle-anim">
 		<g>
-			<path class="st19" d="M952,1544c-6.5,0-12.8-2-18.1-5.8c-6.7-4.8-11.2-12-12.5-20.2s0.6-16.4,5.4-23.1
+			<path class="st14" d="M952,1544c-6.5,0-12.8-2-18.1-5.8c-6.7-4.8-11.2-12-12.5-20.2s0.6-16.4,5.4-23.1
 				c5.8-8.1,15.2-12.9,25.2-12.9c6.5,0,12.8,2,18.1,5.8c6.7,4.8,11.2,12,12.5,20.2s-0.6,16.4-5.4,23.1
 				C971.4,1539.2,961.9,1544,952,1544z"/>
 			<path class="st9" d="M952,1480v4l0,0c6.1,0,11.9,1.9,16.9,5.5c13,9.3,15.9,27.5,6.6,40.5c-5.4,7.6-14.2,12.1-23.6,12.1
@@ -331,57 +570,131 @@
 	</g>
 	<g id="Sandwich_1_">
 		<g id="Left_x5F_Sandwich">
-			<g id="leftBreadBottom">
-				<path class="st20" d="M259,1840.1c-5.3-4.8-8.4-11.9-8.1-19.5l15.2-329.7c0.6-13.7,12.4-24.5,26.1-23.8l329.7,15.2
+			<g id="lBreadBottom">
+				<path class="st15" d="M259,1840.1c-5.3-4.8-8.4-11.9-8.1-19.5l15.2-329.7c0.6-13.7,12.4-24.5,26.1-23.8l329.7,15.2
 					c7.6,0.4,14.4,4.2,18.7,9.8L259,1840.1z"/>
-				<pattern  id="SVGID_2_" xlink:href="#New_Pattern_3" patternTransform="matrix(1 0 0 -1 -2730.5 -19462)">
+				<pattern  id="SVGID_6_" xlink:href="#SVGID_2_" patternTransform="matrix(1 0 0 1 -3060 18091)">
 				</pattern>
-				<path class="st21" d="M275.8,1824.8c-0.9-1-1.4-2.3-1.4-3.6l15.2-329.7c0.1-2.7,2.5-4.9,5.2-4.8l329.7,15.2
+				<path class="st16" d="M275.8,1824.8c-0.9-1-1.4-2.3-1.4-3.6l15.2-329.7c0.1-2.7,2.5-4.9,5.2-4.8l329.7,15.2
 					c1.4,0.1,2.6,0.7,3.4,1.6L275.8,1824.8z"/>
 			</g>
-			<path id="rightHam_1_" class="st22" d="M612.1,1517.9c-18.1-8.1-43.5-14.2-79-15.9c-138-6.3-172.7-101.1-253.9-14.1
+			<path id="lHam" class="st17" d="M612.1,1517.9c-18.1-8.1-43.5-14.2-79-15.9c-138-6.3-172.7-101.1-253.9-14.1
 				s-44.1,224.6-20.4,258.6c11.6,16.7,21.7,39.1,39.7,57.6L612.1,1517.9z"/>
-			<path id="leftCheese" class="st23" d="M322.7,1783.1L220,1717.4c-2.3-1.5-3-4.6-1.5-6.9l179.1-279.7c1.5-2.3,4.6-3,6.9-1.5
+			<path id="lCheese" class="st18" d="M322.7,1783.1L220,1717.4c-2.3-1.5-3-4.6-1.5-6.9l179.1-279.7c1.5-2.3,4.6-3,6.9-1.5
 				l179,114.6L322.7,1783.1z"/>
-			<path id="leftLettuce" class="st24" d="M609.8,1520.4c-14.6-31.6-44.5-53.9-79.9-55.5c-1.5-0.1-3-0.1-4.5-0.1
+			<path id="lLettuce" class="st19" d="M609.8,1520.4c-14.6-31.6-44.5-53.9-79.9-55.5c-1.5-0.1-3-0.1-4.5-0.1
 				c-11-12.1-26.2-19.8-43.3-20.6c-20.7-1-39.5,8.6-52.1,24.1c-4.7-1-9.5-1.6-14.3-1.8c-34.9-1.6-66.4,17.2-84.2,46.5
 				c-32.2,15-55.4,48.6-57.3,88.5c-0.6,12,0.9,23.6,4,34.4c-6.2,12.7-10,26.9-10.7,42.1c-1.7,37.5,15.9,71.1,43.4,89.9
 				c0.9,7.2,2.6,14.1,4.8,20.8L609.8,1520.4z"/>
-			<g id="leftBreadTop">
-				<path class="st20" d="M259,1840.1c-5.3-4.8-8.4-11.9-8.1-19.5l15.2-329.7c0.6-13.7,12.4-24.5,26.1-23.8l329.7,15.2
+			<g id="lBreadTop">
+				<path class="st15" d="M259,1840.1c-5.3-4.8-8.4-11.9-8.1-19.5l15.2-329.7c0.6-13.7,12.4-24.5,26.1-23.8l329.7,15.2
 					c7.6,0.4,14.4,4.2,18.7,9.8L259,1840.1z"/>
-				<pattern  id="SVGID_3_" xlink:href="#New_Pattern_3" patternTransform="matrix(1 0 0 -1 -2730.5 -19462)">
+				<pattern  id="SVGID_7_" xlink:href="#SVGID_3_" patternTransform="matrix(1 0 0 1 -3060 18091)">
 				</pattern>
-				<path class="st25" d="M275.8,1824.8c-0.9-1-1.4-2.3-1.4-3.6l15.2-329.7c0.1-2.7,2.5-4.9,5.2-4.8l329.7,15.2
+				<path class="st20" d="M275.8,1824.8c-0.9-1-1.4-2.3-1.4-3.6l15.2-329.7c0.1-2.7,2.5-4.9,5.2-4.8l329.7,15.2
 					c1.4,0.1,2.6,0.7,3.4,1.6L275.8,1824.8z"/>
 			</g>
 		</g>
 		<g id="Right_x5F_Sandwich">
-			<g id="rightBreadBottom">
-				<path class="st20" d="M653.4,1506.1c3.5,4.5,5.4,10.2,5.1,16.3l-15.2,329.7c-0.6,13.7-12.4,24.5-26.1,23.8l-329.7-15.2
+			<g id="rBreadBottom">
+				<path class="st15" d="M653.4,1506.1c3.5,4.5,5.4,10.2,5.1,16.3l-15.2,329.7c-0.6,13.7-12.4,24.5-26.1,23.8l-329.7-15.2
 					c-6.1-0.3-11.6-2.7-15.7-6.6L653.4,1506.1z"/>
-				<pattern  id="SVGID_4_" xlink:href="#New_Pattern_3" patternTransform="matrix(1 0 0 -1 -2730.5 -19462)">
+				<pattern  id="SVGID_8_" xlink:href="#SVGID_4_" patternTransform="matrix(1 0 0 1 -3060 18091)">
 				</pattern>
-				<path class="st26" d="M641.4,1518.3c0.9,1,1.4,2.2,1.3,3.6l-15.2,329.7c-0.1,2.7-2.5,4.9-5.2,4.8l-329.7-15.2
+				<path class="st21" d="M641.4,1518.3c0.9,1,1.4,2.2,1.3,3.6l-15.2,329.7c-0.1,2.7-2.5,4.9-5.2,4.8l-329.7-15.2
 					c-1.3-0.1-2.5-0.7-3.4-1.6L641.4,1518.3z"/>
 			</g>
-			<path id="rightHam" class="st22" d="M311.9,1818.9c20.2,20.7,50.3,36.4,103.8,33.4c182.5-10.3,158,33.4,216.5-56.9
+			<path id="rHam" class="st17" d="M311.9,1818.9c20.2,20.7,50.3,36.4,103.8,33.4c182.5-10.3,158,33.4,216.5-56.9
 				c25.7-39.8,84.2-58.6,41.2-187.3c-2.1-6.3-3.3-12.9-3.6-19.5c-0.4-13-6.4-38.9-44.2-55.9L311.9,1818.9z"/>
-			<path id="rightCheese" class="st23" d="M596.4,1557.9l100.7,64.5c2.3,1.5,3,4.6,1.5,6.9L519.5,1909c-1.5,2.3-4.6,3-6.9,1.5
+			<path id="rCheese" class="st18" d="M596.4,1557.9l100.7,64.5c2.3,1.5,3,4.6,1.5,6.9L519.5,1909c-1.5,2.3-4.6,3-6.9,1.5
 				l-177-113.4L596.4,1557.9z"/>
-			<path id="rightLettuce" class="st24" d="M328.5,1802.6c8.7,25.4,26.7,46.1,49.8,57.2c10.8,18.9,29.9,31.8,52.2,32.9
+			<path id="rLettuce" class="st19" d="M328.5,1802.6c8.7,25.4,26.7,46.1,49.8,57.2c10.8,18.9,29.9,31.8,52.2,32.9
 				c21.2,1,40.6-9.1,53.1-25.4c12.7,7.9,27.3,12.7,43,13.4c30.2,1.4,57.7-12.6,76-35.4c32.4-14.7,55.8-48.3,57.7-88.3
 				c0.7-15.2-1.8-29.7-6.8-42.9c8.3-14.2,13.4-30.7,14.3-48.6c1.5-33.7-12.6-64.2-35.5-83.5c0.5-17-3-33.2-9.6-47.5L328.5,1802.6z"
 				/>
-			<g id="rightBreadTop_1_">
-				<path class="st20" d="M653.4,1506.1c3.5,4.5,5.4,10.2,5.1,16.3l-15.2,329.7c-0.6,13.7-12.4,24.5-26.1,23.8l-329.7-15.2
+			<g id="rBreadTop">
+				<path class="st15" d="M653.4,1506.1c3.5,4.5,5.4,10.2,5.1,16.3l-15.2,329.7c-0.6,13.7-12.4,24.5-26.1,23.8l-329.7-15.2
 					c-6.1-0.3-11.6-2.7-15.7-6.6L653.4,1506.1z"/>
-				<pattern  id="SVGID_5_" xlink:href="#New_Pattern_3" patternTransform="matrix(1 0 0 -1 -2730.5 -19462)">
+				<pattern  id="SVGID_9_" xlink:href="#SVGID_5_" patternTransform="matrix(1 0 0 1 -3060 18091)">
 				</pattern>
-				<path class="st27" d="M641.4,1518.3c0.9,1,1.4,2.2,1.3,3.6l-15.2,329.7c-0.1,2.7-2.5,4.9-5.2,4.8l-329.7-15.2
+				<path class="st22" d="M641.4,1518.3c0.9,1,1.4,2.2,1.3,3.6l-15.2,329.7c-0.1,2.7-2.5,4.9-5.2,4.8l-329.7-15.2
 					c-1.3-0.1-2.5-0.7-3.4-1.6L641.4,1518.3z"/>
 			</g>
 		</g>
+	</g>
+</g>
+<g id="waterBottle">
+	<g id="bottle">
+		<path class="st23" d="M299.8,577.3c0,27.4-15,53.9-39.2,69c-11.2,7.5-20.4,17.1-26.7,27.6c-6.7,11.2-10.2,23.3-10.2,36v402.2
+			h254.4V718c0-28.6-14.2-54.1-39.1-69.9c-0.1,0-0.2-0.1-0.2-0.1c-11-7.8-20.2-18.2-26.6-30.2c-6.6-12.5-10.2-26.5-10.2-40.5V397.6
+			H299.8V577.3z"/>
+		<path class="st9" d="M481.3,718v397.4H220.5V710c0-1,0-2,0.1-3c0-0.2,0-0.3,0-0.6c0-0.8,0.1-1.6,0.2-2.4c0-0.2,0.1-0.5,0.1-0.7
+			c0.1-0.7,0.2-1.4,0.2-2.2c0-0.2,0.1-0.5,0.1-0.7c0.1-0.7,0.2-1.4,0.3-2.2c0-0.2,0.1-0.4,0.1-0.6c0.2-0.9,0.3-1.8,0.6-2.7
+			c0.1-0.2,0.2-0.6,0.2-0.8c0.2-0.6,0.2-1.2,0.4-1.8c0.2-0.5,0.2-1,0.4-1.5c0.1-0.3,0.2-0.6,0.2-1c0.2-0.6,0.3-1.2,0.6-1.8
+			c0.1-0.2,0.2-0.4,0.2-0.6c2.5-7.6,6.2-14.6,10.9-21.2c0.1-0.1,0.2-0.2,0.2-0.3c0.3-0.4,0.6-0.8,0.9-1.2
+			c6.2-8.1,13.8-15.2,22.6-21.1c0,0,0,0,0-0.1c0,0,0,0,0.1,0c22.9-14.2,37.8-39.4,37.8-66.3V397.6h3.2v179.7c0,27.4-15,53.9-39.2,69
+			c-11.2,7.5-20.4,17.1-26.7,27.6c-6.7,11.2-10.2,23.3-10.2,36v402.2H478V718c0-28.6-14.2-54.1-39.1-69.9c-0.1,0-0.2-0.1-0.2-0.1
+			c-11-7.8-20.2-18.2-26.6-30.2c-6.6-12.5-10.2-26.5-10.2-40.5V397.6h3.1v179.7c0,10.3,1.9,20.2,5.4,29.4c1.3,3.3,2.7,6.5,4.4,9.6
+			c2.2,4.1,4.7,7.9,7.5,11.6c1.6,2.1,3.4,4.1,5.1,6.1c0.1,0.1,0.2,0.2,0.3,0.3c0.5,0.6,1,1,1.5,1.6c0.1,0.1,0.1,0.1,0.2,0.2
+			c2.2,2.2,4.6,4.4,7,6.3c0.1,0,0.1,0.1,0.2,0.1c0.6,0.5,1.2,1,1.8,1.4c0.6,0.5,1.4,1,2,1.4C465.9,661.3,481.3,687.6,481.3,718z
+			 M402,394.4H299.8v3.2H402V394.4z"/>
+	</g>
+	<g id="bottleLid">
+		<rect x="299.8" y="368.3" class="st10" width="102.2" height="26.2"/>
+		<path class="st9" d="M296.6,365.1v3v0.2v29.4h1.2h2H402h2.2h1v-32.6H296.6z M299.8,368.3V368h102.4v26.4H402H299.8V368.3z"/>
+	</g>
+	<g id="bottleLabel">
+		<rect x="220.6" y="809.6" class="st10" width="260.8" height="108.8"/>
+		<path class="st9" d="M481.4,809.6H220.6v3.2l0,0c0,18,0,105.6,0,105.6h3.2l0,0l0,0l0,0l0,0c29.8,0,257.6,0,257.6,0V809.6
+			L481.4,809.6z M223.8,812.8h254.4v102.4H223.8V812.8L223.8,812.8z"/>
+	</g>
+</g>
+<g id="Donut3">
+	<path class="st24" d="M1052.7,787.5c-10.6,6.7-23.2,10.6-36.7,10.6c-33.5,0-61.4-23.9-67.7-55.6c-8.6,3.9-18.2,6.1-28.3,6.1
+		c-20.3,0-38.5-8.7-51.1-22.6c-12.7,23.3-37.5,39.1-65.9,39.1c-33.7,0-62.2-22.2-71.7-52.8c-11.5,7.8-22.3,16.8-32.3,26.8
+		c-42.3,42.3-65.6,98.6-65.6,158.4s23.3,116.1,65.6,158.4s98.6,65.6,158.4,65.6s116.1-23.3,158.4-65.6s65.6-98.6,65.6-158.4
+		C1081.5,858.4,1071.5,820.7,1052.7,787.5z M857.5,975.5c-43,0-78-35-78-78s35-78,78-78s78,35,78,78S900.5,975.5,857.5,975.5z"/>
+	<pattern  id="SVGID_10_" xlink:href="#SVGID_1_" patternTransform="matrix(1 0 0 1 -502.5001 16776.5)">
+	</pattern>
+	<path class="st25" d="M1037.7,810.7l-10.8-13.5c-3.6,0.6-7.2,0.9-10.9,0.9c-33.5,0-61.4-23.9-67.7-55.6c-8.6,3.9-18.2,6.1-28.3,6.1
+		c-20.3,0-38.5-8.7-51.1-22.7c-12.7,23.3-37.5,39.2-65.9,39.2c-24.2,0-45.7-11.5-59.4-29.2l-10.9,5.2l-55.5,69.6l-19.8,86.8
+		l19.8,86.8l55.5,69.6l80.2,38.6h89l80.2-38.6l55.5-69.6l19.8-86.8L1037.7,810.7z M857.5,973.5c-41.9,0-76-34.1-76-76s34.1-76,76-76
+		s76,34.1,76,76S899.4,973.5,857.5,973.5z"/>
+</g>
+<g id="Donut2">
+	<path class="st24" d="M1016,798.1c-33.5,0-61.4-23.9-67.7-55.6c-8.6,3.9-18.2,6.1-28.3,6.1c-38.1,0-69-30.9-69-69c0-2,0.1-4,0.3-6
+		c-57.5,1.5-111.4,24.7-152.2,65.5c-42.3,42.3-65.6,98.6-65.6,158.4s23.3,116.1,65.6,158.4s98.6,65.6,158.4,65.6
+		s116.1-23.3,158.4-65.6s65.6-98.6,65.6-158.4c0-39.1-10-76.8-28.8-110C1042.1,794.2,1029.5,798.1,1016,798.1z M857.5,975.5
+		c-43,0-78-35-78-78s35-78,78-78s78,35,78,78S900.5,975.5,857.5,975.5z"/>
+	<pattern  id="SVGID_11_" xlink:href="#SVGID_2_2" patternTransform="matrix(1 0 0 1 -502.5001 16776.5)">
+	</pattern>
+	<path class="st26" d="M1026.9,797.2c-3.6,0.6-7.2,0.9-10.9,0.9c-33.5,0-61.4-23.9-67.7-55.6c-8.6,3.9-18.2,6.1-28.3,6.1
+		c-30.1,0-55.6-19.2-65.1-46.1h-42l-80.2,38.6l-55.5,69.6l-19.8,86.8l19.8,86.8l55.5,69.6l80.2,38.6h89l80.2-38.6l55.5-69.6
+		l19.8-86.8l-19.8-86.8L1026.9,797.2z M857.5,973.5c-41.9,0-76-34.1-76-76s34.1-76,76-76s76,34.1,76,76S899.4,973.5,857.5,973.5z"/>
+</g>
+<g id="Donut1">
+	<path class="st24" d="M1015.9,739.1c-10.6-10.6-22.1-20.1-34.4-28.2c-11.4,22.4-34.6,37.7-61.5,37.7c-38.1,0-69-30.9-69-69
+		c0-2,0.1-4,0.3-6c-57.5,1.5-111.4,24.7-152.2,65.5c-42.3,42.3-65.6,98.6-65.6,158.4s23.3,116.1,65.6,158.4s98.6,65.6,158.4,65.6
+		s116.1-23.3,158.4-65.6s65.6-98.6,65.6-158.4S1058.2,781.4,1015.9,739.1z M857.5,975.5c-43,0-78-35-78-78s35-78,78-78s78,35,78,78
+		S900.5,975.5,857.5,975.5z"/>
+	<pattern  id="SVGID_12_" xlink:href="#SVGID_3_2" patternTransform="matrix(1 0 0 1 -502.5001 16776.5)">
+	</pattern>
+	<path class="st27" d="M1037.7,810.7l-55.5-69.6l-17.9-8.6c-12,10-27.4,16.1-44.3,16.1c-30.1,0-55.6-19.2-65.1-46.1h-42l-80.2,38.6
+		l-55.5,69.6l-19.8,86.8l19.8,86.8l55.5,69.6l80.2,38.6h89l80.2-38.6l55.5-69.6l19.8-86.8L1037.7,810.7z M857.5,973.5
+		c-41.9,0-76-34.1-76-76s34.1-76,76-76s76,34.1,76,76S899.4,973.5,857.5,973.5z"/>
+</g>
+<g id="Donut">
+	<g>
+		<path class="st24" d="M857.5,1121.5c-59.8,0-116.1-23.3-158.4-65.6c-42.3-42.3-65.6-98.6-65.6-158.4s23.3-116.1,65.6-158.4
+			c42.3-42.3,98.6-65.6,158.4-65.6s116.1,23.3,158.4,65.6s65.6,98.6,65.6,158.4s-23.3,116.1-65.6,158.4
+			C973.6,1098.2,917.3,1121.5,857.5,1121.5z M857.5,819.5c-43,0-78,35-78,78s35,78,78,78s78-35,78-78S900.5,819.5,857.5,819.5z"/>
+	</g>
+	<g>
+		<pattern  id="SVGID_13_" xlink:href="#SVGID_4_2" patternTransform="matrix(1 0 0 1 -502.5001 16776.5)">
+		</pattern>
+		<path class="st28" d="M1037.7,810.7l-55.5-69.6L902,702.5h-89l-80.2,38.6l-55.5,69.6l-19.8,86.8l19.8,86.8l55.5,69.6l80.2,38.6h89
+			l80.2-38.6l55.5-69.6l19.8-86.8L1037.7,810.7z M857.5,973.5c-41.9,0-76-34.1-76-76s34.1-76,76-76s76,34.1,76,76
+			S899.4,973.5,857.5,973.5z"/>
 	</g>
 </g>
 </svg>

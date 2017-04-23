@@ -8,7 +8,7 @@
 <style type="text/css">
 	.st0{fill:none;}
 	.st1{fill:none;stroke:#FFDB58;stroke-width:2;stroke-miterlimit:10;}
-	.st2{fill:#FFF1A5;stroke:#000000;stroke-miterlimit:10;}
+	.st2{fill:#FFF1A5;}
 	.st3{opacity:0.5;fill:url(#pattern_1_);enable-background:new    ;}
 	.st4{fill:#132560;}
 	.st5{fill:#F2F2F2;stroke:#132560;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
@@ -112,7 +112,7 @@
 		l14,5"/>
 	<path id="rSteam" class="st11" d="M1116.3,798.2c-28.1,10.8-61.7,30.7-17.8,51.5c42.4,20.2,37.7,57.6,14.3,65.8
 		c-36,12.6,11.4,48,11.4,48"/>
-	<path id="mStean" class="st11" d="M1068.1,805.6c0-0.9-67.6,44.2-23.1,59.1c28.4,9.7,31.6,27.2,14.9,53.5
+	<path id="mSteam" class="st11" d="M1068.1,805.6c0-0.9-67.6,44.2-23.1,59.1c28.4,9.7,31.6,27.2,14.9,53.5
 		c-6.4,10.2-6.7,28.1,3.2,33.7l8.5,5"/>
 </g>
 <g id="Sugar">
@@ -132,7 +132,7 @@
 		<path class="st4" d="M1809.2,1060l-3.7-7.6h-4.4v7.6h-8.3v-28h13.1c7.5,0,11.8,3.6,11.8,10c0,4.2-1.7,7.2-4.7,8.9l5.7,9.2
 			L1809.2,1060L1809.2,1060z M1801,1046.1h4.8c2.5,0,3.9-1.4,3.9-3.9c0-2.4-1.4-3.8-3.9-3.8h-4.8V1046.1z"/>
 	</g>
-	<g id="Jar_x5F_Lid">
+	<g id="Jar_Lid">
 		<path class="st4 lid-animation" d="M1612.5,930h267c3.6,0,6.5,2.9,6.5,6.5l0,0c0,3.6-2.9,6.5-6.5,6.5h-267c-3.6,0-6.5-2.9-6.5-6.5l0,0
 			C1606,932.9,1608.9,930,1612.5,930z"/>
 		<path id="_x3C_Compound_x5F_Path_x3E_" class="st6" d="M1750,845.1v-5.8c4.7-1.6,8-6.1,8-11.3c0-6.6-5.4-12-12-12s-12,5.4-12,12

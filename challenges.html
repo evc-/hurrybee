@@ -26,6 +26,7 @@
         padding-top: 60px;
         /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
         font-family: 'Nunito', sans-serif;
+        background-image: url("assets/other/Background/honeycomb-bg.png");
     }
 		
 	h1{
@@ -69,6 +70,7 @@
         top: 0;
         width: 100%;
         background-color: rgba(255,255,255,0.8);
+        animation: fadein 0.8s ease-in-out;
     }
     
     #modal-content {
@@ -83,8 +85,19 @@
         bottom: 0;
         left: 0;
         right: 0;
+        animation: fadein 0.8s ease-in-out;
     }
+    
+        @keyframes fadein {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
 
+        @keyframes fadeout {
+            from { opacity: 1; }
+            to { opacity: 0; }
+        }
+        
     .exit-button {
         width: 30px;
     }
@@ -110,6 +123,16 @@
 		border-radius: 24px;
 		color: #14275E;
 		}
+        
+        .congrats-bg {
+            background-color: #FFF1A5;
+            width: 80vw;
+        }
+        
+        #c1:hover, #c2:hover, #c3:hover, #c4:hover, #c5:hover, #c6:hover, #c7:hover, #exit:hover {
+            opacity: 0.7;
+        }
+
     </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -153,8 +176,8 @@
 </div> -->
     
     <!-- Content -->
-    
-	<div class="container-fluid congrats-container">
+    <br><br>
+	<div class="container-fluid congrats-container congrats-bg">
 		
 		<div class="row">
 			<div class="col-xs-1">
@@ -171,6 +194,7 @@
 			</div>
         
     </div>
+        <br>
     
     <div id="myModal" class="modal">
         <div id="modal-content">

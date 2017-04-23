@@ -6,7 +6,7 @@
 
 /* COFFEE SCENE ANIMATIONS */
         
-#Jar_x5F_Lid, #bottleLid {
+#Jar_Lid, #bottleLid {
     animation: lidAnim linear 2s;
     animation-iteration-count: infinite;
     transform-origin:  0% 50%;
@@ -47,7 +47,7 @@
 }
 
 .button-anim-on {
-    animation: buttonOnAnim 10s; 
+    animation: buttonOnAnim 5s; 
     animation-iteration-count: infinite;
 }
 
@@ -85,6 +85,29 @@
     100% { fill: #FFF1A5; }
 }
 
+#lSteam, #rSteam {
+    stroke-dasharray: 120;
+    animation: dash 5s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 500;
+  }
+}
+
+#mSteam {
+    stroke-dasharray: 140;
+    animation: dash 5s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 500;
+  }
+}
 
 /* PACKING LUNCH SCENE ANIMATIONS */
 
@@ -193,4 +216,56 @@
     50% { opacity: 1; }
     90% { opacity: 1; }
     100% { opacity: 0; }
+}
+
+#Donut {
+    animation: fulldonut 5s infinite ease;
+}
+
+@keyframes fulldonut {
+    0% { opacity: 1; }
+    10% { opacity: 1; }
+    20% { opacity: 0; }
+    90% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#Donut1 {
+    animation: onebite 5s infinite ease;
+}
+
+@keyframes onebite {
+    0% { opacity: 1; }
+    10% { opacity: 1; }
+    30% { opacity: 1; }
+    40% { opacity: 0; }
+    90% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+#Donut2 {
+    animation: twobites 5s infinite ease;
+}
+
+@keyframes twobites {
+    0% { opacity: 1; }
+    10% { opacity: 1; }
+    50% { opacity: 1; }
+    60% { opacity: 0; }
+    90% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+#Carrot {
+    animation: carrotAnim linear 5s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50% 0;
+}
+
+@keyframes carrotAnim {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(25deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(25deg); }
+    100% { transform: rotate(0deg); }
 }
