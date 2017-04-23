@@ -84,17 +84,7 @@
 	font-size: 14pt;
 }
 
-#timerContainer{
-	background-color: paleturquoise;
-	height: 200px;
-	width: 200px;
-	z-index: 1;
-	position: fixed;
-	right: 40px;
-	top: 80px;
-	text-align: center;
-	border-radius: 50%;
-}
+
 
 #freeTimerContainer{
 	color: white;
@@ -115,10 +105,7 @@
 }
 
 
-#timerContainer span{
-	position: relative;
-	top: 60%;
-} 
+
 
 .activityLength{
 	text-align: center;
@@ -153,8 +140,8 @@
 	right: 40px;
 	top: 50%;
 	background-image: url(next-icon.png);
-	height: 100px;
-	width: 100px;
+	max-width: 10%;
+    height: auto;
 	background-size: cover;
 }
 
@@ -166,10 +153,6 @@
 	background-color:#14275E;
 }
 
-#timeRemainingAct{
-	font-size: 5em;
-	font-weight: 600;
-}
 
 .list-group-item{
 	padding: 5px;
@@ -180,3 +163,48 @@
 .welcomeHeader{
 	margin-top: 5px;
 }
+
+#timerContainer{
+	background-color: #14275E;
+	height: 200px;
+	width: 200px;
+	z-index: 1;
+	position: fixed;
+	right: 40px;
+	top: 80px;
+	text-align: center;
+	border-radius: 50%;
+}
+
+.progress {
+	z-index: 1;
+	height: 200px;
+	width: 200px;
+	position: relative;
+	right: 0;
+	top: 0;
+	background-color: transparent;
+	text-align: center;
+	border-radius: 50%;
+}
+
+.progress > svg {
+   	height: 100%;
+    display: block;
+}
+
+#timeRemainingAct{
+	font-size: 5em;
+	font-weight: 600;
+	color: white;
+	text-align: center;
+}
+
+#absoluteTimer{
+	position: absolute;
+	top: 50%;
+	transform: translate(0%, -50%);
+	text-align: center;
+	width: 100%;
+}
+

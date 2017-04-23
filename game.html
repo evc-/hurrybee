@@ -43,6 +43,8 @@
 		
 	
 		}
+		
+	
 	
 	</style>
 		
@@ -81,20 +83,24 @@
 		
 		<object id ="SVGplaceholder" type="image/svg+xml" data=" ">
 		</object>
-
-		<div id="timerContainer">
-			<p>Time Remaining in Activity </p>
-				<span id="timeRemainingAct"></span>
-			<br>
-
 				
-		</div>
+<!--fixed-->
+			<div id="timerContainer"> 
+<!--relative-->
+			 <div class="progress" id="progress">
+				 <div id="absoluteTimer">
+					<span id="timeRemainingAct"></span>
+				 </div>
+			</div>
+			
+			
+			</div>
 		
 		
 
-		<span id="countdown"></span>
+<!--		<span id="countdown"></span>-->
 <!--		<button id = "advanceButton" onclick = "advanceGame()">NEXT</button>-->
-				<span id="advanceButton" onclick="advanceGame()"></span>
+			<img src="next-icon.png" class="img-responsive" id="advanceButton" onclick="advanceGame()"/>
 				
 				
 			
@@ -103,7 +109,8 @@
 	</div>
 	
 
-	
+	       
+
 	
 	<div class="footerInfo">
 					
@@ -128,6 +135,11 @@
 	
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+	
+	<!-- Progress Bar -->
+    <script src="js/progressbar.js"></script>
+	
+
 	
 </body>
 
