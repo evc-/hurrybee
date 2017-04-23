@@ -12,6 +12,8 @@ var timeDif = [];
 var countdownTimer;
 var freeTime = document.getElementById("freeTime");
 var timeRemainingAct = document.getElementById("timeRemainingAct");
+var scheduleUpdate = document.getElementById("scheduleUpdate");
+
 
 
 function loadPic(){
@@ -67,10 +69,11 @@ function loadPic(){
 			
 		} else {
 			loadPic();
+			startTimer();
+			showSchedule();
 		} 
 		
-		startTimer();
-		showSchedule();
+		
 	}
 
 	loadScene();
@@ -119,7 +122,13 @@ function showSchedule(){
 		freeTimeSum = freeTimeSum + timeDif[i];
 	}
 	
-
+	if (freeTimeSum  < 0){
+		scheduleUpdate.innerHTML = "You're running behind!";
+	} else if (freeTimeSum > 0) {
+	scheduleUpdate.innerHTML = "Ahead of Schedule! You'll have free time this morning.";
+} else{
+	scheduleUpdate.innerHTML = "Right on track!";
+}
 	freeTime.innerHTML = getDisplayTime(freeTimeSum);
 	console.log(freeTimeSum);
 }
@@ -135,7 +144,7 @@ function getDisplayTime(timeSeconds){
     }
 	
 	if (timeSeconds < 0){
-		return "-" + minutes + ":" + remainingSeconds
+		return "- " + minutes + ":" + remainingSeconds
 	} else {
 		return minutes + ":" + remainingSeconds
 	}

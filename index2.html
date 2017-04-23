@@ -52,11 +52,9 @@
   </div>
 </nav>
 
-<br>
-<br>
-<br>
 	
-<div class="container">
+
+<div class="container welcomeHeader">
 	<div class="row">
 		<div class="col-xs-12">
 			<h2 id="goodMorning">Good Morning!</h2>
@@ -66,14 +64,15 @@
 		</div>
 	</div>
 </div>
+
 	
 <div class="container">
 	<div class="row">
 		
 		<div class="col-md-8 mainform">
 			<h2 class="formSectionHeader">Let's Get Set Up</h2>
-			<br>
-			<label>Today I want to...</label>
+			
+			<label>This morning (in this order), I want to...</label>
 			<div id="listcontainer">
 		  		<ul id="simpleList" class="list-group">
 		  		</ul>
@@ -81,6 +80,8 @@
 		</div>
 		
 		<div class="col-md-4 sidebar">
+			
+			
 		<div id="welcome">
 			<img class="img-responsive center-block" src= "numbers-01.png" width ="100px"/>
 			
@@ -97,8 +98,7 @@
 	</div>
 </div> 
 	
-	<br>
-	<br>
+
 
 <div class="container">
 	<div class="row">
@@ -106,15 +106,18 @@
 		<div class="col-md-8 mainform">
 			<h2 class="formSectionHeader">Add Something New</h2>
 			<br>
-				<div class="input-group input-group-lg">
-					<label>Activity Name</label>
-  					<input type="text" id="customActName" placeholder="Do a dance" class="form-control" aria-describedby="sizing-addon1">
-				</div>
-				<div class="input-group input-group-lg">
-					<label>Duration</label>
-					<input type="number" id="customActTime"  value="" min=0 max=60 class="form-control" aria-describedby="sizing-addon1">
-				</div>
-				<button type="button" class="btn btn-outline-primary  btn-lg round" id="addNewAct" onclick="buttonAdd()">Add to Morning</button>
+				
+					<label>Set your own activity and how long it should take</label>
+			<br>
+			
+  					<input type="text" id="customActName" placeholder="Do a dance" class="activityLength">
+				
+				
+					
+			
+					<input type="number" class="activityLength" placeholder="0" id="customActTime"  value="" min=1 max=60>
+				
+				<button type="button" class="btn btn-outline-primary" id="addNewAct" onclick="buttonAdd()">Add</button>
 		</div>
 	
 		
@@ -128,10 +131,7 @@
 	</div>
 </div>
 	
-	
-	<br>
-	<br>
-	
+
 <div class="container">
 	<div class="row">
 		

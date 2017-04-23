@@ -51,7 +51,7 @@ estimateTime(); //estimate time when list is updated
 			newActivity.setAttribute('data-id' , name);  //give it a name 
 			newActivity.id = name; //make the id the same as the name
 			
-			newActivity.style.marginTop = "20px";
+			newActivity.style.marginTop = "5px";
 			
 			var dragHandle = document.createElement("span");
 			dragHandle.className = "glyphicon glyphicon-resize-vertical grabbable";
@@ -98,6 +98,9 @@ estimateTime(); //estimate time when list is updated
 
 		function deleteMe(item){
 			item.parentNode.removeChild(item);
+			activityArr = myList.toArray(); //generate array of strings when list is updated
+			estimateTime(); //estimate time when list is updated 
+			console.log(activityArr);
 		}
 		
 	
@@ -146,7 +149,7 @@ estimateTime(); //estimate time when list is updated
 //this function loops over activityArr, an array of strings, and generates activityObjects, an array of objects. this is not visual - it is preparing a list that can be stored and used 
 
 		function createList(){
-
+			activityObjects =[];
 			for (i=0; i < activityArr.length; i ++){
 				
 				activityObjects[i] = {name: activityArr[i], time: document.getElementById(activityArr[i]).childNodes[2].value, pic:document.getElementById(activityArr[i]).dataset.pic};
