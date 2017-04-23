@@ -42,7 +42,12 @@ estimateTime(); //estimate time when list is updated
 			var customActName = document.getElementById("customActName");
 			var customActTime = document.getElementById("customActTime");
 			addActivity(customActName.value, customActTime.value);	//give the custom activity a name and a time value 	
-//			estimateTime();
+			
+			setTimeout(function(){
+				activityArr = myList.toArray(); //generate array of strings when list is updated
+				estimateTime(); //estimate time when list is updated 
+			}, 100);
+			
 		}
 
 //this is for generating a single list item that gets added to the end of the list 
@@ -120,6 +125,8 @@ estimateTime(); //estimate time when list is updated
 			
 			document.getElementById("timeEstimate").innerHTML = timeSum;
 			getFinishTime();
+			
+			console.log(activityArr);
 		}
 
 //this array is all the default objects/activities.
@@ -241,14 +248,21 @@ var welcomeMsg = document.getElementById("welcomeMsg");
 	var currentTime = document.getElementById("currentTime");
 	var timeFinish = document.getElementById("timeFinish");
 
+	currentHours = currentHours % 12;
+		
+	if (currentMins <10){
+		currentMins = "0" + currentMins;
+	}
+		
 	currentTime.innerHTML = currentHours + ":" + currentMins;
 		
-	var finishMins = currentMins + timeSum;
+	var finishMins = parseInt(currentMins) + timeSum;
 	var finishHours = currentHours + Math.floor(finishMins/60);
+		
 	finishMins = finishMins % 60;
 		
 		if (finishHours > 12) {
-			finishHours = finishHours - 12;
+			finishHours = finishHours % 12;
 		}
 		
 		if (finishMins < 10){

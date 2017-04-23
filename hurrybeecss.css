@@ -23,35 +23,35 @@
 	font-weight: 600;
 	font-size: 14pt;
 	color: #FF9C32;
-	margin-bottom: 10px;
-	padding-top: -10px;
+	margin-bottom: 7px;
+	
 }
 		
-	.btn.outline {
+.btn.outline {
 		background: none;
 		padding: 12px 22px;
 		
 		}
 		
-	.btn-primary.outline {
+.btn-primary.outline {
 		border: 2px solid #0099cc;
 		color: #0099cc;
 		}
 		
-	.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary, .btn-lg.round:hover {
+.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary, .btn-lg.round:hover {
 		background-color: #F8DB01;
 		color: #14275E;
 		
 		}
 		
-	.btn-primary.outline:active, .btn-primary.outline.active, .btn-lg.round:active {
+.btn-primary.outline:active, .btn-primary.outline.active, .btn-lg.round:active {
 		
 		background-color: #F8DB01;
 		box-shadow: none;
 		color: #14275E;
 		}	
 
-	.btn-lg.round {
+.btn-lg.round {
 		border-radius: 24px;
 		color: #14275E;
 		}
@@ -114,12 +114,6 @@
 	font-size: 3rem;
 }
 
-/*
-#timerContainer p{
-	position: relative;
-	top: 40%;
-}
-*/
 
 #timerContainer span{
 	position: relative;
@@ -132,6 +126,7 @@
 	font-size: 16pt;
 	color: #FF9C32;
 	padding-top: 5px;
+	display: inline;
 }
 
 .deleteButton{
@@ -178,6 +173,8 @@
 
 .list-group-item{
 	padding: 5px;
+	border-width: thin;
+	border-radius: 4px;
 }
 
 .welcomeHeader{
