@@ -140,7 +140,6 @@ function showSchedule(){
 	scheduleUpdate.innerHTML = "Right on track!";
 }
 	freeTime.innerHTML = getDisplayTime(freeTimeSum);
-	console.log(freeTimeSum);
 }
 
 function getDisplayTime(timeSeconds){
