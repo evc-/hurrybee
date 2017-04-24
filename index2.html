@@ -68,65 +68,66 @@
 	
 <div class="container">
 	<div class="row">
-		
-		<div class="col-md-8 mainform">
-			<h2 class="formSectionHeader">Let's Get Set Up</h2>
-			
-			<label>This morning (in this order), I want to...</label>
-			<div id="listcontainer">
-		  		<ul id="simpleList" class="list-group">
-		  		</ul>
+		<div class="formRow">
+			<div class="col-md-1 col-xs-3">
+				<img class="img-responsive center-block" src= "numbers-01.png" width ="100px"/>
 			</div>
-		</div>
-		
-		<div class="col-md-4 sidebar">
-			
-			
-		<div id="welcome">
-			<img class="img-responsive center-block" src= "numbers-01.png" width ="100px"/>
-			
+			<div class="col-md-4 col-md-push-7 sidebar col-xs-9">
+				<br>
+				<br>
+				<div id="welcome">			
 					<p id="introText">
-					
-					<br>
-						Drag and drop the activities to change the order you want to do them in this morning.<br>
-						Delete any activites you don't want to do.<br>
-						Adjust the times as needed, and check the estimated time to see if you'll be ready on time.<br>
+						<span class="glyphicon glyphicon-resize-vertical"></span>
+						<strong>Drag and Drop</strong> the activities to change the order you want to do them in this morning.
+						<br>
+						<br>
+						<span class="glyphicon glyphicon-remove-sign"></span>
+						<strong>Delete </strong>any activites you don't want to do.<br>
+						<br>
+						<span class="glyphicon glyphicon-time"></span>
+						<strong>Adjust </strong>the times as needed, and check the <strong>estimated time</strong> to see if you'll be ready on time.<br>
+						<br>
 					</p>
+				</div>
+			</div>
+			<div class="col-md-7 col-md-pull-4 mainform col-xs-12">
+				<h2 class="formSectionHeader">Let's Get Set Up</h2>
+				<label>This morning (in this order), I want to...</label>
+				<div id="listcontainer">
+					<ul id="simpleList" class="list-group"></ul>
+				</div>
 			</div>
 		</div>
-		
 	</div>
 </div> 
 	
 
 <div class="container">
 	<div class="row">
-		
-		<div class="col-md-8 mainform">
-			
-			<h2 class="formSectionHeader">Add Something New
-			</h2>
-			
-				
-					<label>Set your own activity and how long it should take</label>
-			<br>
-			
-  					<input type="text" id="customActName" placeholder="Do a dance" class="activityLength list-group-item">
-				
-				
-					
-			
-					<input type="number" class="activityLength list-group-item" placeholder="0" id="customActTime"  value="" min=1 max=60>
-				
-				<button type="button" class="btn btn-outline-primary" id="addNewAct" onclick="buttonAdd()">Add</button>
-		</div>
-	
-		
-		<div class="col-md-4 sidebar">
-			<div id ="addNew">
-				<img class="img-responsive center-block" src= "numbers-02.png" width ="100px"/>
-				Add your own activity to your morning routine. It'll be saved when you start!
+		<div clas="formRow">
+			<div class="col-md-1 col-xs-3">
+				<img class="img-responsive center-block" src= "numbers-02.png" width ="70px"/>
+			</div>
+			<div class="col-md-4 sidebar col-md-push-7 col-xs-9">
 				<br>
+				<br>
+				<div id ="addNew">
+					<p><span class="glyphicon glyphicon-plus"></span>
+					<strong>Add your own</strong> activity to your morning routine. 
+					<br>
+					<br>
+					Rearrange it in the list to get it in the right order
+					</p>
+					<br>
+				</div>
+			</div>
+			<div class="col-md-7 col-md-pull-4 mainform col-xs-12">
+				<h2 class="formSectionHeader">Add Something New</h2>
+				<label>Set your own activity and how long it should take</label>
+				<br>
+				<input type="text" id="customActName" placeholder="Do a dance" class="activityLength list-group-item">
+				<input type="number" class="activityLength list-group-item" placeholder="0" id="customActTime"  value="" min=1 max=60>
+				<button type="button" class="btn btn-outline-primary" id="addNewAct" onclick="buttonAdd()">Add</button>
 			</div>
 		</div>
 	</div>
@@ -135,53 +136,46 @@
 
 <div class="container">
 	<div class="row">
-		
-		<div class="col-md-8 mainform">
-			
-			<h2 class="formSectionHeader">On track?</h2>
-			
-			<div class="row">
-				<div class="col-md-6">
-
-				
-					<label>Your Estimated time in minutes:</label>
-					<p id="timeEstimate"></p>
-				
-
-				</div>
-
-				<div class="col-md-6">
-				
-
-					<label>It's <span id="currentTime"></span>, so you'll be ready to go at:</label>
-					<p id="timeFinish">9:12</p>
-
-				
+		<div class="formRow">
+			<div class="col-md-1 col-xs-3">
+				<img class="img-responsive center-block" src= "numbers-03.png" width ="100px"/>
+			</div>
+			<div class="col-md-4 col-md-push-7 sidebar col-xs-9">
+				<br>
+				<br>
+				<p>
+				<span class="glyphicon glyphicon-time"></span>
+				<strong>Adjust</strong> the times in the list above if you need.
+				<br>
+				<br>
+				When you press go, your custom activites and times will be saved!
+				</p>
+				<br>
+			</div>
+				<div class="col-md-7 col-md-pull-4 mainform col-xs-12">
+				<h2 class="formSectionHeader">On track?</h2>
+				<div class="row">
+					<div class="col-md-6">
+						<label>Your Estimated time in minutes:</label>
+						<p id="timeEstimate"></p>
+					</div>
+					<div class="col-md-6">
+						<label>It's <span id="currentTime"></span>, so you'll be ready to go at:</label>
+						<p id="timeFinish">9:12</p>
+					</div>
 				</div>
 			</div>
-		</div>
-		
-		<div class="col-md-4 sidebar">
-			<img class="img-responsive center-block" src= "numbers-03.png" width ="100px"/>
-				
-			<p>Your morning routine should take about this long.</p>
-				<br>
-			
 		</div>
 	</div>
 </div>
 
-		
-		
+<br>
 
-	<br>
-
-	
 <div class="container">
 	<div class="row">
 		<div class="col-xs-1"></div>
 		<div class="col-xs-10">
-				<button type="button" id="startGame" class="btn btn-outline-primary  btn-block btn-lg round">Let's Go!</button>
+			<button type="button" id="startGame" class="btn btn-outline-primary  btn-block btn-lg round">Let's Go!</button>
 			<br>
 			<br>
 		</div>
@@ -205,20 +199,17 @@
 
 
 	
-	<!--Drag and Drop JS-->
-	<script src="js/Sortable.js"></script>
+<!--Drag and Drop JS-->
+<script src="js/Sortable.js"></script>
 	
-	
-	<!-- Custom Game Code-->
-	<script src= "hurrybeecode.js"></script>
+<!-- Custom Game Code-->
+<script src= "hurrybeecode.js"></script>
 
-    <!-- jQuery Version 1.11.1 -->
-    <script src="js/jquery.js"></script>
+<!-- jQuery Version 1.11.1 -->
+<script src="js/jquery.js"></script>
 	
-	
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
 
 </body>
-
 </html>

@@ -11,7 +11,7 @@ var countdownTimer;
 var freeTime = document.getElementById("freeTime");
 var timeRemainingAct = document.getElementById("timeRemainingAct");
 var scheduleUpdate = document.getElementById("scheduleUpdate");
-
+var circle;
 
 
 function loadPic(){
@@ -55,9 +55,6 @@ function loadPic(){
 
 	function loadScene(){
 		
-		console.log(saveActivities.length); 
-		console.log(index);
-		
 		//if all the activities are done, go to challenges page 
 		
 		if (index == saveActivities.length) {
@@ -75,7 +72,7 @@ function loadPic(){
 		
 	}
 
-	loadScene();
+loadScene();
 
 //this function advances the game to the next scene by increasing the index by 1 and running the load scene function again
 
@@ -84,7 +81,6 @@ function advanceGame(){
 		stopTimer();
 		saveTime();
 		loadScene();
-//		animateProgress();
 	}
 
 
@@ -152,15 +148,18 @@ function getDisplayTime(timeSeconds){
 	
 }
 
+
 function animateProgress() {
-    var circle = new ProgressBar.Circle('#progress', {
+	if (circle){
+		circle.destroy();
+	}
+	circle = new ProgressBar.Circle('#progress', {
         color: '#FCB03C',
 		strokeWidth: 6,
-//		trailWidth: 0.8,
-        duration: (saveActivities[index].time) * 60000,
-        easing: 'linear'
+		duration: ((saveActivities[index].time) * 60000) +1000,
+		trailWidth: 0.8,
+       	easing: 'linear'
     });
-
-    circle.animate(1);
-};
+	circle.animate(1);
+}
 

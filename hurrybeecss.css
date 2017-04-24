@@ -57,8 +57,9 @@
 		}
 
 .sidebar{
-/*	background-color: #F8DB01;*/
-	text-align: center;
+	text-align: left;
+	font-size: 12pt;
+	color: #757575;
 }
 
 .mainform{
@@ -103,9 +104,6 @@
 #freeTime{
 	font-size: 3rem;
 }
-
-
-
 
 .activityLength{
 	text-align: center;
