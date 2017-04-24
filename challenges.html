@@ -27,6 +27,7 @@
         /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
         font-family: 'Nunito', sans-serif;
         background-image: url("assets/other/Background/honeycomb-bg.png");
+		overflow: hidden;
     }
 		
 	h1{
@@ -126,12 +127,36 @@
         
         .congrats-bg {
             background-color: #FFF1A5;
+			border-radius: 8px;
             width: 80vw;
         }
         
         #c1:hover, #c2:hover, #c3:hover, #c4:hover, #c5:hover, #c6:hover, #c7:hover, #exit:hover {
             opacity: 0.7;
         }
+		
+		.challengeicon{
+			height: 100%;
+		}
+		
+		.rowClassH{
+			height: 33%;
+		}
+		
+		.challengeContainer{
+			height: calc(100vh - 250px);
+		}
+		
+		.colClassH{
+			height: 100%;
+		}
+		
+		#finishChallengeBut{
+			position:fixed;
+			bottom: 20px;
+			text-align: center;
+			right: 20px;
+		}
 
     </style>
 
@@ -200,89 +225,85 @@
         </div>
     </div>
 
-    <div class="container">
-		<div class="row" name="icons">
+    <div class="container challengeContainer">
+		<div class="row rowClassH" name="icons">
 			
-			<div class="col-xs-6">
+			<div class="col-xs-6 colClassH">
 				
-			<img src="assets/other/Icons/challenge_icon.svg" id="c1" class="img-responsive center-block" alt="challenge-icon" width= "150px";>
+			<img src="assets/other/Icons/challenge_icon.svg" id="c1" class="img-responsive center-block challengeicon" alt="challenge-icon">
             
-            <img src="assets/other/Icons/completed_challenge.svg" id="c1-complete" class="img-responsive center-block complete-icon" alt="challenge-icon" width= "150px";>
+            <img src="assets/other/Icons/completed_challenge.svg" id="c1-complete" class="img-responsive center-block complete-icon challengeicon" alt="challenge-icon">
 
 			</div>
 			
-			<div class="col-xs-6">
+			<div class="col-xs-6 colClassH">
 				
-			<img src="assets/other/Icons/challenge_icon.svg" id="c2" class="img-responsive center-block" alt="challenge-icon" width= "150px";>
+			<img src="assets/other/Icons/challenge_icon.svg" id="c2" class="img-responsive center-block challengeicon" alt="challenge-icon">
                         
-            <img src="assets/other/Icons/completed_challenge.svg" id="c2-complete" class="img-responsive center-block complete-icon" alt="challenge-icon" width= "150px";>
+            <img src="assets/other/Icons/completed_challenge.svg" id="c2-complete" class="img-responsive center-block complete-icon challengeicon" alt="challenge-icon">
 
             </div>	
         </div>
-		<div class="row" name="icons">
+		<div class="row rowClassH" name="icons">
 			
-			<div class="col-xs-4">
+			<div class="col-xs-4 colClassH">
 				
-			<img src="assets/other/Icons/challenge_icon.svg" id="c3" class="img-responsive center-block img-margin" alt="challenge-icon" width= "150px";>
+			<img src="assets/other/Icons/challenge_icon.svg" id="c3" class="img-responsive center-block img-margin challengeicon" alt="challenge-icon">
                         
-            <img src="assets/other/Icons/completed_challenge.svg" id="c3-complete" class="img-responsive center-block complete-icon" alt="challenge-icon" width= "150px";>
+            <img src="assets/other/Icons/completed_challenge.svg" id="c3-complete" class="img-responsive center-block complete-icon challengeicon" alt="challenge-icon">
 
 			</div>
 			
-			<div class="col-xs-4">
+			<div class="col-xs-4 colClassH">
 				
-			<img src="assets/other/Icons/challenge_icon.svg" id="c4" class="img-responsive center-block img-margin" alt="challenge-icon" width= "150px";>
+			<img src="assets/other/Icons/challenge_icon.svg" id="c4" class="img-responsive center-block img-margin challengeicon" alt="challenge-icon">
                         
-            <img src="assets/other/Icons/completed_challenge.svg" id="c4-complete" class="img-responsive center-block complete-icon" alt="challenge-icon" width= "150px";>
+            <img src="assets/other/Icons/completed_challenge.svg" id="c4-complete" class="img-responsive center-block complete-icon challengeicon" alt="challenge-icon">
 
             </div>	
             
-			<div class="col-xs-4">
+			<div class="col-xs-4 colClassH">
 				
-			<img src="assets/other/Icons/challenge_icon.svg" id="c5" class="img-responsive center-block img-margin" alt="challenge-icon" width= "150px";>
+			<img src="assets/other/Icons/challenge_icon.svg" id="c5" class="img-responsive center-block img-margin challengeicon" alt="challenge-icon">
                         
-            <img src="assets/other/Icons/completed_challenge.svg" id="c5-complete" class="img-responsive center-block complete-icon" alt="challenge-icon" width= "150px";>
+            <img src="assets/other/Icons/completed_challenge.svg" id="c5-complete" class="img-responsive center-block complete-icon challengeicon" alt="challenge-icon" >
 
             </div>	 
         </div>
         
-		<div class="row" name="icons">
+		<div class="row rowClassH" name="icons">
 			
-			<div class="col-xs-6">
+			<div class="col-xs-6 colClassH">
 				
-			<img src="assets/other/Icons/challenge_icon.svg" id="c6" class="img-responsive center-block" alt="challenge-icon" width= "150px";>
+			<img src="assets/other/Icons/challenge_icon.svg" id="c6" class="img-responsive center-block challengeicon" alt="challenge-icon">
                         
-            <img src="assets/other/Icons/completed_challenge.svg" id="c6-complete" class="img-responsive center-block complete-icon" alt="challenge-icon" width= "150px";>
+            <img src="assets/other/Icons/completed_challenge.svg" id="c6-complete" class="img-responsive center-block complete-icon challengeicon" alt="challenge-icon">
 
 			</div>
 			
-			<div class="col-xs-6">
+			<div class="col-xs-6 colClassH">
 				
-			<img src="assets/other/Icons/challenge_icon.svg" id="c7" class="img-responsive center-block" alt="challenge-icon" width= "150px";>
+			<img src="assets/other/Icons/challenge_icon.svg" id="c7" class="img-responsive center-block challengeicon" alt="challenge-icon">
                         
-            <img src="assets/other/Icons/completed_challenge.svg" id="c7-complete" class="img-responsive center-block complete-icon" alt="challenge-icon" width= "150px";>
+            <img src="assets/other/Icons/completed_challenge.svg" id="c7-complete" class="img-responsive center-block complete-icon challengeicon" alt="challenge-icon">
 
             </div>	
         </div>
         
 	</div>
     	<div class="container-fluid">
-		
 		<div class="row">
-			<div class="col-xs-1">
-        </div>
-		<div class="col-xs-10">
-            <br><br>
-            <button type="button" class="btn btn-outline-primary  btn-lg round center-block">Continue</button>
+
+		<div class="col-xs-12">
+            <br>
+            <button type="button" class="btn btn-outline-primary  btn-lg round center-block" id="finishChallengeBut">Continue</button>
         </div>
 		
         <br>
 
-        </div>
-			<div class="col-xs-1">	
-			</div>
-        
+
     </div>
+			</div>
 
     <br>
     <br>

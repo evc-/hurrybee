@@ -41,16 +41,19 @@ function loadPic(){
 			SVGplaceholder.data = "customactivityBG.svg";
 			var customActTitle = document.createElement("DIV");
 			customActTitle.style.fontSize = "70pt";
+			customActTitle.id = "customActTitle";
 			customActTitle.innerHTML = saveActivities[index].name;
 			document.body.appendChild(customActTitle);
 			
 		//if both of those are untrue, show the pic associated with the activity 
 			
 		} else {
+			var customActTitle = document.getElementById("customActTitle");
+			if (customActTitle){
+				customActTitle.parentElement.removeChild(customActTitle);	
+			}
 			SVGplaceholder.data = gameScenes[saveActivities[index].pic];
-			
-		} 
-	
+			}
 }
 
 
@@ -150,8 +153,6 @@ function getDisplayTime(timeSeconds){
 	} else {
 		return minutes + ":" + remainingSeconds
 	}
-	
-	
 }
 
 
