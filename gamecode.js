@@ -39,11 +39,19 @@ function loadPic(){
 	}
 	
 	if (saveActivities[index].pic == "undefined"){
-			SVGplaceholder.data = "customactivityBG.svg";
+		if (window.innerWidth < 576){
+			SVGplaceholder.data = "./assets/game/Mobile/customactivity_mobile.svg";
 			var customActTitle = document.createElement("DIV");
 			customActTitle.id = "customActTitle";
 			customActTitle.innerHTML = saveActivities[index].name;
 			document.body.appendChild(customActTitle);
+		} else {
+			SVGplaceholder.data = "./assets/game/Tablet/customactivity_tablet.svg";
+			var customActTitle = document.createElement("DIV");
+			customActTitle.id = "customActTitle";
+			customActTitle.innerHTML = saveActivities[index].name;
+			document.body.appendChild(customActTitle);
+		}
 			
 		//if both of those are untrue, show the pic associated with the activity 
 			
