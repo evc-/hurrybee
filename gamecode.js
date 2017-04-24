@@ -14,7 +14,8 @@ var scheduleUpdate = document.getElementById("scheduleUpdate");
 var circle;
 var timerContainer = document.getElementById("timerContainer");
 
-var tickAlert = document.getElementById("tickAlert");
+var beepAlert = document.getElementById("beepAlert");
+//var tickAlert = document.getElementById("tickAlert");
 
 
 function loadPic(){
@@ -141,13 +142,21 @@ function getDisplayTime(timeSeconds){
 	//giving the seconds part 
     var remainingSeconds = Math.abs(timeSeconds) % 60;
 	
+	if (remainingSeconds == 0){
+		beepAlert.play();
+	}
+	
+//	if (remainingSeconds ==10){
+//		tickAlert.play();
+//	}
+	
 	if (remainingSeconds < 10) {
 		
         remainingSeconds = "0" + remainingSeconds;  
     }
 	
 	if (timeSeconds < 0){
-//		tickAlert.play();
+		
 		timerContainer.style.backgroundColor = "black";
 		return minutes + ":" + remainingSeconds
 	} else {
