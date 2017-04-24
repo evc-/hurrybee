@@ -12,6 +12,9 @@ var freeTime = document.getElementById("freeTime");
 var timeRemainingAct = document.getElementById("timeRemainingAct");
 var scheduleUpdate = document.getElementById("scheduleUpdate");
 var circle;
+var timerContainer = document.getElementById("timerContainer");
+
+var tickAlert = document.getElementById("tickAlert");
 
 
 function loadPic(){
@@ -136,11 +139,14 @@ function getDisplayTime(timeSeconds){
     var remainingSeconds = Math.abs(timeSeconds) % 60;
 	
 	if (remainingSeconds < 10) {
+		
         remainingSeconds = "0" + remainingSeconds;  
     }
 	
 	if (timeSeconds < 0){
-		return "- " + minutes + ":" + remainingSeconds
+//		tickAlert.play();
+		timerContainer.style.backgroundColor = "black";
+		return minutes + ":" + remainingSeconds
 	} else {
 		return minutes + ":" + remainingSeconds
 	}
@@ -153,6 +159,7 @@ function animateProgress() {
 	if (circle){
 		circle.destroy();
 	}
+	timerContainer.style.backgroundColor = "#FFFFE5";
 	circle = new ProgressBar.Circle('#progress', {
         color: '#FCB03C',
 		strokeWidth: 6,
