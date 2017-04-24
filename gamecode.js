@@ -41,7 +41,6 @@ function loadPic(){
 	if (saveActivities[index].pic == "undefined"){
 			SVGplaceholder.data = "customactivityBG.svg";
 			var customActTitle = document.createElement("DIV");
-			customActTitle.style.fontSize = "70pt";
 			customActTitle.id = "customActTitle";
 			customActTitle.innerHTML = saveActivities[index].name;
 			document.body.appendChild(customActTitle);

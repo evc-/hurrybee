@@ -210,12 +210,17 @@
 }
 
 #customActTitle{
+	background-color: white;
+	color: #FF9C32;
+	border-radius: 6px;
+	margin-top: -10px;
+	padding: 10px;
 	z-index: 1;
+	font-size: 5em;
 	position: fixed;
-	margin: auto;
 	text-align: center;
 	top: 50%;
-	left: 50%
-	
+	left: 50%;
+	transform:translate(-50%,-50%);
 }
 
