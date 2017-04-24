@@ -27,14 +27,14 @@ function loadPic(){
 		var gameScenes = ["./assets/game/Mobile/teethbrush_mobile.svg",
 					"./assets/game/Mobile/coffee_mobile.svg",
 					"./assets/game/Mobile/breakfast_mobile.svg",
-					"dressedtest.svg",
+					"./assets/game/Mobile/gettingdressed_mobile.svg",
 					"./assets/game/Mobile/lunch_mobile.svg"];
 		
 	} else {
 		var gameScenes = ["./assets/game/Tablet/teethbrush_tablet.svg",
 					"./assets/game/Tablet/coffee_tablet.svg",
 					"./assets/game/Tablet/breakfast_Tablet.svg",
-					"dressedtest.svg",
+					"./assets/game/Tablet/gettingdressed_Tablet.svg",
 					"./assets/game/Tablet/lunch_Tablet.svg"];
 	}
 	
