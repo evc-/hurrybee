@@ -151,11 +151,7 @@ function getDisplayTime(timeSeconds){
 	if (remainingSeconds == 0){
 		beepAlert.play();
 	}
-	
-//	if (remainingSeconds ==10){
-//		tickAlert.play();
-//	}
-	
+		
 	if (remainingSeconds < 10) {
 		
         remainingSeconds = "0" + remainingSeconds;  

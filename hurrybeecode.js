@@ -8,10 +8,18 @@
 
 //these are the arrays that handle the list 
 
-		var activityArr = [];  //this is the array of activities as string form that is generated when the list isrearranged 
+		var activityArr = [];  //this is the array of activities as string form that is generated when the list is rearranged 
 		var activityObjects = []; //this is the array of objects that have a name, time, and pic. the create, store, and get list functions all use it
 		
 		var timeSum = 0;
+
+		var resetList = document.getElementById("resetList");
+		var testClearStorage = document.getElementById("testClearStorage");
+		var testGetList = document.getElementById("testGetList");
+
+		var welcomeMsg = document.getElementById("welcomeMsg");
+
+		var startGame = document.getElementById("startGame");
 
 //this is the list from the sortable library (https://github.com/RubaXa/Sortable)
 
@@ -184,8 +192,6 @@ estimateTime(); //estimate time when list is updated
 
 //when you click the start game button, activityArr (array of strings) --> acitvityObjects (array of objects), then gets saved in local storage 
 
-	var startGame = document.getElementById("startGame");
-
 		startGame.addEventListener("click", function(){
 			createList();
 			storeList();
@@ -195,9 +201,6 @@ estimateTime(); //estimate time when list is updated
 	
 //this function checks if there is a custom list saved in the local storage. if there is a custom list, the list should be generated with the addActivity function. if there is no custom list stored, a default list should be generated. 
 		
-		
-var welcomeMsg = document.getElementById("welcomeMsg");
-
 	function getList(){
 			
 			if (saveActivities == null){
@@ -214,22 +217,20 @@ var welcomeMsg = document.getElementById("welcomeMsg");
 			
 		}
 
-
-
-	var testGetList = document.getElementById("testGetList");
-		getList();
-		testGetList.addEventListener("click", function(){
-			getList();
-			console.log(activityObjects);
+	
+	function clearList(){
+		$( document ).ready(function() {
+   			$("#simpleList").empty();
 		})
-		
-	var testClearStorage = document.getElementById("testClearStorage");
+	}
 
-		testClearStorage.addEventListener("click", function(){
-			saveActivities = null;
-			localStorage.removeItem("mySavedActivities");
-			console.log(saveActivities);
+	getList();
+		
+	resetList.addEventListener("click", function(){
+			clearList();
+			fillDefault();	
 	})
+		
 		
 		
 		

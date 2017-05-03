@@ -68,12 +68,15 @@
 
 #goodMorning{
 	text-align: center;
-	font-weight: 700;
-	font-size: 3em;
+	
+	color: #FF9C32;
+/*	font-size: 3em;*/
 }
 
 #welcomeMsg{
+	font-weight: 700;
 	text-align: center;
+	width: 60%;
 }
 
 .formSectionHeader{
