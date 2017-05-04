@@ -177,6 +177,20 @@
 	border-radius: 50%;
 }
 
+#warningContainer {
+    z-index: 1;
+    position: fixed;
+    /*margin: auto;*/
+    top: 10%;
+    bottom: 0;
+    left: 10%;
+    right: 0;
+    width: 40vw;
+    height: 10vh;
+    color: #14275E;
+    background-color: none;
+}
+
 .progress {
 	z-index: 1;
 	height: 200px;
