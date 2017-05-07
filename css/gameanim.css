@@ -532,6 +532,7 @@
     animation-iteration-count: infinite;
     animation-delay: 0.5s;
 }
+
 @keyframes poloMove {
     0% { transform: translateX(0px); }
     25% { transform: translateX(50px); }
@@ -556,3 +557,6 @@
     100% { transform: rotate(0deg); }
 }
 
+#checkmarkFill:hover +  .cls-4 {
+	fill: #14275E;
+}

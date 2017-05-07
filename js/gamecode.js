@@ -12,6 +12,7 @@ var timeRemainingAct = document.getElementById("timeRemainingAct");
 var scheduleUpdate = document.getElementById("scheduleUpdate");
 var circle;
 var timerContainer = document.getElementById("timerContainer");
+
 var warning = document.getElementById("warning"),
     warningContainer = document.getElementById("warningContainer");
 
@@ -69,8 +70,8 @@ function loadPic(){
 					"./assets/game/Mobile/gettingdressed_mobile.svg",
 					"./assets/game/Mobile/lunch_mobile.svg"];
         
-        warning.style.fontSize = "25pt";
-        warningContainer.style.height = "50px";
+        warning.style.fontSize = "3rem";
+//        warningContainer.style.height = "50px";
 		
 	} else {
 		var gameScenes = ["./assets/game/Tablet/teethbrush_tablet.svg",
@@ -79,8 +80,8 @@ function loadPic(){
 					"./assets/game/Tablet/gettingdressed_Tablet.svg",
 					"./assets/game/Tablet/lunch_Tablet.svg"];
         
-        warning.style.fontSize = "50pt";
-        warningContainer.style.height = "100px";
+        warning.style.fontSize = "3rem";
+//        warningContainer.style.height = "100px";
 	}
     
 	if (saveActivities[index].pic == "undefined"){
@@ -189,7 +190,7 @@ function showSchedule(){
         freeTime.style.color = "#00ff00";
 
     } else{
-        scheduleUpdate.innerHTML = "You are right on track!";
+        freeTime.innerHTML = "You are right on track!";
     }
 
 }

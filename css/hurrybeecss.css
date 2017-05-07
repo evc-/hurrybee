@@ -136,6 +136,7 @@
 	max-width: 100vw;
 }
 
+/*
 #advanceButton{
 	position: fixed;
 	right: 40px;
@@ -145,14 +146,9 @@
     height: auto;
 	background-size: cover;
 }
+*/
 
-.footerInfo{
-	position: fixed;
-	bottom: 0;
-	height: 70px;
-	width: 100%;
-	background-color:#14275E;
-}
+
 
 
 .list-group-item{
@@ -177,19 +173,6 @@
 	border-radius: 50%;
 }
 
-#warningContainer {
-    z-index: 1;
-    position: fixed;
-    /*margin: auto;*/
-    top: 10%;
-    bottom: 0;
-    left: 10%;
-    right: 0;
-    width: 40vw;
-    height: 10vh;
-    color: #14275E;
-    background-color: none;
-}
 
 .progress {
 	z-index: 1;
@@ -262,3 +245,33 @@
 	fill: white;
 }
 
+.morning-status{
+	height: 100%;
+}
+
+#warningContainer {
+    background-color: mediumvioletred;
+	height: 100%;
+}
+
+.footer-headers{
+	padding:2px;
+	padding:2px;
+	display: block;
+	font-weight: 700;
+	font-size: 15pt;
+	background-color: #14275E;
+	color: white;
+}
+
+.footer-updates{
+	background-color: white;
+}
+
+.footer-info{
+	position: fixed;
+	bottom: 0;
+	height: 70px;
+	width: 100%;
+	background-color:white;
+}
