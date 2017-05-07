@@ -26,7 +26,7 @@
 
     <!-- Custom CSS -->
    
-<style>
+	<style>
 		
     body {
         padding-top: 60px;
@@ -174,8 +174,13 @@
 		font-size: 20px;
 		font-weight: 400;
 		}
+
+	.glyphicon.glyphicon-chevron-left, .glyphicon.glyphicon-chevron-right{
+		font-size: 30px;
+		top: -15px;
+	}
         
-</style>
+	</style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -363,25 +368,19 @@
 <script src="js/jquery.js"></script>
 <script src="unslider-master/src/js/unslider.js"></script>
 	
+<!--Slider Script 	-->
 <script>
-		
-		//landing page slider 
-
+	
 	jQuery(document).ready(function($) {
 		console.log("jquery");
-		
 			$('.my-slider').unslider({
 				arrows:{
 					prev: '<a class="unslider-arrow prev"><span class="glyphicon glyphicon-chevron-left"></span></a>',
     				next: '<a class="unslider-arrow next"><span class="glyphicon glyphicon-chevron-right"></span></a>'
 				}
 			});
-		
 		});
 	
-	
-
-		
 </script>
 	
 <!-- jQuery Version 1.11.1 -->

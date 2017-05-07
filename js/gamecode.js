@@ -20,6 +20,7 @@ var beepAlert = document.getElementById("beepAlert"),
 
 var checkbox = document.getElementById("checkbox");
 var checkmarkFill = document.getElementById("checkmarkFill");
+var skipSVG = document.getElementById("skipSVG");
 
 //<<<<<<< HEAD:js/gamecode.js
 var beepAlert = document.getElementById("beepAlert");
@@ -43,7 +44,17 @@ checkmarkFill.addEventListener("click",function(){
 	}, 500);
 })
 
+skipSVG.addEventListener("click",function(){
+	skipActivity();
+})
 
+
+function skipActivity(){
+	index = index +2;
+	stopTimer();
+	saveTime();
+	loadScene();
+}
 
 function loadPic(){
 	console.log(window.innerWidth);
