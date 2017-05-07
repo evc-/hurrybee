@@ -112,7 +112,7 @@
 		}
 		
 	.slider-container{
-			  background:rgba(255,255,255,0.5);
+			  background:rgba(255,255,255,0.6);
 		}
 		
 	.infographic-container{
@@ -172,7 +172,7 @@
 	.center-text-hiw{
 		text-align: center;	
 		font-size: 20px;
-		font-weight: 600;
+		font-weight: 400;
 		}
         
 </style>
@@ -363,7 +363,7 @@
 <script src="js/jquery.js"></script>
 <script src="unslider-master/src/js/unslider.js"></script>
 	
-	<script>
+<script>
 		
 		//landing page slider 
 
@@ -371,24 +371,24 @@
 		console.log("jquery");
 		
 			$('.my-slider').unslider({
-				arrows:true
+				arrows:{
+					prev: '<a class="unslider-arrow prev"><span class="glyphicon glyphicon-chevron-left"></span></a>',
+    				next: '<a class="unslider-arrow next"><span class="glyphicon glyphicon-chevron-right"></span></a>'
+				}
 			});
 		
 		});
-		
-	</script>
-	
-
-    <!-- jQuery Version 1.11.1 -->
-    <script src="js/jquery.js"></script>
-	
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-	
 	
 	
 
 		
+</script>
+	
+<!-- jQuery Version 1.11.1 -->
+<script src="js/jquery.js"></script>
+	
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+	
 </body>
-
 </html>
