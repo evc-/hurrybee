@@ -12,8 +12,17 @@ var timeRemainingAct = document.getElementById("timeRemainingAct");
 var scheduleUpdate = document.getElementById("scheduleUpdate");
 var circle;
 var timerContainer = document.getElementById("timerContainer");
+var warning = document.getElementById("warning"),
+    warningContainer = document.getElementById("warningContainer");
 
+var beepAlert = document.getElementById("beepAlert"),
+    warningAlert = document.getElementById("warningAlert");
+
+<<<<<<< HEAD:js/gamecode.js
 var beepAlert = document.getElementById("beepAlert");
+=======
+//var tickAlert = document.getElementById("tickAlert");
+>>>>>>> origin/master:gamecode.js
 
 loadScene();
 
@@ -29,6 +38,9 @@ function loadPic(){
 					"./assets/game/Mobile/breakfast_mobile.svg",
 					"./assets/game/Mobile/gettingdressed_mobile.svg",
 					"./assets/game/Mobile/lunch_mobile.svg"];
+        
+        warning.style.fontSize = "25pt";
+        warningContainer.style.height = "50px";
 		
 	} else {
 		var gameScenes = ["./assets/game/Tablet/teethbrush_tablet.svg",
@@ -36,8 +48,11 @@ function loadPic(){
 					"./assets/game/Tablet/breakfast_Tablet.svg",
 					"./assets/game/Tablet/gettingdressed_Tablet.svg",
 					"./assets/game/Tablet/lunch_Tablet.svg"];
+        
+        warning.style.fontSize = "50pt";
+        warningContainer.style.height = "100px";
 	}
-	
+    
 	if (saveActivities[index].pic == "undefined"){
 		if (window.innerWidth < 576){
 			SVGplaceholder.data = "./assets/game/Mobile/customactivity_mobile.svg";
@@ -81,6 +96,7 @@ function loadPic(){
 			startTimer();
 			showSchedule();
 			animateProgress();
+            //displayWarning();
 		} 
 		
 		
@@ -132,13 +148,19 @@ function showSchedule(){
 	}
 	
 	if (freeTimeSum  < 0){
-		scheduleUpdate.innerHTML = "You're running behind!";
+        scheduleUpdate.innerHTML = "";
+        freeTime.innerHTML = "- " + getDisplayTime(freeTimeSum) + " mins behind schedule!";
+        freeTime.style.color = "#ff0000";
+
 	} else if (freeTimeSum > 0) {
-	scheduleUpdate.innerHTML = "Ahead of Schedule! You'll have free time this morning.";
-} else{
-	scheduleUpdate.innerHTML = "Right on track!";
-}
-	freeTime.innerHTML = getDisplayTime(freeTimeSum);
+        scheduleUpdate.innerHTML = "";
+        freeTime.innerHTML = "+ " + getDisplayTime(freeTimeSum) + " mins ahead of schedule!";
+        freeTime.style.color = "#00ff00";
+
+    } else{
+        scheduleUpdate.innerHTML = "You are right on track!";
+    }
+
 }
 
 function getDisplayTime(timeSeconds){
@@ -152,16 +174,33 @@ function getDisplayTime(timeSeconds){
 	}
 		
 	if (remainingSeconds < 10) {
-		
-        remainingSeconds = "0" + remainingSeconds;  
+        remainingSeconds = "0" + remainingSeconds;
     }
-	
+    
+    // display warning at x seconds
+    
+    if (timeSeconds < 0){
+        warning.innerText = "YOU'RE LATE!";
+        warning.style.color = "#ff0000";
+        warningContainer.style.backgroundColor = "#FFFFE5";
+        
+    } else if (timeSeconds <= 10) {
+        warning.innerText = "HURRY UP!";
+        warning.style.color = "#14275E";
+        warningAlert.play();
+        warningContainer.style.backgroundColor = "#FFFFE5";
+        
+    } else {
+        warning.innerText = "";
+        warningContainer.style.backgroundColor = "";
+    }
+    
 	if (timeSeconds < 0){
-		
 		timerContainer.style.backgroundColor = "black";
-		return minutes + ":" + remainingSeconds
+		return "-" + minutes + ":" + remainingSeconds
 	} else {
-		return minutes + ":" + remainingSeconds
+        
+        return minutes + ":" + remainingSeconds
 	}
 }
 
@@ -181,3 +220,26 @@ function animateProgress() {
 	circle.animate(1);
 }
 
+/*function displayWarning(timeSeconds){
+    var minutes = Math.floor(Math.abs(timeSeconds)/60);
+    var remainingSeconds = Math.abs(timeSeconds) % 60;
+
+    
+    if (timeSeconds < 10){
+        warning.innerText = "HURRY UP!";
+        warning.style.backgroundColor = "#FFFFE5";
+    } 
+    
+    if (timeSeconds < 0){
+        warning.innerText = "You're late!";
+        warning.fontSize = "20pt";
+        warning.style.color = "#ff0000";
+        warning.style.backgroundColor = "#FFFFE5";
+    } 
+    
+    else {
+        warning.innerText = "";
+        warning.style.backgroundColor = "none";
+    }
+    
+}*/

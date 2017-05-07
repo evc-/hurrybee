@@ -73,7 +73,8 @@
 		</object>
 				
 <!--fixed-->
-			<div id="timerContainer"> 
+            <div id="warningContainer"><p id="warning"></p></div>    
+			<div id="timerContainer">
 <!--relative-->
 			 <div class="progress" id="progress">
 				 <div id="absoluteTimer">
@@ -83,6 +84,7 @@
 			</div>
 				
 <audio id="beepAlert" src="beep.wav"></audio>
+<audio id="warningAlert" src="warning.mp3"></audio>
 <!--<audio id="tickAlert" src="ticktock.wav"></audio>	-->
 		
 
@@ -102,9 +104,10 @@
 	
 	<div class="footerInfo">
 					
-					<div id="freeTimerContainer">
+				<div id="freeTimerContainer">
+                    <span>Overall Status:</span><br>
 					<span id="freeTime"></span>
-				<p id="scheduleUpdate">Free Time accumulated</p>
+				    <p id="scheduleUpdate">Free Time accumulated</p>
 				
 				<br>
 				</div>
