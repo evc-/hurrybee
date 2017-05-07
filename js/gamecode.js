@@ -18,13 +18,32 @@ var warning = document.getElementById("warning"),
 var beepAlert = document.getElementById("beepAlert"),
     warningAlert = document.getElementById("warningAlert");
 
-<<<<<<< HEAD:js/gamecode.js
+var checkbox = document.getElementById("checkbox");
+var checkmarkFill = document.getElementById("checkmarkFill");
+
+//<<<<<<< HEAD:js/gamecode.js
 var beepAlert = document.getElementById("beepAlert");
-=======
+
 //var tickAlert = document.getElementById("tickAlert");
->>>>>>> origin/master:gamecode.js
+//>>>>>>> origin/master:gamecode.js
 
 loadScene();
+
+checkbox.addEventListener("click",function(){
+	checkmarkFill.style.fill = "#14275E";
+	setTimeout(function(){ 
+		advanceGame() 
+	}, 500);
+})
+
+checkmarkFill.addEventListener("click",function(){
+	checkmarkFill.style.fill = "#14275E";
+	setTimeout(function(){ 
+		advanceGame() 
+	}, 500);
+})
+
+
 
 function loadPic(){
 	console.log(window.innerWidth);
@@ -99,6 +118,7 @@ function loadPic(){
             //displayWarning();
 		} 
 		
+		checkmarkFill.style.fill = "white";
 		
 	}
 
@@ -243,3 +263,5 @@ function animateProgress() {
     }
     
 }*/
+
+

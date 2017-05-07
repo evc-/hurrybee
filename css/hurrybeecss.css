@@ -241,3 +241,24 @@
 	transform:translate(-50%,-50%);
 }
 
+#checkboxSVG{
+	z-index: 10;
+	position: fixed;
+	right: 103px;
+	top: 320px;
+	text-align: center;
+}
+
+#skipSVG{
+	z-index: 100;
+	position: fixed;
+	right: 103px;
+	top: 430px;
+	text-align: center;
+}
+
+
+#checkmark .cls-4{
+	fill: white;
+}
+
