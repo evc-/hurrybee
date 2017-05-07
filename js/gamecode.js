@@ -1,6 +1,5 @@
 var saveActivities = localStorage.getItem("mySavedActivities");
 saveActivities = JSON.parse(saveActivities);
-console.log(saveActivities);
 
 var index = 0;
 var SVGplaceholder = document.getElementById("SVGplaceholder");
@@ -15,11 +14,12 @@ var circle;
 var timerContainer = document.getElementById("timerContainer");
 
 var beepAlert = document.getElementById("beepAlert");
-//var tickAlert = document.getElementById("tickAlert");
 
+loadScene();
 
 function loadPic(){
 	console.log(window.innerWidth);
+	
 	//set tablet or mobile display based on screen size 
 
 	if (window.innerWidth < 576){
@@ -86,7 +86,6 @@ function loadPic(){
 		
 	}
 
-loadScene();
 
 //this function advances the game to the next scene by increasing the index by 1 and running the load scene function again
 
