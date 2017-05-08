@@ -57,7 +57,7 @@ skipSVG.addEventListener("click",function(){
 
 
 function skipActivity(){
-	if (index >= saveActivities.length) {
+	if (index == (saveActivities.length -1)) {
 			window.location.href = "challenges.html";
 	} else {
 		addtoSkipped();
@@ -158,6 +158,7 @@ function advanceGame(){
 		stopTimer();
 		saveTime();
 		loadScene();
+		console.log(timeDif);
 	}
 
 
@@ -273,16 +274,15 @@ function animateProgress() {
 function addToCompleted(){
 	completedActs.push(saveActivities[index].name);
 	localStorage.setItem('completedActs', JSON.stringify(completedActs));
-	
 	console.log(completedActs);
 }
 
 function addtoSkipped(){
 	skippedActs.push(saveActivities[index].name);
 	localStorage.setItem('skippedActs', JSON.stringify(skippedActs));
-	
 	console.log(skippedActs);
 }
+
 
 
 
