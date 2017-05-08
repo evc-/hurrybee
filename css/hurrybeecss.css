@@ -129,8 +129,11 @@
 }
 
 #SVGplaceholder{
-	max-height: 100vh;
-	max-width: 100vw;
+	max-height: 90vh;
+	max-width: 90vw;
+	position: fixed;
+	left:-30px;
+	top: 20px;
 }
 
 /*
@@ -268,7 +271,7 @@
 .footer-info{
 	margin-bottom:10px;
 	position: fixed;
-	bottom: 0;
+	bottom: 17px;
 	height: 70px;
 	width: 100%;
 	background-color:white;

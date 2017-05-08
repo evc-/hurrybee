@@ -110,6 +110,8 @@ function loadPic(){
 			}
 			SVGplaceholder.data = gameScenes[saveActivities[index].pic];
 			}
+	
+	console.log(gameScenes.indexOf(this));
 }
 
 
@@ -278,5 +280,11 @@ function animateProgress() {
     }
     
 }*/
+
+
+
+function saveCompleted(){
+	
+}
 
 
