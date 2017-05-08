@@ -264,23 +264,8 @@ completeBtn.addEventListener("click", function(){
         // save to localStorage
         var txt = JSON.stringify(challengeArr);
         localStorage.setItem("myChallenges", txt);
-        data = localStorage.getItem("myChallenges");
+        
         
     }
 });
 
-// display completed challenge icons
-
-if (data){
-    challengeArr = JSON.parse(data);
-    
-    for (var i = 0; i <= challengeArr.length - 1; i++){
-            
-        if (challengeArr[i].type == 0){
-            cExercise.style.display = "none";
-            document.getElementById("c1-complete").style.display = "block";
-        }
-        
-    }
-    
-}

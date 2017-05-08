@@ -6,10 +6,16 @@ var clearStorage = document.getElementById("clearStorage");
 
 var skippedActsResult = document.getElementById("skippedActsResult");
 var completedActsResult = document.getElementById("completedActsResult");
+var challengesResult = document.getElementById("challengesResult");
+var challengesCompleted = localStorage.getItem("myChallenges");
 
 
 showCompleted();
-showSkipped();
+showChallenges();
+
+if (skippedActs != null){
+	showSkipped();
+}
 
 clearStorage.addEventListener("click", function(){
 	localStorage.clear();
@@ -29,4 +35,25 @@ function showSkipped(){
 		skippedNames.innerHTML = skippedActs[i];
 		skippedActsResult.appendChild(skippedNames);
 	}
+}
+
+function showChallenges(){if (challengesCompleted){
+	console.log(challengesCompleted);
+    challengeArr = JSON.parse(challengesCompleted);
+    
+    for (var i = 0; i <= challengeArr.length - 1; i++){
+		
+		var challengeNames = document.createElement("p");
+		challengeNames.innerHTML = challengeArr[i];
+		challengesResult.appendChild(challengeNames);
+            
+        if (challengeArr[i].type == 0){
+            cExercise.style.display = "none";
+            document.getElementById("c1-complete").style.display = "block";
+        }
+        
+    }
+    
+}
+						 
 }
