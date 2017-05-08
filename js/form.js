@@ -9,6 +9,8 @@
 //these are the arrays that handle the list 
 
 		var activityArr = [];  //this is the array of activities as string form that is generated when the list is rearranged 
+		console.log(activityArr);
+
 		var activityObjects = []; //this is the array of objects that have a name, time, and pic. the create, store, and get list functions all use it
 		
 		var timeSum = 0;
@@ -175,7 +177,7 @@ estimateTime(); //estimate time when list is updated
 				activityObjects[i] = {name: activityArr[i], time: document.getElementById(activityArr[i]).childNodes[2].value, pic:document.getElementById(activityArr[i]).dataset.pic};
 					
 			}
-			console.log(activityObjects);
+			
 		}
 
 
@@ -240,9 +242,6 @@ estimateTime(); //estimate time when list is updated
 
 	var currentMins = myDate.getMinutes();
 	var currentHours = myDate.getHours();
-
-	console.log(currentHours);
-	console.log(currentMins);
 
 	var currentTime = document.getElementById("currentTime");
 	var timeFinish = document.getElementById("timeFinish");

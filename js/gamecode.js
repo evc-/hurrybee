@@ -1,6 +1,10 @@
 var saveActivities = localStorage.getItem("mySavedActivities");
 saveActivities = JSON.parse(saveActivities);
 
+//saveActivities is now an array of objects with names,times, and pics
+
+console.log(saveActivities);
+
 var index = 0;
 var SVGplaceholder = document.getElementById("SVGplaceholder");
 
@@ -26,17 +30,25 @@ var skipSVG = document.getElementById("skipSVG");
 var completedActs = [];
 var skippedActs= [];
 
-//<<<<<<< HEAD:js/gamecode.js
 var beepAlert = document.getElementById("beepAlert");
 
+var icons = ["./assets/other/Icons/brushteeth.svg",
+					"./assets/other/Icons/coffee.svg",
+					"./assets/other/Icons/breakfast.svg",
+					"./assets/other/Icons/clothes.svg",
+					"./assets/other/Icons/lunch.svg"];
+
+
 //var tickAlert = document.getElementById("tickAlert");
-//>>>>>>> origin/master:gamecode.js
 
 loadScene();
 
+<<<<<<< HEAD
 
 //this gets the current name of the activity 
 
+=======
+>>>>>>> origin/master
 checkbox.addEventListener("click",function(){
 	checkmarkFill.style.fill = "#14275E";
 	setTimeout(function(){ 
@@ -55,7 +67,12 @@ checkmarkFill.addEventListener("click",function(){
 skipSVG.addEventListener("click",function(){
 	skipActivity();
 })
+<<<<<<< HEAD
     
+=======
+
+//pressing the skip button will add the name of the skipped activity to an array, increase the index to change the picture, stop the timer, save the activity time, then load the next picture and scene. if someone is skipping the last activity,it will go to the challenges page. 
+>>>>>>> origin/master
 
 function skipActivity(){
 	if (index == (saveActivities.length -1)) {
@@ -64,15 +81,15 @@ function skipActivity(){
 		addtoSkipped();
 		index ++;
 		stopTimer();
+		console.log(activityTime);
 		saveTime();
 		loadPic();
 		loadScene();
 	}
 }
 
+
 function loadPic(){
-	console.log(window.innerWidth);
-	
 	//set tablet or mobile display based on screen size 
 
 	if (window.innerWidth < 576){
@@ -96,8 +113,8 @@ function loadPic(){
         
         warning.style.fontSize = "3vw";
 		freeTime.style.fontSize = "3vw";
-//        warningContainer.style.height = "100px";
 	}
+	
     
     console.log(saveActivities[index]);
 	if (saveActivities[index].pic == "undefined"){
@@ -115,14 +132,21 @@ function loadPic(){
 			document.body.appendChild(customActTitle);
 		}
 			
-		//if both of those are untrue, show the pic associated with the activity 
+//if both of those are untrue, show the pic associated with the activity 
 			
 		} else {
 			var customActTitle = document.getElementById("customActTitle");
 			if (customActTitle){
 				customActTitle.parentElement.removeChild(customActTitle);	
 			}
+			
 			SVGplaceholder.data = gameScenes[saveActivities[index].pic];
+			
+			//gameScenes is an array of paths to the images
+			//saveActivities is an array of objects 
+			//index is whatever scene you're on 
+			//pic is the associated svg scene for the object 
+			//how does does the gameScene change based on the order of saveActivities?
 			}
 	
 }
@@ -170,7 +194,8 @@ function secondPassed() {
 	
 	timeRemainingAct.innerHTML = getDisplayTime(activityTime);
 
-	//this takes away a second from the activity 
+	//this takes away a second from the activity
+	
     activityTime--;
 }
 
@@ -284,9 +309,4 @@ function addtoSkipped(){
 	localStorage.setItem('skippedActs', JSON.stringify(skippedActs));
 	console.log(skippedActs);
 }
-
-
-
-
-
 
