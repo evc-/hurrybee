@@ -265,3 +265,26 @@
 	width: 100%;
 	background-color:white;
 }
+
+#iconPlaceholder{
+	position: relative;
+	left: 25px;
+}
+
+#iconContainer{
+	position: fixed;
+	height: 10vh;
+	width: 10vw;
+	z-index: 1000;
+}
+
+#iconName{
+	color: #14275E;
+	position: relative;
+	z-index: 10000;
+	left: 5px;
+	text-align: center;
+	width: 100%;
+	background-color:#FFF1A5;
+	border-radius: 6px;
+}

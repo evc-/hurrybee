@@ -33,13 +33,20 @@ var skippedActs= [];
 var beepAlert = document.getElementById("beepAlert");
 
 
+var icons = ["./assets/other/Icons/brushteeth.svg",
+					"./assets/other/Icons/coffee.svg",
+					"./assets/other/Icons/breakfast.svg",
+					"./assets/other/Icons/clothes.svg",
+					"./assets/other/Icons/lunch.svg"];
 
+var iconPlaceholder = document.getElementById("iconPlaceholder");
+var iconContainer = document.getElementById("iconContainer");
+var iconName = document.getElementById("iconName");
 
 //var tickAlert = document.getElementById("tickAlert");
 
 loadScene();
-
-
+loadIcon();
 
 //this gets the current name of the activity 
 
@@ -78,6 +85,7 @@ function skipActivity(){
 		saveTime();
 		loadPic();
 		loadScene();
+		loadIcon();
 	}
 }
 
@@ -136,6 +144,7 @@ function loadPic(){
 				customActTitle.parentElement.removeChild(customActTitle);	
 			}
 			
+			
 			SVGplaceholder.data = gameScenes[saveActivities[index].pic];
 			
 			//gameScenes is an array of paths to the images
@@ -145,6 +154,14 @@ function loadPic(){
 			//how does does the gameScene change based on the order of saveActivities?
 			}
 	
+}
+
+function loadIcon(){
+			iconName.innerHTML = saveActivities[index].name;
+			iconName.style.fontSize = "2vw";
+	
+			iconName.style.fontWeight = "700";
+			iconPlaceholder.data = icons[saveActivities[index].pic];
 }
 
 
@@ -180,7 +197,7 @@ function advanceGame(){
 		stopTimer();
 		saveTime();
 		loadScene();
-		console.log(timeDif);
+		loadIcon();
 	}
 
 
