@@ -1,3 +1,5 @@
+console.log(localStorage.myChallenges);
+
 var modal = document.getElementById("myModal"),
     modalContent = document.getElementById("modal-content"),
     modalText = document.getElementById("modal-text"),
@@ -16,11 +18,18 @@ var cExercise = document.getElementById("c1"),
 var exitBtn = document.getElementById("exit"),
     completeBtn = document.getElementById("completeBut");
 
-var completeArr = [];
+var challengeArr = [];
+
+var challengeObj = {
+    type: ""
+}
+
+var data = localStorage.getItem("myChallenges");
 
 cExercise.addEventListener("click", function(){
     curClick = "exercise";
     console.log(curClick);
+    
     modal.style.display = "block";
     
     if (curClick == "exercise"){
@@ -147,72 +156,131 @@ completeBtn.addEventListener("click", function(){
     
     if (curClick == "exercise"){
         // push completed challenge to array
-        completeArr.push("exercise");
-        console.log(completeArr);
+        challengeArr.push("exercise");
+        console.log(challengeArr);
+        
+        challengeObj.type = 0;
         
         // change cExercise icon to different colour
         cExercise.style.display = "none";
         document.getElementById("c1-complete").style.display = "block";
         
+        // save to localStorage
+        var txt = JSON.stringify(challengeArr);
+        localStorage.setItem("myChallenges", txt);
+        data = localStorage.getItem("myChallenges");
+        
     } 
     
     else if (curClick == "news"){
         // push completed challenge to array
-        completeArr.push("news");
-        console.log(completeArr);
+        challengeArr.push("news");
+        console.log(challengeArr);
         
-        // change cExercise icon to different colour
+        // change cNews icon to different colour
         cNews.style.display = "none";
         document.getElementById("c2-complete").style.display = "block";
+        
+        // save to localStorage
+        var txt = JSON.stringify(challengeArr);
+        localStorage.setItem("myChallenges", txt);
+        data = localStorage.getItem("myChallenges");
+        
     }
     
     else if (curClick == "water"){
         // push completed challenge to array
-        completeArr.push("water");
-        console.log(completeArr);
+        challengeArr.push("water");
+        console.log(challengeArr);
         
-        // change cExercise icon to different colour
+        // change cWater icon to different colour
         cWater.style.display = "none";
         document.getElementById("c3-complete").style.display = "block";
+        
+        // save to localStorage
+        var txt = JSON.stringify(challengeArr);
+        localStorage.setItem("myChallenges", txt);
+        data = localStorage.getItem("myChallenges");
+        
     }
     
     else if (curClick == "vitamin"){
         // push completed challenge to array
-        completeArr.push("vitamin");
-        console.log(completeArr);
+        challengeArr.push("vitamin");
+        console.log(challengeArr);
         
-        // change cExercise icon to different colour
+        // change cVitamin icon to different colour
         cVitamin.style.display = "none";
         document.getElementById("c4-complete").style.display = "block";
+        
+        // save to localStorage
+        var txt = JSON.stringify(challengeArr);
+        localStorage.setItem("myChallenges", txt);
+        data = localStorage.getItem("myChallenges");
+        
     }
     
     else if (curClick == "meditate"){
         // push completed challenge to array
-        completeArr.push("meditate");
-        console.log(completeArr);
+        challengeArr.push("meditate");
+        console.log(challengeArr);
         
-        // change cExercise icon to different colour
+        // change cJournal icon to different colour
         cMeditate.style.display = "none";
         document.getElementById("c5-complete").style.display = "block";
+        
+        // save to localStorage
+        var txt = JSON.stringify(challengeArr);
+        localStorage.setItem("myChallenges", txt);
+        data = localStorage.getItem("myChallenges");
+
     }
     
     else if (curClick == "journal"){
         // push completed challenge to array
-        completeArr.push("journal");
-        console.log(completeArr);
+        challengeArr.push("journal");
+        console.log(challengeArr);
         
-        // change cExercise icon to different colour
+        // change cJournal icon to different colour
         cJournal.style.display = "none";
         document.getElementById("c6-complete").style.display = "block";
+        
+        // save to localStorage
+        var txt = JSON.stringify(challengeArr);
+        localStorage.setItem("myChallenges", txt);
+        data = localStorage.getItem("myChallenges");
+        
     }
     
     else if (curClick == "bed"){
         // push completed challenge to array
-        completeArr.push("bed");
-        console.log(completeArr);
+        challengeArr.push("bed");
+        console.log(challengeArr);
         
-        // change cExercise icon to different colour
+        // change cBed icon to different colour
         cBed.style.display = "none";
         document.getElementById("c7-complete").style.display = "block";
+        
+        // save to localStorage
+        var txt = JSON.stringify(challengeArr);
+        localStorage.setItem("myChallenges", txt);
+        data = localStorage.getItem("myChallenges");
+        
     }
 });
+
+// display completed challenge icons
+
+if (data){
+    challengeArr = JSON.parse(data);
+    
+    for (var i = 0; i <= challengeArr.length - 1; i++){
+            
+        if (challengeArr[i].type == 0){
+            cExercise.style.display = "none";
+            document.getElementById("c1-complete").style.display = "block";
+        }
+        
+    }
+    
+}
