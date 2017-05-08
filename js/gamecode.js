@@ -23,6 +23,9 @@ var checkbox = document.getElementById("checkbox");
 var checkmarkFill = document.getElementById("checkmarkFill");
 var skipSVG = document.getElementById("skipSVG");
 
+var completedActs = [];
+var skippedActs= [];
+
 //<<<<<<< HEAD:js/gamecode.js
 var beepAlert = document.getElementById("beepAlert");
 
@@ -30,6 +33,8 @@ var beepAlert = document.getElementById("beepAlert");
 //>>>>>>> origin/master:gamecode.js
 
 loadScene();
+
+//this gets the current name of the activity 
 
 checkbox.addEventListener("click",function(){
 	checkmarkFill.style.fill = "#14275E";
@@ -43,6 +48,7 @@ checkmarkFill.addEventListener("click",function(){
 	setTimeout(function(){ 
 		advanceGame() 
 	}, 500);
+	
 })
 
 skipSVG.addEventListener("click",function(){
@@ -51,10 +57,16 @@ skipSVG.addEventListener("click",function(){
 
 
 function skipActivity(){
-	index = index +2;
-	stopTimer();
-	saveTime();
-	loadScene();
+	if (index >= saveActivities.length) {
+			window.location.href = "challenges.html";
+	} else {
+		addtoSkipped();
+		index = index +2;
+		stopTimer();
+		saveTime();
+		loadPic();
+		loadScene();
+	}
 }
 
 function loadPic(){
@@ -111,7 +123,6 @@ function loadPic(){
 			SVGplaceholder.data = gameScenes[saveActivities[index].pic];
 			}
 	
-	console.log(gameScenes.indexOf(this));
 }
 
 
@@ -142,6 +153,7 @@ function loadPic(){
 //this function advances the game to the next scene by increasing the index by 1 and running the load scene function again
 
 function advanceGame(){
+		addToCompleted();
 		index ++;
 		stopTimer();
 		saveTime();
@@ -257,34 +269,22 @@ function animateProgress() {
 	circle.animate(1);
 }
 
-/*function displayWarning(timeSeconds){
-    var minutes = Math.floor(Math.abs(timeSeconds)/60);
-    var remainingSeconds = Math.abs(timeSeconds) % 60;
 
-    
-    if (timeSeconds < 10){
-        warning.innerText = "HURRY UP!";
-        warning.style.backgroundColor = "#FFFFE5";
-    } 
-    
-    if (timeSeconds < 0){
-        warning.innerText = "You're late!";
-        warning.fontSize = "20pt";
-        warning.style.color = "#ff0000";
-        warning.style.backgroundColor = "#FFFFE5";
-    } 
-    
-    else {
-        warning.innerText = "";
-        warning.style.backgroundColor = "none";
-    }
-    
-}*/
-
-
-
-function saveCompleted(){
+function addToCompleted(){
+	completedActs.push(saveActivities[index].name);
+	localStorage.setItem('completedActs', JSON.stringify(completedActs));
 	
+	console.log(completedActs);
 }
+
+function addtoSkipped(){
+	skippedActs.push(saveActivities[index].name);
+	localStorage.setItem('skippedActs', JSON.stringify(skippedActs));
+	
+	console.log(skippedActs);
+}
+
+
+
 
 
