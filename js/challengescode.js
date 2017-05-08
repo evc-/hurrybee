@@ -284,3 +284,5 @@ if (data){
     }
     
 }
+
+localStorage.clear();
