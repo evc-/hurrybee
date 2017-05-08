@@ -23,6 +23,10 @@
 
 		var startGame = document.getElementById("startGame");
 
+		var audioSwitch = document.getElementById("audioSwitch");
+
+		var audioStatus = false;
+
 //this is the list from the sortable library (https://github.com/RubaXa/Sortable)
 
 var myList = Sortable.create(simpleList, {
@@ -275,5 +279,12 @@ estimateTime(); //estimate time when list is updated
 		
 	}
 
-
-
+audioSwitch.addEventListener("click", function(){
+	if (audioStatus == false){
+		audioStatus = true;
+	} else
+	audioStatus = false;
+	console.log(audioStatus);
+	
+	localStorage.setItem("audioSwitch", audioStatus);
+})

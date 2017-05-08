@@ -32,6 +32,8 @@ var skippedActs= [];
 
 var beepAlert = document.getElementById("beepAlert");
 
+var audioStatus = localStorage.getItem("audioSwitch");
+console.log(audioStatus);
 
 var icons = ["./assets/other/Icons/brushteeth.svg",
 					"./assets/other/Icons/coffee.svg",
@@ -116,11 +118,7 @@ function loadPic(){
 		freeTime.style.fontSize = "3vw";
 	}
 	
-	
 
-	
-    
-    console.log(saveActivities[index]);
 	if (saveActivities[index].pic == "undefined"){
 		if (window.innerWidth < 576){
 			SVGplaceholder.data = "./assets/game/Mobile/customactivity_mobile.svg";
@@ -258,7 +256,7 @@ function getDisplayTime(timeSeconds){
 	//giving the seconds part 
     var remainingSeconds = Math.abs(timeSeconds) % 60;
 	
-	if (remainingSeconds == 0){
+	if (remainingSeconds == 0 && audioStatus == true){
 		beepAlert.play();
 	}
 		
