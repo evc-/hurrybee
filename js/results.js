@@ -4,6 +4,10 @@ var completedActs = JSON.parse(localStorage.getItem("completedActs"));
 var skippedActs = JSON.parse(localStorage.getItem("skippedActs"));
 var clearStorage = document.getElementById("clearStorage");
 
+var skippedActsResult = document.getElementById("skippedActsResult");
+var completedActsResult = document.getElementById("completedActsResult");
+
+
 showCompleted();
 showSkipped();
 
@@ -15,7 +19,7 @@ function showCompleted(){
 	for (i=0; i < completedActs.length; i++){
 		var completedNames = document.createElement("p");
 		completedNames.innerHTML = completedActs[i];
-		document.body.appendChild(completedNames);
+		completedActsResult.appendChild(completedNames);
 	}
 }
 
@@ -23,6 +27,6 @@ function showSkipped(){
 	for (i=0; i < skippedActs.length; i++){
 		var skippedNames = document.createElement("p");
 		skippedNames.innerHTML = skippedActs[i];
-		document.body.appendChild(skippedNames);
+		skippedActsResult.appendChild(skippedNames);
 	}
 }

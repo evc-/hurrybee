@@ -61,7 +61,7 @@ function skipActivity(){
 			window.location.href = "challenges.html";
 	} else {
 		addtoSkipped();
-		index = index +2;
+		index ++;
 		stopTimer();
 		saveTime();
 		loadPic();
