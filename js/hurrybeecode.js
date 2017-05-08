@@ -233,8 +233,6 @@ estimateTime(); //estimate time when list is updated
 		
 		
 		
-		
-	
 	function getFinishTime(){
 		
 		//finish time
@@ -273,4 +271,6 @@ estimateTime(); //estimate time when list is updated
 		timeFinish.innerHTML = finishHours + ":" + finishMins;
 		
 	}
+
+
 

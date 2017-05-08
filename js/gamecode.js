@@ -70,7 +70,8 @@ function loadPic(){
 					"./assets/game/Mobile/gettingdressed_mobile.svg",
 					"./assets/game/Mobile/lunch_mobile.svg"];
         
-        warning.style.fontSize = "3rem";
+        warning.style.fontSize = "5vw";
+		freeTime.style.fontSize = "5vw";
 //        warningContainer.style.height = "50px";
 		
 	} else {
@@ -80,7 +81,8 @@ function loadPic(){
 					"./assets/game/Tablet/gettingdressed_Tablet.svg",
 					"./assets/game/Tablet/lunch_Tablet.svg"];
         
-        warning.style.fontSize = "3rem";
+        warning.style.fontSize = "3vw";
+		freeTime.style.fontSize = "3vw";
 //        warningContainer.style.height = "100px";
 	}
     
@@ -181,13 +183,13 @@ function showSchedule(){
 	
 	if (freeTimeSum  < 0){
         scheduleUpdate.innerHTML = "";
-        freeTime.innerHTML = "- " + getDisplayTime(freeTimeSum) + " mins behind schedule!";
+        freeTime.innerHTML =  getDisplayTime(freeTimeSum) + " mins behind schedule!";
         freeTime.style.color = "#ff0000";
 
 	} else if (freeTimeSum > 0) {
         scheduleUpdate.innerHTML = "";
         freeTime.innerHTML = "+ " + getDisplayTime(freeTimeSum) + " mins ahead of schedule!";
-        freeTime.style.color = "#00ff00";
+        freeTime.style.color = "#22A517";
 
     } else{
         freeTime.innerHTML = "You are right on track!";
@@ -218,13 +220,14 @@ function getDisplayTime(timeSeconds){
         
     } else if (timeSeconds <= 10) {
         warning.innerText = "HURRY UP!";
-        warning.style.color = "#14275E";
+        warning.style.color = "#FF9C32";
         warningAlert.play();
         warningContainer.style.backgroundColor = "#FFFFE5";
         
     } else {
-        warning.innerText = "";
-        warningContainer.style.backgroundColor = "";
+		warning.style.color = "#14275E";
+        warning.innerText = "KEEP IT UP!";
+        warningContainer.style.backgroundColor = "#FFFFE5";
     }
     
 	if (timeSeconds < 0){
