@@ -141,11 +141,11 @@ estimateTime(); //estimate time when list is updated
 
 //pic is a number so that you can change from mobile to tablet when you load the page 
 
-		var defaultActivities = [{"name":"Wash Face and Brush Teeth ","time":"5", pic:0},
-							 {"name":"Make Coffee ","time":"15", pic:1},
-							 {"name":"Eat Breakfast ","time":"15", pic:2},
-							 {"name":"Get Dressed ","time":"15", pic:3},
-							 {"name":"Pack Lunch and Bag ","time":"10", pic:4}];
+		var defaultActivities = [{"name":"Wash Face and Brush Teeth ","time":"5", pic:0, icon:0},
+							 {"name":"Make Coffee ","time":"15", pic:1, icon:1},
+							 {"name":"Eat Breakfast ","time":"15", pic:2, icon:2},
+							 {"name":"Get Dressed ","time":"15", pic:3, icon:3},
+							 {"name":"Pack Lunch and Bag ","time":"10", pic:4, icon:4}];
 	 
 
 //this loops over the default activities and uses the "add activity" function to generate the visual list 
