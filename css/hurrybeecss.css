@@ -218,6 +218,10 @@
 	text-align: center;
 }
 
+#checkboxSVG:hover, #skipSVG:hover {
+    transform: scale(1.1);
+}
+
 #skipSVG{
 	z-index: 100;
 	position: fixed;
@@ -225,7 +229,6 @@
 	top: 430px;
 	text-align: center;
 }
-
 
 #checkmark .cls-4{
 	fill: white;

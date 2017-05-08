@@ -268,24 +268,3 @@ completeBtn.addEventListener("click", function(){
         
     }
 });
-
-<<<<<<< HEAD
-=======
-// display completed challenge icons
-
-if (data){
-    challengeArr = JSON.parse(data);
-    
-    for (var i = 0; i <= challengeArr.length - 1; i++){
-            
-        if (challengeArr[i].type == 0){
-            cExercise.style.display = "none";
-            document.getElementById("c1-complete").style.display = "block";
-        }
-        
-    }
-    
-}
-
-localStorage.clear();
->>>>>>> origin/master
