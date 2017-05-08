@@ -32,6 +32,13 @@ var skippedActs= [];
 
 var beepAlert = document.getElementById("beepAlert");
 
+var icons = ["./assets/other/Icons/brushteeth.svg",
+					"./assets/other/Icons/coffee.svg",
+					"./assets/other/Icons/breakfast.svg",
+					"./assets/other/Icons/clothes.svg",
+					"./assets/other/Icons/lunch.svg"];
+
+
 //var tickAlert = document.getElementById("tickAlert");
 
 loadScene();
@@ -129,10 +136,6 @@ function loadPic(){
 			//index is whatever scene you're on 
 			//pic is the associated svg scene for the object 
 			//how does does the gameScene change based on the order of saveActivities?
-			
-			console.log(saveActivities[index].pic);
-			console.log(gameScenes);
-			
 			}
 	
 }
