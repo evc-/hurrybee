@@ -9,6 +9,7 @@
 //these are the arrays that handle the list 
 
 		var activityArr = [];  //this is the array of activities as string form that is generated when the list is rearranged 
+
 		var activityObjects = []; //this is the array of objects that have a name, time, and pic. the create, store, and get list functions all use it
 		
 		var timeSum = 0;

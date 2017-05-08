@@ -24,6 +24,10 @@ clearStorage.addEventListener("click", function(){
 function showCompleted(){
 	for (i=0; i < completedActs.length; i++){
 		var completedNames = document.createElement("p");
+		completedNames.style.backgroundColor = "#FFF1A5";
+		completedNames.style.fontSize="13pt";
+		completedNames.style.padding ="10px";
+		completedNames.style.borderRadius = "6px";
 		completedNames.innerHTML = completedActs[i];
 		completedActsResult.appendChild(completedNames);
 	}
@@ -32,6 +36,10 @@ function showCompleted(){
 function showSkipped(){
 	for (i=0; i < skippedActs.length; i++){
 		var skippedNames = document.createElement("p");
+		skippedNames.style.backgroundColor = "#BCB69F";
+		skippedNames.style.fontSize="13pt";
+		skippedNames.style.padding ="10px";
+		skippedNames.style.borderRadius = "6px";
 		skippedNames.innerHTML = skippedActs[i];
 		skippedActsResult.appendChild(skippedNames);
 	}
