@@ -274,7 +274,9 @@ function getDisplayTime(timeSeconds){
     } else if (timeSeconds <= 10) {
         warning.innerText = "HURRY UP!";
         warning.style.color = "#FF9C32";
-        warningAlert.play();
+		if (audioStatus == true){
+			warningAlert.play();
+		}
         warningContainer.style.backgroundColor = "#FFFFE5";
         
     } else {
