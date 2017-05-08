@@ -34,6 +34,7 @@ var beepAlert = document.getElementById("beepAlert");
 
 loadScene();
 
+
 //this gets the current name of the activity 
 
 checkbox.addEventListener("click",function(){
@@ -54,7 +55,7 @@ checkmarkFill.addEventListener("click",function(){
 skipSVG.addEventListener("click",function(){
 	skipActivity();
 })
-
+    
 
 function skipActivity(){
 	if (index == (saveActivities.length -1)) {
@@ -98,6 +99,7 @@ function loadPic(){
 //        warningContainer.style.height = "100px";
 	}
     
+    console.log(saveActivities[index]);
 	if (saveActivities[index].pic == "undefined"){
 		if (window.innerWidth < 576){
 			SVGplaceholder.data = "./assets/game/Mobile/customactivity_mobile.svg";
