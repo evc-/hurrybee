@@ -32,23 +32,18 @@ var skippedActs= [];
 
 var beepAlert = document.getElementById("beepAlert");
 
-var icons = ["./assets/other/Icons/brushteeth.svg",
-					"./assets/other/Icons/coffee.svg",
-					"./assets/other/Icons/breakfast.svg",
-					"./assets/other/Icons/clothes.svg",
-					"./assets/other/Icons/lunch.svg"];
+
 
 
 //var tickAlert = document.getElementById("tickAlert");
 
 loadScene();
 
-<<<<<<< HEAD
+
 
 //this gets the current name of the activity 
 
-=======
->>>>>>> origin/master
+
 checkbox.addEventListener("click",function(){
 	checkmarkFill.style.fill = "#14275E";
 	setTimeout(function(){ 
@@ -67,12 +62,10 @@ checkmarkFill.addEventListener("click",function(){
 skipSVG.addEventListener("click",function(){
 	skipActivity();
 })
-<<<<<<< HEAD
-    
-=======
+
 
 //pressing the skip button will add the name of the skipped activity to an array, increase the index to change the picture, stop the timer, save the activity time, then load the next picture and scene. if someone is skipping the last activity,it will go to the challenges page. 
->>>>>>> origin/master
+
 
 function skipActivity(){
 	if (index == (saveActivities.length -1)) {
@@ -114,6 +107,9 @@ function loadPic(){
         warning.style.fontSize = "3vw";
 		freeTime.style.fontSize = "3vw";
 	}
+	
+	
+
 	
     
     console.log(saveActivities[index]);

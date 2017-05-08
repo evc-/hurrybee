@@ -108,10 +108,13 @@ estimateTime(); //estimate time when list is updated
 			
 			newActivity.appendChild(deleteButton);
 			
+//			var newIcon = document.createElement("SVG");
+//			newIcon.innerHTML = icon;
+//			newActivity.appendChild(newIcon);
+
+			
 			simpleList.appendChild(newActivity); //append the new activity to the list 
-			
-//			
-			
+					
 		}
 
 //this function is used to delete an item off the list 
@@ -191,6 +194,7 @@ estimateTime(); //estimate time when list is updated
 			localStorage.setItem("mySavedActivities", saveActivities);
 			
 		}
+		
 
 //when you click the start game button, activityArr (array of strings) --> acitvityObjects (array of objects), then gets saved in local storage 
 
