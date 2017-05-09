@@ -2,16 +2,18 @@
 
 var completedActs = JSON.parse(localStorage.getItem("completedActs"));
 var skippedActs = JSON.parse(localStorage.getItem("skippedActs"));
+var totalTime = JSON.parse(localStorage.getItem("timeTaken"));
 var clearStorage = document.getElementById("clearStorage");
 
 var skippedActsResult = document.getElementById("skippedActsResult");
 var completedActsResult = document.getElementById("completedActsResult");
 var challengesResult = document.getElementById("challengesResult");
 var challengesCompleted = localStorage.getItem("myChallenges");
-
+var totalTimeResult = document.getElementById("totalTimeResult");
 
 showCompleted();
 showChallenges();
+showTime();
 
 if (skippedActs != null){
 	showSkipped();
@@ -52,16 +54,27 @@ function showChallenges(){if (challengesCompleted){
     for (var i = 0; i <= challengeArr.length - 1; i++){
 		
 		var challengeNames = document.createElement("p");
+		challengeNames.style.backgroundColor = "#FFDB58";
+		challengeNames.style.fontSize="13pt";
+		challengeNames.style.padding ="10px";
+		challengeNames.style.borderRadius = "6px";
 		challengeNames.innerHTML = challengeArr[i];
 		challengesResult.appendChild(challengeNames);
             
         if (challengeArr[i].type == 0){
             cExercise.style.display = "none";
             document.getElementById("c1-complete").style.display = "block";
-        }
-        
+        }   
     }
-    
+}					 
 }
-						 
+
+function showTime(){
+	function getSum(total, num) {
+    return total + num;
+	}
+
+	function getTime(item) {
+   totalTimeResult.innerHTML = totalTime.reduce(getSum);
+	}
 }

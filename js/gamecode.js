@@ -249,7 +249,9 @@ function stopTimer(){
 function saveTime(){
 	timeDif.push(activityTime);
 	timeTaken.push(plannedTime - activityTime);
+	addTimeStorage();
 }
+
 
 function showSchedule(){
 	var freeTimeSum = 0;
@@ -348,6 +350,6 @@ function addtoSkipped(){
 }
 
 function addTimeStorage(){
-	
+	localStorage.setItem("timeTaken", JSON.stringify(timeTaken));
 }
 

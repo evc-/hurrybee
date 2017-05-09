@@ -156,7 +156,7 @@ completeBtn.addEventListener("click", function(){
     
     if (curClick == "exercise"){
         // push completed challenge to array
-        challengeArr.push("exercise");
+        challengeArr.push("Got some exercise");
         console.log(challengeArr);
         
         challengeObj.type = 0;
@@ -174,7 +174,7 @@ completeBtn.addEventListener("click", function(){
     
     else if (curClick == "news"){
         // push completed challenge to array
-        challengeArr.push("news");
+        challengeArr.push("Read the news");
         console.log(challengeArr);
         
         // change cNews icon to different colour
@@ -190,7 +190,7 @@ completeBtn.addEventListener("click", function(){
     
     else if (curClick == "water"){
         // push completed challenge to array
-        challengeArr.push("water");
+        challengeArr.push("Drank water");
         console.log(challengeArr);
         
         // change cWater icon to different colour
@@ -206,7 +206,7 @@ completeBtn.addEventListener("click", function(){
     
     else if (curClick == "vitamin"){
         // push completed challenge to array
-        challengeArr.push("vitamin");
+        challengeArr.push("Took a multi-vitamin");
         console.log(challengeArr);
         
         // change cVitamin icon to different colour
@@ -222,7 +222,7 @@ completeBtn.addEventListener("click", function(){
     
     else if (curClick == "meditate"){
         // push completed challenge to array
-        challengeArr.push("meditate");
+        challengeArr.push("Meditated");
         console.log(challengeArr);
         
         // change cJournal icon to different colour
@@ -238,7 +238,7 @@ completeBtn.addEventListener("click", function(){
     
     else if (curClick == "journal"){
         // push completed challenge to array
-        challengeArr.push("journal");
+        challengeArr.push("Wrote in gratitude journal");
         console.log(challengeArr);
         
         // change cJournal icon to different colour
@@ -254,7 +254,7 @@ completeBtn.addEventListener("click", function(){
     
     else if (curClick == "bed"){
         // push completed challenge to array
-        challengeArr.push("bed");
+        challengeArr.push("Made the bed");
         console.log(challengeArr);
         
         // change cBed icon to different colour
