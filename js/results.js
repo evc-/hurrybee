@@ -19,18 +19,6 @@ showCompleted();
 showChallenges();
 showTime();
 
-function showTime(){
-	var minutes = Math.floor(Math.abs(summedTime)/60);
-    var seconds = Math.abs(summedTime) % 60;
-	totalTimeResult.innerHTML = minutes + " minutes and " + seconds + " seconds";
-//	totalTimeResult.style.backgroundColor = "#BCB69F";
-	totalTimeResult.style.fontSize= "6em";
-	totalTimeResult.style.padding = "10px";
-	totalTimeResult.style.marginLeft= "20px";
-	totalTimeResult.style.borderRadius = "6px";
-}
-
-
 if (skippedActs != null){
 	showSkipped();
 }
@@ -83,5 +71,15 @@ function showChallenges(){if (challengesCompleted){
         }   
     }
 }					 
+}
+
+function showTime(){
+	var minutes = Math.floor(Math.abs(summedTime)/60);
+    var seconds = Math.abs(summedTime) % 60;
+	totalTimeResult.innerHTML = minutes + " minutes and " + seconds + " seconds";
+	totalTimeResult.style.fontSize= "6em";
+	totalTimeResult.style.padding = "10px";
+	totalTimeResult.style.marginLeft= "20px";
+	totalTimeResult.style.borderRadius = "6px";
 }
 
