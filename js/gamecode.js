@@ -31,9 +31,7 @@ var completedActs = [];
 var skippedActs= [];
 
 var beepAlert = document.getElementById("beepAlert");
-
-var audioStatus = localStorage.getItem("audioSwitch");
-console.log(audioStatus);
+var audioStatus = JSON.parse(localStorage.getItem("audioSwitch"));
 
 var icons = ["./assets/other/Icons/brushteeth.svg",
 					"./assets/other/Icons/coffee.svg",
@@ -47,6 +45,9 @@ var iconContainer = document.getElementById("iconContainer");
 var iconName = document.getElementById("iconName");
 
 var customIcon = false;
+
+var plannedTime = 0;
+var timeTaken = [];
 
 //var tickAlert = document.getElementById("tickAlert");
 
@@ -161,17 +162,18 @@ function loadPic(){
 
 
 function loadIcon(){
+			//if custom icon is true, load the custom icon. otherwise, load the icon associated with the activity 
 	
 			if (customIcon){
 				iconPlaceholder.data = icons[5];
-			} 
+			} else {
+				iconPlaceholder.data = icons[saveActivities[index].pic];
+			}	
 	
-			iconName.innerHTML = saveActivities[index].name;
-			console.log(saveActivities[index].name);
-			iconName.style.fontSize = "2vw";
-	
-			iconName.style.fontWeight = "700";
-			iconPlaceholder.data = icons[saveActivities[index].pic];
+				iconName.innerHTML = saveActivities[index].name;
+				console.log(saveActivities[index].name);
+				iconName.style.fontSize = "2vw";
+				iconName.style.fontWeight = "700";
 }
 
 
@@ -225,7 +227,11 @@ function secondPassed() {
 
 function startTimer(){
 	//take time property of the index activity and turn it into seconds 
-	activityTime = (saveActivities[index].time * 60)
+	activityTime = (saveActivities[index].time * 60);
+	
+	//set the time the user wanted the activity to take in seconds 
+	plannedTime = activityTime;
+	
 	//this runs the seconds passed function every 1 second 
 	countdownTimer = setInterval('secondPassed()', 1000);
 } 
@@ -234,9 +240,12 @@ function stopTimer(){
 	clearInterval(countdownTimer);
 }
 
+//tim that it should have been minus how far ahed or behind scheduke it was 
+
 //when the user clicks next, we want to store their time to see if they're ahead or behind schedule.
 function saveTime(){
 	timeDif.push(activityTime);
+	timeTaken.push(plannedTime - activityTime);
 }
 
 function showSchedule(){
@@ -268,7 +277,7 @@ function getDisplayTime(timeSeconds){
 	//giving the seconds part 
     var remainingSeconds = Math.abs(timeSeconds) % 60;
 	
-	if (remainingSeconds == 0 && audioStatus == true){
+	if (remainingSeconds == 0 && audioStatus){
 		beepAlert.play();
 	}
 		
@@ -286,7 +295,7 @@ function getDisplayTime(timeSeconds){
     } else if (timeSeconds <= 10) {
         warning.innerText = "HURRY UP!";
         warning.style.color = "#FF9C32";
-		if (audioStatus == true){
+		if (audioStatus){
 			warningAlert.play();
 		}
         warningContainer.style.backgroundColor = "#FFFFE5";
@@ -333,5 +342,9 @@ function addtoSkipped(){
 	skippedActs.push(saveActivities[index].name);
 	localStorage.setItem('skippedActs', JSON.stringify(skippedActs));
 	console.log(skippedActs);
+}
+
+function addTimeStorage(){
+	
 }
 

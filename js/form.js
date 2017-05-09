@@ -18,14 +18,19 @@
 		var resetList = document.getElementById("resetList");
 		var testClearStorage = document.getElementById("testClearStorage");
 		var testGetList = document.getElementById("testGetList");
-
 		var welcomeMsg = document.getElementById("welcomeMsg");
-
 		var startGame = document.getElementById("startGame");
 
 		var audioSwitch = document.getElementById("audioSwitch");
+		
+		var audioStatus = JSON.parse(localStorage.getItem("audioSwitch"));
+		
+		console.log(audioStatus);
+		if (audioStatus == undefined){
+			audioStatus = false;
+		}
 
-		var audioStatus = false;
+		audioSwitch.checked = audioStatus;
 
 //this is the list from the sortable library (https://github.com/RubaXa/Sortable)
 
@@ -280,11 +285,15 @@ estimateTime(); //estimate time when list is updated
 	}
 
 audioSwitch.addEventListener("click", function(){
-	if (audioStatus == false){
+	if (audioStatus){
+		audioSwitch.value = "checked";
+		audioStatus = false;
+		console.log(audioStatus);
+	} else{
+		audioSwitch.value = "unchecked";
 		audioStatus = true;
-	} else
-	audioStatus = false;
-	console.log(audioStatus);
+	}
 	
-	localStorage.setItem("audioSwitch", audioStatus);
+	localStorage.setItem("audioSwitch", JSON.stringify(audioStatus));
+	
 })
