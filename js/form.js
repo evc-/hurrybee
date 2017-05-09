@@ -18,10 +18,19 @@
 		var resetList = document.getElementById("resetList");
 		var testClearStorage = document.getElementById("testClearStorage");
 		var testGetList = document.getElementById("testGetList");
-
 		var welcomeMsg = document.getElementById("welcomeMsg");
-
 		var startGame = document.getElementById("startGame");
+
+		var audioSwitch = document.getElementById("audioSwitch");
+		
+		var audioStatus = JSON.parse(localStorage.getItem("audioSwitch"));
+		
+		console.log(audioStatus);
+		if (audioStatus == undefined){
+			audioStatus = false;
+		}
+
+		audioSwitch.checked = audioStatus;
 
 //this is the list from the sortable library (https://github.com/RubaXa/Sortable)
 
@@ -108,10 +117,13 @@ estimateTime(); //estimate time when list is updated
 			
 			newActivity.appendChild(deleteButton);
 			
+//			var newIcon = document.createElement("SVG");
+//			newIcon.innerHTML = icon;
+//			newActivity.appendChild(newIcon);
+
+			
 			simpleList.appendChild(newActivity); //append the new activity to the list 
-			
-//			
-			
+					
 		}
 
 //this function is used to delete an item off the list 
@@ -191,6 +203,7 @@ estimateTime(); //estimate time when list is updated
 			localStorage.setItem("mySavedActivities", saveActivities);
 			
 		}
+		
 
 //when you click the start game button, activityArr (array of strings) --> acitvityObjects (array of objects), then gets saved in local storage 
 
@@ -271,5 +284,16 @@ estimateTime(); //estimate time when list is updated
 		
 	}
 
-
-
+audioSwitch.addEventListener("click", function(){
+	if (audioStatus){
+		audioSwitch.value = "checked";
+		audioStatus = false;
+		console.log(audioStatus);
+	} else{
+		audioSwitch.value = "unchecked";
+		audioStatus = true;
+	}
+	
+	localStorage.setItem("audioSwitch", JSON.stringify(audioStatus));
+	
+})

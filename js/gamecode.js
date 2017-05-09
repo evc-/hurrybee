@@ -31,24 +31,32 @@ var completedActs = [];
 var skippedActs= [];
 
 var beepAlert = document.getElementById("beepAlert");
+var audioStatus = JSON.parse(localStorage.getItem("audioSwitch"));
 
 var icons = ["./assets/other/Icons/brushteeth.svg",
 					"./assets/other/Icons/coffee.svg",
 					"./assets/other/Icons/breakfast.svg",
 					"./assets/other/Icons/clothes.svg",
-					"./assets/other/Icons/lunch.svg"];
+					"./assets/other/Icons/lunch.svg",
+					"./assets/other/Icons/custom.svg"];
 
+var iconPlaceholder = document.getElementById("iconPlaceholder");
+var iconContainer = document.getElementById("iconContainer");
+var iconName = document.getElementById("iconName");
+
+var customIcon = false;
+
+var plannedTime = 0;
+var timeTaken = [];
 
 //var tickAlert = document.getElementById("tickAlert");
 
 loadScene();
-
-<<<<<<< HEAD
+loadIcon();
 
 //this gets the current name of the activity 
 
-=======
->>>>>>> origin/master
+
 checkbox.addEventListener("click",function(){
 	checkmarkFill.style.fill = "#14275E";
 	setTimeout(function(){ 
@@ -67,12 +75,10 @@ checkmarkFill.addEventListener("click",function(){
 skipSVG.addEventListener("click",function(){
 	skipActivity();
 })
-<<<<<<< HEAD
-    
-=======
+
 
 //pressing the skip button will add the name of the skipped activity to an array, increase the index to change the picture, stop the timer, save the activity time, then load the next picture and scene. if someone is skipping the last activity,it will go to the challenges page. 
->>>>>>> origin/master
+
 
 function skipActivity(){
 	if (index == (saveActivities.length -1)) {
@@ -85,6 +91,7 @@ function skipActivity(){
 		saveTime();
 		loadPic();
 		loadScene();
+		loadIcon();
 	}
 }
 
@@ -102,8 +109,7 @@ function loadPic(){
         
         warning.style.fontSize = "5vw";
 		freeTime.style.fontSize = "5vw";
-//        warningContainer.style.height = "50px";
-		
+
 	} else {
 		var gameScenes = ["./assets/game/Tablet/teethbrush_tablet.svg",
 					"./assets/game/Tablet/coffee_tablet.svg",
@@ -115,9 +121,14 @@ function loadPic(){
 		freeTime.style.fontSize = "3vw";
 	}
 	
-    
-    console.log(saveActivities[index]);
+		var customActTitle = document.getElementById("customActTitle");
+		if (customActTitle){
+		customActTitle.parentElement.removeChild(customActTitle);	
+		}
+
+	
 	if (saveActivities[index].pic == "undefined"){
+		
 		if (window.innerWidth < 576){
 			SVGplaceholder.data = "./assets/game/Mobile/customactivity_mobile.svg";
 			var customActTitle = document.createElement("DIV");
@@ -131,24 +142,41 @@ function loadPic(){
 			customActTitle.innerHTML = saveActivities[index].name;
 			document.body.appendChild(customActTitle);
 		}
+		
+		customIcon = true;
 			
 //if both of those are untrue, show the pic associated with the activity 
 			
-		} else {
-			var customActTitle = document.getElementById("customActTitle");
-			if (customActTitle){
-				customActTitle.parentElement.removeChild(customActTitle);	
-			}
-			
-			SVGplaceholder.data = gameScenes[saveActivities[index].pic];
-			
-			//gameScenes is an array of paths to the images
-			//saveActivities is an array of objects 
-			//index is whatever scene you're on 
-			//pic is the associated svg scene for the object 
-			//how does does the gameScene change based on the order of saveActivities?
-			}
+	} else {
+		
+		customIcon = false;
+		SVGplaceholder.data = gameScenes[saveActivities[index].pic];
+
+		//gameScenes is an array of paths to the images
+		//saveActivities is an array of objects 
+		//index is whatever scene you're on 
+		//pic is the associated svg scene for the object 
+		//how does does the gameScene change based on the order of saveActivities?
+		
+	}
 	
+	
+}
+
+
+function loadIcon(){
+			//if custom icon is true, load the custom icon. otherwise, load the icon associated with the activity 
+	
+			if (customIcon){
+				iconPlaceholder.data = icons[5];
+			} else {
+				iconPlaceholder.data = icons[saveActivities[index].pic];
+			}	
+	
+				iconName.innerHTML = saveActivities[index].name;
+				console.log(saveActivities[index].name);
+				iconName.style.fontSize = "2vw";
+				iconName.style.fontWeight = "700";
 }
 
 
@@ -184,7 +212,7 @@ function advanceGame(){
 		stopTimer();
 		saveTime();
 		loadScene();
-		console.log(timeDif);
+		loadIcon();
 	}
 
 
@@ -202,7 +230,11 @@ function secondPassed() {
 
 function startTimer(){
 	//take time property of the index activity and turn it into seconds 
-	activityTime = (saveActivities[index].time * 60)
+	activityTime = (saveActivities[index].time * 60);
+	
+	//set the time the user wanted the activity to take in seconds 
+	plannedTime = activityTime;
+	
 	//this runs the seconds passed function every 1 second 
 	countdownTimer = setInterval('secondPassed()', 1000);
 } 
@@ -211,9 +243,12 @@ function stopTimer(){
 	clearInterval(countdownTimer);
 }
 
+//tim that it should have been minus how far ahed or behind scheduke it was 
+
 //when the user clicks next, we want to store their time to see if they're ahead or behind schedule.
 function saveTime(){
 	timeDif.push(activityTime);
+	timeTaken.push(plannedTime - activityTime);
 }
 
 function showSchedule(){
@@ -245,7 +280,7 @@ function getDisplayTime(timeSeconds){
 	//giving the seconds part 
     var remainingSeconds = Math.abs(timeSeconds) % 60;
 	
-	if (remainingSeconds == 0){
+	if (remainingSeconds == 0 && audioStatus){
 		beepAlert.play();
 	}
 		
@@ -263,7 +298,9 @@ function getDisplayTime(timeSeconds){
     } else if (timeSeconds <= 10) {
         warning.innerText = "HURRY UP!";
         warning.style.color = "#FF9C32";
-        warningAlert.play();
+		if (audioStatus){
+			warningAlert.play();
+		}
         warningContainer.style.backgroundColor = "#FFFFE5";
         
     } else {
@@ -308,5 +345,9 @@ function addtoSkipped(){
 	skippedActs.push(saveActivities[index].name);
 	localStorage.setItem('skippedActs', JSON.stringify(skippedActs));
 	console.log(skippedActs);
+}
+
+function addTimeStorage(){
+	
 }
 
