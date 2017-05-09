@@ -39,11 +39,14 @@ var icons = ["./assets/other/Icons/brushteeth.svg",
 					"./assets/other/Icons/coffee.svg",
 					"./assets/other/Icons/breakfast.svg",
 					"./assets/other/Icons/clothes.svg",
-					"./assets/other/Icons/lunch.svg"];
+					"./assets/other/Icons/lunch.svg",
+					"./assets/other/Icons/custom.svg"];
 
 var iconPlaceholder = document.getElementById("iconPlaceholder");
 var iconContainer = document.getElementById("iconContainer");
 var iconName = document.getElementById("iconName");
+
+var customIcon = false;
 
 //var tickAlert = document.getElementById("tickAlert");
 
@@ -120,6 +123,7 @@ function loadPic(){
 	
 
 	if (saveActivities[index].pic == "undefined"){
+		
 		if (window.innerWidth < 576){
 			SVGplaceholder.data = "./assets/game/Mobile/customactivity_mobile.svg";
 			var customActTitle = document.createElement("DIV");
@@ -133,29 +137,37 @@ function loadPic(){
 			customActTitle.innerHTML = saveActivities[index].name;
 			document.body.appendChild(customActTitle);
 		}
+		
+		customIcon = true;
 			
 //if both of those are untrue, show the pic associated with the activity 
 			
-		} else {
-			var customActTitle = document.getElementById("customActTitle");
-			if (customActTitle){
-				customActTitle.parentElement.removeChild(customActTitle);	
-			}
-			
-			
-			SVGplaceholder.data = gameScenes[saveActivities[index].pic];
-			
-			//gameScenes is an array of paths to the images
-			//saveActivities is an array of objects 
-			//index is whatever scene you're on 
-			//pic is the associated svg scene for the object 
-			//how does does the gameScene change based on the order of saveActivities?
-			}
-	
+	} else {
+		var customActTitle = document.getElementById("customActTitle");
+		if (customActTitle){
+			customActTitle.parentElement.removeChild(customActTitle);	
+		}
+
+		customIcon = false;
+		SVGplaceholder.data = gameScenes[saveActivities[index].pic];
+
+		//gameScenes is an array of paths to the images
+		//saveActivities is an array of objects 
+		//index is whatever scene you're on 
+		//pic is the associated svg scene for the object 
+		//how does does the gameScene change based on the order of saveActivities?
+		}
 }
 
+
 function loadIcon(){
+	
+			if (customIcon){
+				iconPlaceholder.data = icons[5];
+			} 
+	
 			iconName.innerHTML = saveActivities[index].name;
+			console.log(saveActivities[index].name);
 			iconName.style.fontSize = "2vw";
 	
 			iconName.style.fontWeight = "700";
