@@ -11,9 +11,25 @@ var challengesResult = document.getElementById("challengesResult");
 var challengesCompleted = localStorage.getItem("myChallenges");
 var totalTimeResult = document.getElementById("totalTimeResult");
 
+var summedTime = totalTime.reduce(function(acc, val) {
+  return acc + val;
+}, 0);
+
 showCompleted();
 showChallenges();
 showTime();
+
+function showTime(){
+	var minutes = Math.floor(Math.abs(summedTime)/60);
+    var seconds = Math.abs(summedTime) % 60;
+	totalTimeResult.innerHTML = minutes + " minutes and " + seconds + " seconds";
+//	totalTimeResult.style.backgroundColor = "#BCB69F";
+	totalTimeResult.style.fontSize= "6em";
+	totalTimeResult.style.padding = "10px";
+	totalTimeResult.style.marginLeft= "20px";
+	totalTimeResult.style.borderRadius = "6px";
+}
+
 
 if (skippedActs != null){
 	showSkipped();
@@ -69,12 +85,3 @@ function showChallenges(){if (challengesCompleted){
 }					 
 }
 
-function showTime(){
-	function getSum(total, num) {
-    return total + num;
-	}
-
-	function getTime(item) {
-   totalTimeResult.innerHTML = totalTime.reduce(getSum);
-	}
-}

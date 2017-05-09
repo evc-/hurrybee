@@ -277,7 +277,7 @@ function showSchedule(){
 }
 
 function getDisplayTime(timeSeconds){
-		//turn it into minutes
+	//turn it into minutes
     var minutes = Math.floor(Math.abs(timeSeconds)/60);
 	//giving the seconds part 
     var remainingSeconds = Math.abs(timeSeconds) % 60;
