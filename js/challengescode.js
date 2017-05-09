@@ -267,4 +267,7 @@ completeBtn.addEventListener("click", function(){
     }
 
 });
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
