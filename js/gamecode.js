@@ -109,8 +109,7 @@ function loadPic(){
         
         warning.style.fontSize = "5vw";
 		freeTime.style.fontSize = "5vw";
-//        warningContainer.style.height = "50px";
-		
+
 	} else {
 		var gameScenes = ["./assets/game/Tablet/teethbrush_tablet.svg",
 					"./assets/game/Tablet/coffee_tablet.svg",
@@ -122,7 +121,12 @@ function loadPic(){
 		freeTime.style.fontSize = "3vw";
 	}
 	
+		var customActTitle = document.getElementById("customActTitle");
+		if (customActTitle){
+		customActTitle.parentElement.removeChild(customActTitle);	
+		}
 
+	
 	if (saveActivities[index].pic == "undefined"){
 		
 		if (window.innerWidth < 576){
@@ -144,11 +148,7 @@ function loadPic(){
 //if both of those are untrue, show the pic associated with the activity 
 			
 	} else {
-		var customActTitle = document.getElementById("customActTitle");
-		if (customActTitle){
-			customActTitle.parentElement.removeChild(customActTitle);	
-		}
-
+		
 		customIcon = false;
 		SVGplaceholder.data = gameScenes[saveActivities[index].pic];
 
@@ -157,7 +157,10 @@ function loadPic(){
 		//index is whatever scene you're on 
 		//pic is the associated svg scene for the object 
 		//how does does the gameScene change based on the order of saveActivities?
-		}
+		
+	}
+	
+	
 }
 
 
