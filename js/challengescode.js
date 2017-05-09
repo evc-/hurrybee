@@ -264,13 +264,4 @@ completeBtn.addEventListener("click", function(){
         // save to localStorage
         var txt = JSON.stringify(challengeArr);
         localStorage.setItem("myChallenges", txt);
-        
-        
     }
-<<<<<<< HEAD
-});
-=======
-});
-
-
->>>>>>> origin/master
