@@ -1,0 +1,141 @@
+/*Challenges Style    */
+
+body {
+        padding-top: 60px;
+        font-family: 'Nunito', sans-serif;
+        background-image: url("../assets/other/Background/honeycomb-bg.png");
+		overflow: hidden;
+    }
+		
+	h1{
+		font-size: 4em;
+		font-weight: 700;
+		color: #14275E;
+		}
+		
+	h2{
+		font-size: 1.5em;
+		font-weight: 700;
+		text-align: center;
+		color: #14275E;
+		}
+        
+    #congrats{
+			text-align: center;
+		}
+    
+    .img-margin{
+        padding: 0px;
+        }
+    
+    .ndiv-style{
+        width: 150px;
+        height: 100px;
+        background-color: rgba(255,255,255,0.8);
+        position: absolute;
+        margin: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        }
+    
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background-color: rgba(255,255,255,0.8);
+        animation: fadein 0.8s ease-in-out;
+    }
+    
+    #modal-content {
+        margin: 15% auto;
+        padding: 20px;
+        background-color: #fff1a5;
+        width: 350px;
+        height: 550px;
+        position: absolute;
+        margin:auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        animation: fadein 0.8s ease-in-out;
+    }
+    
+        @keyframes fadein {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeout {
+            from { opacity: 1; }
+            to { opacity: 0; }
+        }
+        
+    .exit-button {
+        width: 30px;
+    }
+    
+    .complete-icon {
+        display: none;
+    }
+        
+    	.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary, .btn-lg.round:hover {
+		background-color: #F8DB01;
+		color: #14275E;
+		
+		}
+		
+	.btn-primary.outline:active, .btn-primary.outline.active, .btn-lg.round:active {
+		
+		background-color: #F8DB01;
+		box-shadow: none;
+		color: #14275E;
+		}	
+
+	.btn-lg.round {
+		border-radius: 24px;
+		color: #14275E;
+		}
+        
+        .congrats-bg {
+            background-color: #FFF1A5;
+			border-radius: 8px;
+            width: 80vw;
+        }
+        
+        #c1:hover, #c2:hover, #c3:hover, #c4:hover, #c5:hover, #c6:hover, #c7:hover, #exit:hover {
+            opacity: 0.7;
+            cursor: pointer;
+        }
+		
+		.challengeicon{
+			height: 100%;
+		}
+		
+		.rowClassH{
+			height: 33%;
+            margin-bottom: -40px;
+		}
+		
+		.challengeContainer{
+			height: calc(100vh - 270px);
+		}
+		
+		.colClassH{
+			height: 80%;
+		}
+		
+		#finishChallengeBut{
+			text-align: center;
+			margin-bottom: 20px;
+		}
+        
+        .continueBtn {
+            width: 40vw;
+            background-color: #fff1a5;
+        }

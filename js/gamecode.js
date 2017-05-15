@@ -49,7 +49,6 @@ var customIcon = false;
 var plannedTime = 0;
 var timeTaken = [];
 
-//var tickAlert = document.getElementById("tickAlert");
 
 loadScene();
 loadIcon();
@@ -151,12 +150,6 @@ function loadPic(){
 		
 		customIcon = false;
 		SVGplaceholder.data = gameScenes[saveActivities[index].pic];
-
-		//gameScenes is an array of paths to the images
-		//saveActivities is an array of objects 
-		//index is whatever scene you're on 
-		//pic is the associated svg scene for the object 
-		//how does does the gameScene change based on the order of saveActivities?
 		
 	}
 	
