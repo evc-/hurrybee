@@ -1,4 +1,4 @@
-console.log(localStorage.myChallenges);
+//Challenges Code
 
 var modal = document.getElementById("myModal"),
     modalContent = document.getElementById("modal-content"),
@@ -28,8 +28,6 @@ var data = localStorage.getItem("myChallenges");
 
 cExercise.addEventListener("click", function(){
     curClick = "exercise";
-    console.log(curClick);
-    
     modal.style.display = "block";
     
     if (curClick == "exercise"){
@@ -46,7 +44,6 @@ cExercise.addEventListener("click", function(){
 
 cNews.addEventListener("click", function(){
     curClick = "news";
-    console.log(curClick);
     modal.style.display = "block";
     
     if (curClick == "news"){
@@ -63,7 +60,6 @@ cNews.addEventListener("click", function(){
 
 cWater.addEventListener("click", function(){
     curClick = "water";
-    console.log(curClick);
     modal.style.display = "block";
     
     if (curClick == "water"){
@@ -80,7 +76,6 @@ cWater.addEventListener("click", function(){
 
 cVitamin.addEventListener("click", function(){
     curClick = "vitamin";
-    console.log(curClick);
     modal.style.display = "block";
     
     if (curClick == "vitamin"){
@@ -97,7 +92,6 @@ cVitamin.addEventListener("click", function(){
 
 cMeditate.addEventListener("click", function(){
     curClick = "meditate";
-    console.log(curClick);
     modal.style.display = "block";
     
     if (curClick == "meditate"){
@@ -114,7 +108,6 @@ cMeditate.addEventListener("click", function(){
 
 cJournal.addEventListener("click", function(){
     curClick = "journal";
-    console.log(curClick);
     modal.style.display = "block";
     
     if (curClick == "journal"){
@@ -131,7 +124,6 @@ cJournal.addEventListener("click", function(){
 
 cBed.addEventListener("click", function(){
     curClick = "bed";
-    console.log(curClick);
     modal.style.display = "block";
     
     if (curClick == "bed"){
@@ -157,7 +149,6 @@ completeBtn.addEventListener("click", function(){
     if (curClick == "exercise"){
         // push completed challenge to array
         challengeArr.push("Got some exercise");
-        console.log(challengeArr);
         
         challengeObj.type = 0;
         
@@ -175,7 +166,6 @@ completeBtn.addEventListener("click", function(){
     else if (curClick == "news"){
         // push completed challenge to array
         challengeArr.push("Read the news");
-        console.log(challengeArr);
         
         // change cNews icon to different colour
         cNews.style.display = "none";
@@ -191,7 +181,6 @@ completeBtn.addEventListener("click", function(){
     else if (curClick == "water"){
         // push completed challenge to array
         challengeArr.push("Drank water");
-        console.log(challengeArr);
         
         // change cWater icon to different colour
         cWater.style.display = "none";
@@ -207,7 +196,6 @@ completeBtn.addEventListener("click", function(){
     else if (curClick == "vitamin"){
         // push completed challenge to array
         challengeArr.push("Took a multi-vitamin");
-        console.log(challengeArr);
         
         // change cVitamin icon to different colour
         cVitamin.style.display = "none";
@@ -223,7 +211,6 @@ completeBtn.addEventListener("click", function(){
     else if (curClick == "meditate"){
         // push completed challenge to array
         challengeArr.push("Meditated");
-        console.log(challengeArr);
         
         // change cJournal icon to different colour
         cMeditate.style.display = "none";
@@ -239,7 +226,6 @@ completeBtn.addEventListener("click", function(){
     else if (curClick == "journal"){
         // push completed challenge to array
         challengeArr.push("Wrote in gratitude journal");
-        console.log(challengeArr);
         
         // change cJournal icon to different colour
         cJournal.style.display = "none";
@@ -255,7 +241,6 @@ completeBtn.addEventListener("click", function(){
     else if (curClick == "bed"){
         // push completed challenge to array
         challengeArr.push("Made the bed");
-        console.log(challengeArr);
         
         // change cBed icon to different colour
         cBed.style.display = "none";
