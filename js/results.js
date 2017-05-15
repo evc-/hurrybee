@@ -37,10 +37,16 @@ function showCompleted(){
 		completedNames.style.fontSize="13pt";
 		completedNames.style.padding ="10px";
 		completedNames.style.borderRadius = "6px";
-		completedNames.innerHTML = completedActs[i].name + completedActs[i].time;
+		completedNames.innerHTML = completedActs[i].name + overUnderTime(completedActs[i].time);		
 		completedActsResult.appendChild(completedNames);
 	}
 }
+
+function overUnderTime(time){
+	var minutes = Math.floor(Math.abs(time)/60);
+    var seconds = Math.abs(time) % 60;
+	return minutes + ":" + seconds;
+};
 
 function showSkipped(){
 	for (i=0; i < skippedActs.length; i++){
@@ -82,6 +88,8 @@ function showTime(){
 	totalTimeResult.style.marginLeft= "20px";
 	totalTimeResult.style.borderRadius = "6px";
 }
+
+
 
 // update the progress bar according to completed challenges
 unlockedProgress.value = challengeArr.length;
