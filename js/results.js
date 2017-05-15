@@ -52,11 +52,8 @@ function showSkipped(){
 }
 
 function showChallenges(){if (challengesCompleted){
-	console.log(challengesCompleted);
     challengeArr = JSON.parse(challengesCompleted);
-    
     for (var i = 0; i <= challengeArr.length - 1; i++){
-		
 		var challengeNames = document.createElement("p");
 		challengeNames.style.backgroundColor = "#FFDB58";
 		challengeNames.style.fontSize="13pt";
@@ -64,13 +61,12 @@ function showChallenges(){if (challengesCompleted){
 		challengeNames.style.borderRadius = "6px";
 		challengeNames.innerHTML = challengeArr[i];
 		challengesResult.appendChild(challengeNames);
-            
         if (challengeArr[i].type == 0){
             cExercise.style.display = "none";
             document.getElementById("c1-complete").style.display = "block";
-        }   
-    }
-}					 
+        	}   
+    	}
+	}					 
 }
 
 function showTime(){
@@ -82,4 +78,3 @@ function showTime(){
 	totalTimeResult.style.marginLeft= "20px";
 	totalTimeResult.style.borderRadius = "6px";
 }
-
