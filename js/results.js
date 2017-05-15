@@ -38,7 +38,11 @@ function showCompleted(){
 		completedNames.style.padding ="10px";
 		completedNames.style.borderRadius = "6px";
 		
-		completedNames.innerHTML = completedActs[i].name + overUnderTime(completedActs[i].time);
+		if (completedActs[i].time > 0){
+			completedNames.innerHTML = completedActs[i].name + " <br> Ahead of schedule by " +  overUnderTime(completedActs[i].time) + " minutes";
+		} else {
+			completedNames.innerHTML = completedActs[i].name + " <br> Behind schedule by " +  overUnderTime(completedActs[i].time) + " minutes";
+		}
 		
 		if (completedActs[i].time > 0){
 			var underIcon = document.createElement("span");
@@ -49,9 +53,9 @@ function showCompleted(){
 			var lateIcon = document.createElement("span");
 			lateIcon.className = "glyphicon glyphicon-alert";
 			lateIcon.style.float = "right";
-
 			completedNames.appendChild(lateIcon)
 		}
+		
 		completedActsResult.appendChild(completedNames);
 	}
 }
