@@ -37,15 +37,30 @@ function showCompleted(){
 		completedNames.style.fontSize="13pt";
 		completedNames.style.padding ="10px";
 		completedNames.style.borderRadius = "6px";
-		completedNames.innerHTML = completedActs[i].name + overUnderTime(completedActs[i].time);		
+		
+		completedNames.innerHTML = completedActs[i].name + overUnderTime(completedActs[i].time);
+		
+		if (completedActs[i].time > 0){
+			var underIcon = document.createElement("span");
+			underIcon.className = "glyphicon glyphicon-check";
+			underIcon.style.float = "right";
+			completedNames.appendChild(underIcon);
+		} else {
+			var lateIcon = document.createElement("span");
+			lateIcon.className = "glyphicon glyphicon-alert";
+			lateIcon.style.float = "right";
+
+			completedNames.appendChild(lateIcon)
+		}
 		completedActsResult.appendChild(completedNames);
 	}
 }
 
+
 function overUnderTime(time){
 	var minutes = Math.floor(Math.abs(time)/60);
     var seconds = Math.abs(time) % 60;
-	return minutes + ":" + seconds;
+	return minutes + ":" + seconds + "       ";
 };
 
 function showSkipped(){
