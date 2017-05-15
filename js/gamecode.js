@@ -187,6 +187,7 @@ function stopTimer(){
 //when the user clicks next, we want to store their time to see if they're ahead or behind schedule.
 function saveTime(){
 	timeDif.push(activityTime);
+	console.log(activityTime);
 	timeTaken.push(plannedTime - activityTime);
 	addTimeStorage();
 }
@@ -209,7 +210,6 @@ function showSchedule(){
     }
 
     	localStorage.setItem("freeTime", JSON.stringify(freeTime.innerHTML));
-        console.log(localStorage);
 }
 
 function getDisplayTime(timeSeconds){
@@ -264,7 +264,10 @@ function animateProgress() {
 }
 
 function addToCompleted(){
-	completedActs.push(saveActivities[index].name);
+	completedActs.push({name: saveActivities[index].name,
+						time: activityTime}
+					  );
+	console.log(completedActs);
 	localStorage.setItem('completedActs', JSON.stringify(completedActs));
 }
 

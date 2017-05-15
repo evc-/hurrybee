@@ -30,13 +30,14 @@ clearStorage.addEventListener("click", function(){
 })
 
 function showCompleted(){
+	console.log(completedActs);
 	for (i=0; i < completedActs.length; i++){
 		var completedNames = document.createElement("p");
 		completedNames.style.backgroundColor = "#FFF1A5";
 		completedNames.style.fontSize="13pt";
 		completedNames.style.padding ="10px";
 		completedNames.style.borderRadius = "6px";
-		completedNames.innerHTML = completedActs[i];
+		completedNames.innerHTML = completedActs[i].name + completedActs[i].time;
 		completedActsResult.appendChild(completedNames);
 	}
 }
