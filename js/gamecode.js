@@ -62,7 +62,6 @@ skipSVG.addEventListener("click",function(){
 })
 
 //pressing the skip button will add the name of the skipped activity to an array, increase the index to change the picture, stop the timer, save the activity time, then load the next picture and scene. if someone is skipping the last activity,it will go to the challenges page. 
-
 function skipActivity(){
 	if (index == (saveActivities.length -1)) {
 			window.location.href = "challenges.html";
@@ -80,7 +79,6 @@ function skipActivity(){
 
 function loadPic(){
 	//set tablet or mobile display based on screen size 
-
 	if (window.innerWidth < 576){
 		var gameScenes = ["./assets/game/Mobile/teethbrush_mobile.svg",
 					"./assets/game/Mobile/coffee_mobile.svg",

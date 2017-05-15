@@ -3,7 +3,6 @@
 var simpleList = document.getElementById("simpleList");
 
 //when the page loads, the list should be the user's custom list - if they have been there before, and have saved a custom list to local storage 
-
 var saveActivities = localStorage.getItem("mySavedActivities");		
 
 //these are the arrays that handle the list 
@@ -45,13 +44,32 @@ setTimeout(function(){
 	estimateTime(); //estimate time when list is updated 
 }, 100);
 
+//set audio to play or not based on stored preference, or off if not yet set
 if (audioStatus == undefined){
 		audioStatus = false;
 	}
+//update visual switch to reflect if audio will play or not 
 audioSwitch.checked = audioStatus;
 
-//this is for adding custom activities 
+audioSwitch.addEventListener("click", function(){
+	if (audioStatus){
+		audioSwitch.value = "checked";
+		audioStatus = false;
+	} else{
+		audioSwitch.value = "unchecked";
+		audioStatus = true;
+	}
+	localStorage.setItem("audioSwitch", JSON.stringify(audioStatus));
+})
+
+getList();
 		
+resetList.addEventListener("click", function(){
+	clearList();
+	fillDefault();	
+})
+
+//this is for adding custom activities 
 function buttonAdd(){
 	var customActName = document.getElementById("customActName");
 	var customActTime = document.getElementById("customActTime");
@@ -64,7 +82,7 @@ function buttonAdd(){
 }
 
 //this is for generating a single list item that gets added to the end of the list 
-		
+//also used to populate entire list 
 function addActivity(name, time, pic){
 	var newActivity= document.createElement("li"); //create list item
 	newActivity.className = "list-group-item";
@@ -110,8 +128,7 @@ function deleteMe(item){
 	estimateTime(); //estimate time when list is updated 
 }
 		
-	
-//this function is for adding up all the time values and getting a sum. it gets time values from activityArr, which is currently only generated when the list is updated 	
+//this function is for adding up all the time values and getting a sum. it gets time values from activityArr	
 function estimateTime(){
 	timeSum= 0;
 	for (i=0; i < activityArr.length; i ++){  
@@ -123,7 +140,6 @@ function estimateTime(){
 }
 
 //this loops over the default activities and uses the "add activity" function to generate the visual list 
-
 function fillDefault(){
 	for (i=0; i < defaultActivities.length; i ++){
 		addActivity(defaultActivities[i].name, defaultActivities[i].time, defaultActivities[i].pic);
@@ -147,7 +163,6 @@ function createList(){
 }
 
 //this function stringifies the new array of objects, and saves them in the local storage as "mySavedActivities" 
-
 function storeList(){
 	var saveActivities = JSON.stringify(activityObjects);
 	localStorage.setItem("mySavedActivities", saveActivities);
@@ -161,7 +176,6 @@ startGame.addEventListener("click", function(){
 })
 		
 //this function checks if there is a custom list saved in the local storage. if there is a custom list, the list should be generated with the addActivity function. if there is no custom list stored, a default list should be generated. 
-		
 function getList(){
 		if (saveActivities == null){
 			fillDefault();
@@ -170,23 +184,14 @@ function getList(){
 			activityObjects = JSON.parse(saveActivities);
 			fillCustom();
 			welcomeMsg.innerHTML = "Welcome back! Here's your custom morning set up. How's it look?<br>";
-	}
+		}
 }
 
-	
 function clearList(){
 	$( document ).ready(function() {
 		$("#simpleList").empty();
 	})
 }
-
-getList();
-		
-resetList.addEventListener("click", function(){
-	clearList();
-	fillDefault();	
-})
-		
 		
 function getFinishTime(){
 	//finish time
@@ -211,14 +216,3 @@ function getFinishTime(){
 		}
 		timeFinish.innerHTML = finishHours + ":" + finishMins;
 }
-
-audioSwitch.addEventListener("click", function(){
-	if (audioStatus){
-		audioSwitch.value = "checked";
-		audioStatus = false;
-	} else{
-		audioSwitch.value = "unchecked";
-		audioStatus = true;
-	}
-	localStorage.setItem("audioSwitch", JSON.stringify(audioStatus));
-})
