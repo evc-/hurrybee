@@ -4,7 +4,6 @@ var completedActs = JSON.parse(localStorage.getItem("completedActs"));
 var skippedActs = JSON.parse(localStorage.getItem("skippedActs"));
 var totalTime = JSON.parse(localStorage.getItem("timeTaken"));
 var clearStorage = document.getElementById("clearStorage");
-
 var skippedActsResult = document.getElementById("skippedActsResult");
 var completedActsResult = document.getElementById("completedActsResult");
 var challengesResult = document.getElementById("challengesResult");
@@ -73,7 +72,6 @@ function showTime(){
 	var minutes = Math.floor(Math.abs(summedTime)/60);
     var seconds = Math.abs(summedTime) % 60;
 	totalTimeResult.innerHTML = minutes + " minutes and " + seconds + " seconds";
-	totalTimeResult.style.fontSize= "6em";
 	totalTimeResult.style.padding = "10px";
 	totalTimeResult.style.marginLeft= "20px";
 	totalTimeResult.style.borderRadius = "6px";

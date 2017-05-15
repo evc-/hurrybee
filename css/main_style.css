@@ -283,6 +283,10 @@ body {
 	.timeRemainingSize{
 		font-size: 2em;
 	}
+
+	#totalTimeResult{
+		font-size: 3em;
+	}
 	
 
 /* Small devices */
@@ -294,6 +298,10 @@ body {
 	}
 	
 	.timeRemainingSize{
+		font-size: 3em;
+	}
+	
+	#totalTimeResult{
 		font-size: 3em;
 	}
 
@@ -308,6 +316,10 @@ body {
 	}
 	
 	.timeRemainingSize{
+		font-size: 4em;
+	}
+	
+	#totalTimeResult{
 		font-size: 4em;
 	}
 	
