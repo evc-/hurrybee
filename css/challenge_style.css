@@ -137,3 +137,7 @@ h2{
 	width: 40vw;
 	background-color: #fff1a5;
 }
+
+#totalFreeTime {
+    margin: 10px;
+}

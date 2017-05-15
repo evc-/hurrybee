@@ -24,6 +24,8 @@ var totalFreeTime = document.getElementById("totalFreeTime");
 
 var data = localStorage.getItem("myChallenges");
 
+var freeTime = JSON.parse(localStorage.getItem("freeTime"));
+
 cExercise.addEventListener("click", function(){
     curClick = "exercise";
     modal.style.display = "block";
@@ -251,7 +253,7 @@ completeBtn.addEventListener("click", function(){
 
 function showFreeTime(){
     if (freeTime){
-        totalFreeTime.innerHTML = JSON.parse(freeTime);
+        totalFreeTime.innerHTML = "You are " + freeTime;
     }
 }
 
