@@ -20,9 +20,7 @@ var exitBtn = document.getElementById("exit"),
 
 var challengeArr = [];
 
-var challengeObj = {
-    type: ""
-}
+var totalFreeTime = document.getElementById("totalFreeTime");
 
 var data = localStorage.getItem("myChallenges");
 
@@ -149,9 +147,7 @@ completeBtn.addEventListener("click", function(){
     if (curClick == "exercise"){
         // push completed challenge to array
         challengeArr.push("Got some exercise");
-        
-        challengeObj.type = 0;
-        
+                
         // change cExercise icon to different colour
         cExercise.style.display = "none";
         document.getElementById("c1-complete").style.display = "block";
@@ -252,3 +248,11 @@ completeBtn.addEventListener("click", function(){
     }
 
 });
+
+function showFreeTime(){
+    if (freeTime){
+        totalFreeTime.innerHTML = JSON.parse(freeTime);
+    }
+}
+
+showFreeTime();

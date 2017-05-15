@@ -209,6 +209,9 @@ function showSchedule(){
 	} else{
         freeTime.innerHTML = "You are right on track!";
     }
+
+    	localStorage.setItem("freeTime", JSON.stringify(freeTime.innerHTML));
+        console.log(localStorage);
 }
 
 function getDisplayTime(timeSeconds){

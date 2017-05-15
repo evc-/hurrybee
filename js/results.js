@@ -10,6 +10,9 @@ var challengesResult = document.getElementById("challengesResult");
 var challengesCompleted = localStorage.getItem("myChallenges");
 var totalTimeResult = document.getElementById("totalTimeResult");
 
+var unlocked = document.getElementById("unlocked"),
+    unlockedProgress = document.getElementById("unlockedProgress");
+
 var summedTime = totalTime.reduce(function(acc, val) {
   return acc + val;
 }, 0);
@@ -50,6 +53,8 @@ function showSkipped(){
 	}
 }
 
+unlocked.innerHTML = challengeArr.length + "/7 unlocked";
+
 function showChallenges(){if (challengesCompleted){
     challengeArr = JSON.parse(challengesCompleted);
     for (var i = 0; i <= challengeArr.length - 1; i++){
@@ -76,3 +81,6 @@ function showTime(){
 	totalTimeResult.style.marginLeft= "20px";
 	totalTimeResult.style.borderRadius = "6px";
 }
+
+// update the progress bar according to completed challenges
+unlockedProgress.value = challengeArr.length;
