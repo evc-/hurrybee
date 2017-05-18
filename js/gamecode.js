@@ -41,6 +41,7 @@ var timeTaken = [];
 
 advanceGame();
 loadIcon();
+console.log("4pm update");
 
 checkbox.addEventListener("click",function(){
 	checkmarkFill.style.fill = "#14275E";
