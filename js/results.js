@@ -39,9 +39,9 @@ function showCompleted(){
 		completedNames.style.borderRadius = "6px";
 		
 		if (completedActs[i].time > 0){
-			completedNames.innerHTML = completedActs[i].name + " <br> Ahead of schedule by " +  overUnderTime(completedActs[i].time) + " minutes";
+			completedNames.innerHTML = completedActs[i].name + " <br> <span style='font-style:italic;'>Ahead of schedule by </span> " +  overUnderTime(completedActs[i].time) + " <span style='font-style:italic;'>minutes </span>";
 		} else {
-			completedNames.innerHTML = completedActs[i].name + " <br> Behind schedule by " +  overUnderTime(completedActs[i].time) + " minutes";
+			completedNames.innerHTML = completedActs[i].name + " <br> <span style='font-style:italic;'>Behind schedule by </span>" +  overUnderTime(completedActs[i].time) + " <span style='font-style:italic;'>minutes </span>";
 		}
 		
 		if (completedActs[i].time > 0){
