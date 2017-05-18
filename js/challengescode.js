@@ -117,7 +117,7 @@ cJournal.addEventListener("click", function(){
         nImg.src = "assets/challenges/journal.svg";
         modalIcon.appendChild(nImg);
                     
-        modalText.innerHTML = "Write down things you're grateful for in a journal! Expressing gratitude is a great way to get a good perspective before starting your fay. It only takes a few minutes, but can make a real difference.";
+        modalText.innerHTML = "The benefits of gratitude are scientifically proven. Take a few minutes to write down some things you're grateful for.";
     }
 
 });
