@@ -90,9 +90,9 @@ function loadPic(){
 	} else {
 		var gameScenes = ["./assets/game/Tablet/teethbrush_tablet.svg",
 					"./assets/game/Tablet/coffee_tablet.svg",
-					"./assets/game/Tablet/breakfast_Tablet.svg",
-					"./assets/game/Tablet/gettingdressed_Tablet.svg",
-					"./assets/game/Tablet/lunch_Tablet.svg"];
+					"./assets/game/Tablet/breakfast_tablet.svg",
+					"./assets/game/Tablet/gettingdressed_tablet.svg",
+					"./assets/game/Tablet/lunch_tablet.svg"];
         warning.style.fontSize = "3vw";
 		freeTime.style.fontSize = "3vw";
 	}
