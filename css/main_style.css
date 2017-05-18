@@ -346,7 +346,7 @@ body {
 	#right_game_controls{
 		position: fixed;
 		right: 10px;
-		bottom: 500px;
+		bottom: 100px;
 	}
 	
 	.timerSize{
@@ -451,9 +451,9 @@ progress[value]{
     /*reset default appearance*/
     -webkit-appearance: none;
     appearance: none;
-    
-    width: 230px;
+/*width: 230px;*/
     height: 15px;
+	width: 100%;
 }
 
 progress[value]::-webkit-progress-bar {
