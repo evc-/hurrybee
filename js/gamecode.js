@@ -80,19 +80,19 @@ function skipActivity(){
 function loadPic(){
 	//set tablet or mobile display based on screen size 
 	if (window.innerWidth < 576){
-		var gameScenes = ["./assets/game/Mobile/teethbrush_mobile.svg",
-					"./assets/game/Mobile/coffee_mobile.svg",
-					"./assets/game/Mobile/breakfast_mobile.svg",
-					"./assets/game/Mobile/gettingdressed_mobile.svg",
-					"./assets/game/Mobile/lunch_mobile.svg"];
+		var gameScenes = ["./assets/game/Mobile/teethbrush_Mobile.svg",
+					"./assets/game/Mobile/coffee_Mobile.svg",
+					"./assets/game/Mobile/breakfast_Mobile.svg",
+					"./assets/game/Mobile/gettingdressed_Mobile.svg",
+					"./assets/game/Mobile/lunch_Mobile.svg"];
         warning.style.fontSize = "5vw";
 		freeTime.style.fontSize = "5vw";
 	} else {
-		var gameScenes = ["./assets/game/Tablet/teethbrush_tablet.svg",
-					"./assets/game/Tablet/coffee_tablet.svg",
-					"./assets/game/Tablet/breakfast_tablet.svg",
-					"./assets/game/Tablet/gettingdressed_tablet.svg",
-					"./assets/game/Tablet/lunch_tablet.svg"];
+		var gameScenes = ["./assets/game/Tablet/teethbrush_Tablet.svg",
+					"./assets/game/Tablet/coffee_Tablet.svg",
+					"./assets/game/Tablet/breakfast_Tablet.svg",
+					"./assets/game/Tablet/gettingdressed_Tablet.svg",
+					"./assets/game/Tablet/lunch_Tablet.svg"];
         warning.style.fontSize = "3vw";
 		freeTime.style.fontSize = "3vw";
 	}
