@@ -64,21 +64,7 @@ skipSVG.addEventListener("click",function(){
 	skipActivity();
 })
 
-//pressing the skip button will add the name of the skipped activity to an array, increase the index to change the picture, stop the timer, save the activity time, then load the next picture and scene. if someone is skipping the last activity,it will go to the challenges page. 
-function skipActivity(){
-	if (index == (saveActivities.length -1)) {
-			window.location.href = "challenges.html";
-	} else {
-		addtoSkipped();
-		advanceGame();
-//		index ++;
-//		stopTimer();
-//		saveTime();
-//		loadPic();
-//		loadScene();
-//		loadIcon();
-	}
-}
+
 
 function loadPic(){
 	//set tablet or mobile display based on screen size 
@@ -142,7 +128,7 @@ function loadIcon(){
 //this function loads the visual (by changing the svg data) to the "pic" value associated with the array object 
 function loadScene(){
 	//if all the activities are done, go to challenges page 
-	if (index == saveActivities.length) {
+	if (index == (saveActivities.length)) {
 		window.location.href = "challenges.html";
 	//else if the pic is undefined, create a placeholder image
 	} else {
@@ -152,6 +138,23 @@ function loadScene(){
 		animateProgress();
 	} 
 	checkmarkFill.style.fill = "white";
+}
+
+//pressing the skip button will add the name of the skipped activity to an array, increase the index to change the picture, stop the timer, save the activity time, then load the next picture and scene. if someone is skipping the last activity,it will go to the challenges page. 
+
+function skipActivity(){
+	if (index == (saveActivities.length)) {
+			window.location.href = "challenges.html";
+	} else {
+		addtoSkipped();
+		advanceGame();
+//		index ++;
+//		stopTimer();
+//		saveTime();
+//		loadPic();
+//		loadScene();
+//		loadIcon();
+	}
 }
 
 
@@ -275,7 +278,6 @@ function addToCompleted(){
 	completedActs.push({name: saveActivities[index].name,
 						time: activityTime}
 					  );
-	console.log(completedActs);
 	localStorage.setItem('completedActs', JSON.stringify(completedActs));
 }
 
