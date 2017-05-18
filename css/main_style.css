@@ -288,7 +288,7 @@ body {
 	#totalTimeResult{
 		font-size: 3em;
 	}
-	
+
 
 /* Small devices */
 @media (min-width: 768px) { 
@@ -311,6 +311,7 @@ body {
 	#totalTimeResult{
 		font-size: 3em;
 	}
+	
 
 }
 
@@ -464,3 +465,4 @@ progress[value]::-webkit-progress-value {
     background-color: #FF9C32;
     border-radius: 5px;
 }
+

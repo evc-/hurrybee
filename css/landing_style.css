@@ -134,6 +134,8 @@ a, a:hover{
 #cta{
 	border-radius: 97px;
 	width: 60%;
+	font-weight: 700;
+	color: #14275E;
 }
 	
 .center-text-hiw{
@@ -146,3 +148,12 @@ a, a:hover{
 	font-size: 30px;
 	top: -15px;
 }
+
+.landing-cta-btn{
+	margin-bottom: 10px;
+}
+
+#Layer_1{
+	width: 80%;
+}
+	
