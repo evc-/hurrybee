@@ -39,20 +39,22 @@ var customIcon = false;
 var plannedTime = 0;
 var timeTaken = [];
 
-loadScene();
+advanceGame();
 loadIcon();
 
 checkbox.addEventListener("click",function(){
 	checkmarkFill.style.fill = "#14275E";
 	setTimeout(function(){ 
-		advanceGame() 
+		addToCompleted();
+		advanceGame();
 	}, 500);
 })
 
 checkmarkFill.addEventListener("click",function(){
 	checkmarkFill.style.fill = "#14275E";
 	setTimeout(function(){ 
-		advanceGame() 
+		addToCompleted();
+		advanceGame();
 	}, 500);
 	
 })
@@ -67,13 +69,13 @@ function skipActivity(){
 			window.location.href = "challenges.html";
 	} else {
 		addtoSkipped();
-		index ++;
-		stopTimer();
-		console.log(activityTime);
-		saveTime();
-		loadPic();
-		loadScene();
-		loadIcon();
+		advanceGame();
+//		index ++;
+//		stopTimer();
+//		saveTime();
+//		loadPic();
+//		loadScene();
+//		loadIcon();
 	}
 }
 
@@ -154,13 +156,18 @@ function loadScene(){
 
 //this function advances the game to the next scene by increasing the index by 1 and running the load scene function again
 function advanceGame(){
-	addToCompleted();
-	index ++;
+	if (index == 0){
+		loadScene();
+	} else {
 	stopTimer();
 	saveTime();
 	loadScene();
 	loadIcon();
+	}
+		index ++;
+	
 }
+
 
 //doing something every time 1 second passes 
 function secondPassed() {
