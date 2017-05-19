@@ -43,6 +43,8 @@ var timeTaken = [];
 advanceGame();
 loadIcon();
 
+console.log("11:45pm");
+
 //either complete or skip activity depending on the button
 checkbox.addEventListener("click",function(){
 	checkmarkFill.style.fill = "#14275E";
