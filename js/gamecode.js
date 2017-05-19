@@ -36,6 +36,7 @@ var iconName = document.getElementById("iconName");
 var customIcon = false;
 var plannedTime = 0;
 var timeTaken = [];
+var gameScenes = [];
 
 //FUNCTIONALITY 
 
