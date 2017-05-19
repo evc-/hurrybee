@@ -55,6 +55,8 @@ var gameScenesTablet = ["./assets/game/Tablet/teethbrush_tablet.svg",
 advanceGame();
 loadIcon();
 
+console.log("11am");
+
 //either complete or skip activity depending on the button
 checkbox.addEventListener("click",function(){
 	checkmarkFill.style.fill = "#14275E";
