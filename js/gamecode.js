@@ -1,10 +1,10 @@
+//VARIABLES 
+
 var saveActivities = localStorage.getItem("mySavedActivities");
 saveActivities = JSON.parse(saveActivities);
 //saveActivities is now an array of objects with names,times, and pics
-
 var index = 0;
 var SVGplaceholder = document.getElementById("SVGplaceholder");
-
 var activityTime = 0;
 var timeDif = [];
 var countdownTimer;
@@ -24,14 +24,12 @@ var completedActs = [];
 var skippedActs= [];
 var beepAlert = document.getElementById("beepAlert");
 var audioStatus = JSON.parse(localStorage.getItem("audioSwitch"));
-
 var icons = ["./assets/other/Icons/brushteeth.svg",
 					"./assets/other/Icons/coffee.svg",
 					"./assets/other/Icons/breakfast.svg",
 					"./assets/other/Icons/clothes.svg",
 					"./assets/other/Icons/lunch.svg",
 					"./assets/other/Icons/custom.svg"];
-
 var iconPlaceholder = document.getElementById("iconPlaceholder");
 var iconContainer = document.getElementById("iconContainer");
 var iconName = document.getElementById("iconName");
@@ -39,23 +37,24 @@ var customIcon = false;
 var plannedTime = 0;
 var timeTaken = [];
 
+//FUNCTIONALITY 
+
+//on page load, advance game 
 advanceGame();
 loadIcon();
-console.log("4pm update");
 
+//either complete or skip activity depending on the button
 checkbox.addEventListener("click",function(){
 	checkmarkFill.style.fill = "#14275E";
 	setTimeout(function(){ 
-		addToCompleted();
-		advanceGame();
+		completeActivity();
 	}, 500);
 })
 
 checkmarkFill.addEventListener("click",function(){
 	checkmarkFill.style.fill = "#14275E";
 	setTimeout(function(){ 
-		addToCompleted();
-		advanceGame();
+		completeActivity();
 	}, 500);
 	
 })
@@ -65,6 +64,23 @@ skipSVG.addEventListener("click",function(){
 })
 
 
+//GAME FUNCTION TOOLKIT
+
+//this function advances the game to the next scene by increasing the index by 1 and running the load scene function again.
+
+function advanceGame(){
+	if (index == 0){
+		loadScene();
+	} else {
+	stopTimer();
+	saveTime();
+	loadScene();
+	loadIcon();
+	}
+	
+}
+
+//this checks the screen size to determine which SVG to load. it also checks the activity choice image is undefined - in which case, it is a custom activity, so the right scene for that will load. 
 
 function loadPic(){
 	//set tablet or mobile display based on screen size 
@@ -89,7 +105,9 @@ function loadPic(){
 		var customActTitle = document.getElementById("customActTitle");
 		if (customActTitle){
 		customActTitle.parentElement.removeChild(customActTitle);	
+			
 		}
+	
 		if (saveActivities[index].pic == "undefined"){
 			if (window.innerWidth < 576){
 				SVGplaceholder.data = "./assets/game/Mobile/customactivity_mobile.svg";
@@ -112,23 +130,11 @@ function loadPic(){
 		}
 }
 
-function loadIcon(){
-		//if custom icon is true, load the custom icon. otherwise, load the icon associated with the activity 
-		if (customIcon){
-			iconPlaceholder.data = icons[5];
-		} else {
-			iconPlaceholder.data = icons[saveActivities[index].pic];
-		}	
-	iconName.innerHTML = saveActivities[index].name;
-	iconName.style.fontSize = "2vw";
-	iconName.style.fontWeight = "700";
-}
-
 
 //this function loads the visual (by changing the svg data) to the "pic" value associated with the array object 
 function loadScene(){
 	//if all the activities are done, go to challenges page 
-	if (index == (saveActivities.length)) {
+	if (index == saveActivities.length) {
 		window.location.href = "challenges.html";
 	//else if the pic is undefined, create a placeholder image
 	} else {
@@ -143,35 +149,44 @@ function loadScene(){
 //pressing the skip button will add the name of the skipped activity to an array, increase the index to change the picture, stop the timer, save the activity time, then load the next picture and scene. if someone is skipping the last activity,it will go to the challenges page. 
 
 function skipActivity(){
-	if (index == (saveActivities.length)) {
-			window.location.href = "challenges.html";
-	} else {
 		addtoSkipped();
-		advanceGame();
-//		index ++;
-//		stopTimer();
-//		saveTime();
-//		loadPic();
-//		loadScene();
-//		loadIcon();
-	}
-}
-
-
-//this function advances the game to the next scene by increasing the index by 1 and running the load scene function again
-function advanceGame(){
-	if (index == 0){
-		loadScene();
-	} else {
-	stopTimer();
-	saveTime();
-	loadScene();
-	loadIcon();
-	}
 		index ++;
-	
+		advanceGame();
 }
 
+function completeActivity(){
+		addToCompleted();
+		index ++;
+		advanceGame();
+}
+
+
+function addToCompleted(){
+	completedActs.push({name: saveActivities[index].name,
+						time: activityTime});
+	localStorage.setItem('completedActs', JSON.stringify(completedActs));
+}
+
+function addtoSkipped(){
+	skippedActs.push(saveActivities[index].name);
+	localStorage.setItem('skippedActs', JSON.stringify(skippedActs));
+}
+
+
+function loadIcon(){
+		//if custom icon is true, load the custom icon. otherwise, load the icon associated with the activity 
+		if (customIcon){
+			iconPlaceholder.data = icons[5];
+		} else {
+			iconPlaceholder.data = icons[saveActivities[index].pic];
+		}	
+	iconName.innerHTML = saveActivities[index].name;
+	iconName.style.fontSize = "2vw";
+	iconName.style.fontWeight = "700";
+}
+
+
+//TIMER FUNCTIONS
 
 //doing something every time 1 second passes 
 function secondPassed() {
@@ -272,18 +287,6 @@ function animateProgress() {
        	easing: 'linear'
     });
 	circle.animate(1);
-}
-
-function addToCompleted(){
-	completedActs.push({name: saveActivities[index].name,
-						time: activityTime}
-					  );
-	localStorage.setItem('completedActs', JSON.stringify(completedActs));
-}
-
-function addtoSkipped(){
-	skippedActs.push(saveActivities[index].name);
-	localStorage.setItem('skippedActs', JSON.stringify(skippedActs));
 }
 
 function addTimeStorage(){
