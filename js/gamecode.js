@@ -92,6 +92,7 @@ function loadPic(){
 					"./assets/game/Mobile/breakfast_mobile.svg",
 					"./assets/game/Mobile/gettingdressed_mobile.svg",
 					"./assets/game/Mobile/lunch_mobile.svg"];
+		
         warning.style.fontSize = "5vw";
 		freeTime.style.fontSize = "5vw";
 	} else {
@@ -127,8 +128,9 @@ function loadPic(){
 			customIcon = true;
 			//if both of those are untrue, show the pic associated with the activity 
 		} else {
-			customIcon = false;
 			SVGplaceholder.data = gameScenes[saveActivities[index].pic];
+			customIcon = false;
+			
 		}
 }
 
