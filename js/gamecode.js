@@ -36,18 +36,7 @@ var iconName = document.getElementById("iconName");
 var customIcon = false;
 var plannedTime = 0;
 var timeTaken = [];
-var gameSceneDisplay;
-var gameScenesMobile = ["./assets/game/Mobile/teethbrush_mobile.svg",
-					"./assets/game/Mobile/coffee_mobile.svg",
-					"./assets/game/Mobile/breakfast_mobile.svg",
-					"./assets/game/Mobile/gettingdressed_mobile.svg",
-					"./assets/game/Mobile/lunch_mobile.svg"];
-
-var gameScenesTablet = ["./assets/game/Tablet/teethbrush_tablet.svg",
-					"./assets/game/Tablet/coffee_tablet.svg",
-					"./assets/game/Tablet/breakfast_tablet.svg",
-					"./assets/game/Tablet/gettingdressed_tablet.svg",
-					"./assets/game/Tablet/lunch_tablet.svg"];
+var gameScenes = [];
 
 //FUNCTIONALITY 
 
@@ -55,7 +44,7 @@ var gameScenesTablet = ["./assets/game/Tablet/teethbrush_tablet.svg",
 advanceGame();
 loadIcon();
 
-console.log("11am");
+console.log("11:15");
 
 //either complete or skip activity depending on the button
 checkbox.addEventListener("click",function(){
@@ -99,14 +88,22 @@ function advanceGame(){
 function loadPic(){
 	//set tablet or mobile display based on screen size 
 	if (window.innerWidth < 576){
-		var gameSceneDisplay = gameScenesMobile;
+		var gameScenes = ["./assets/game/Mobile/teethbrush_mobile.svg",
+					"./assets/game/Mobile/coffee_mobile.svg",
+					"./assets/game/Mobile/breakfast_mobile.svg",
+					"./assets/game/Mobile/gettingdressed_mobile.svg",
+					"./assets/game/Mobile/lunch_mobile.svg"];
 		
-        warning.style.fontSize = "5vw";
+       	 	warning.style.fontSize = "5vw";
 		freeTime.style.fontSize = "5vw";
 	} else {
-		var gameSceneDisplay = gameScenesTablet;
+		var gameScenes = ["./assets/game/Tablet/teethbrush_tablet.svg",
+					"./assets/game/Tablet/coffee_tablet.svg",
+					"./assets/game/Tablet/breakfast_tablet.svg",
+					"./assets/game/Tablet/gettingdressed_tablet.svg",
+					"./assets/game/Tablet/lunch_tablet.svg"];
 		
-        warning.style.fontSize = "3vw";
+       	 	warning.style.fontSize = "3vw";
 		freeTime.style.fontSize = "3vw";
 	}
 	
