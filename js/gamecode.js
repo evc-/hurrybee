@@ -45,7 +45,7 @@ var newSvg;
 advanceGame();
 loadIcon();
 
-console.log("sunday 2");
+console.log("sunday 3");
 
 //either complete or skip activity depending on the button
 checkbox.addEventListener("click",function(){
