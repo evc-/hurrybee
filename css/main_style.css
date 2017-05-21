@@ -10,7 +10,7 @@ body {
 }
 				
 #timeEstimate, #timeFinish{
-	font-size: 6em;
+	font-size: 5em;
 }
 		
 #addNewAct{
@@ -19,6 +19,7 @@ body {
 	font-size: 14pt;
 	color: #FF9C32;
 	margin-bottom: 7px;
+	margin-top: 7px;
 }
 		
 .btn.outline {

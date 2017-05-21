@@ -191,7 +191,7 @@ function loadIcon(){
 			iconPlaceholder.data = icons[saveActivities[index].pic];
 		}	
 	iconName.innerHTML = saveActivities[index].name;
-	iconName.style.fontSize = "2vw";
+	iconName.style.fontSize = "1.7em";
 	iconName.style.fontWeight = "700";
 }
 
