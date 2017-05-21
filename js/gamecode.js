@@ -45,8 +45,6 @@ var newSvg;
 advanceGame();
 loadIcon();
 
-console.log("sunday 3");
-
 //either complete or skip activity depending on the button
 checkbox.addEventListener("click",function(){
 	checkmarkFill.style.fill = "#14275E";
@@ -84,7 +82,7 @@ function advanceGame(){
 	
 }
 
-//this checks the screen size to determine which SVG to load. it also checks the activity choice image is undefined - in which case, it is a custom activity, so the right scene for that will load. 
+//this function creates a new SVG object with the correct data property to show the right image. it checks the screen size to determine which SVG to load. it also checks the activity choice image is undefined - in which case, it is a custom activity, so the right scene for that will load. 
 
 function loadPic(){
 	
@@ -112,16 +110,7 @@ function loadPic(){
        	 	warning.style.fontSize = "3vw";
 			freeTime.style.fontSize = "3vw";
 	}
-	
-		
-		
-	
-//		window.addEventListener('load', function() {
-//		SVGplaceholder.innerHTML= '';
-//		SVGplaceholder.appendChild(newSvg);
-//			
-//	}
-							   
+				   
 		var customActTitle = document.getElementById("customActTitle");
 		if (customActTitle){
 		customActTitle.parentElement.removeChild(customActTitle);	
@@ -148,12 +137,9 @@ function loadPic(){
 		} else {
 			newSvg.data = gameScenes[saveActivities[index].pic];
 			SVGplaceholder.appendChild(newSvg);
-//			SVGplaceholder.data = gameScenes[saveActivities[index].pic];
 			customIcon = false;
-			
 		}
 }
-
 
 //this function loads the visual (by changing the svg data) to the "pic" value associated with the array object 
 function loadScene(){
