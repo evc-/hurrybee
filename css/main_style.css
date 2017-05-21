@@ -114,7 +114,25 @@ body {
 	margin-top: -60px;
 }
 
+/*
 #SVGplaceholder{
+	max-height: 90vh;
+	max-width: 90vw;
+	position: fixed;
+	left:-30px;
+	top: 20px;
+}
+
+#SVGplaceholder2{
+	max-height: 90vh;
+	max-width: 90vw;
+	position: fixed;
+	left:-30px;
+	top: 20px;
+}
+*/
+
+.SVGscenes{
 	max-height: 90vh;
 	max-width: 90vw;
 	position: fixed;

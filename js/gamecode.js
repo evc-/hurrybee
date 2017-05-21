@@ -44,7 +44,7 @@ var gameScenes = [];
 advanceGame();
 loadIcon();
 
-console.log("11:15");
+console.log("sunday");
 
 //either complete or skip activity depending on the button
 checkbox.addEventListener("click",function(){
@@ -86,6 +86,7 @@ function advanceGame(){
 //this checks the screen size to determine which SVG to load. it also checks the activity choice image is undefined - in which case, it is a custom activity, so the right scene for that will load. 
 
 function loadPic(){
+	
 	//set tablet or mobile display based on screen size 
 	if (window.innerWidth < 576){
 		var gameScenes = ["./assets/game/Mobile/teethbrush_mobile.svg",
@@ -95,7 +96,7 @@ function loadPic(){
 					"./assets/game/Mobile/lunch_mobile.svg"];
 		
        	 	warning.style.fontSize = "5vw";
-		freeTime.style.fontSize = "5vw";
+			freeTime.style.fontSize = "5vw";
 	} else {
 		var gameScenes = ["./assets/game/Tablet/teethbrush_tablet.svg",
 					"./assets/game/Tablet/coffee_tablet.svg",
@@ -104,24 +105,37 @@ function loadPic(){
 					"./assets/game/Tablet/lunch_tablet.svg"];
 		
        	 	warning.style.fontSize = "3vw";
-		freeTime.style.fontSize = "3vw";
+			freeTime.style.fontSize = "3vw";
 	}
 	
+		var newSvg = document.createElement('object');
+		
+		newSvg.className = "SVGscenes";
+		SVGplaceholder.innerHTML= '';
+		
+	
+//		window.addEventListener('load', function() {
+//		SVGplaceholder.innerHTML= '';
+//		SVGplaceholder.appendChild(newSvg);
+//			
+//	}
+							   
 		var customActTitle = document.getElementById("customActTitle");
 		if (customActTitle){
 		customActTitle.parentElement.removeChild(customActTitle);	
-			
 		}
 	
 		if (saveActivities[index].pic == "undefined"){
 			if (window.innerWidth < 576){
-				SVGplaceholder.data = "./assets/game/Mobile/customactivity_mobile.svg";
+				newSVG.data = "./assets/game/Mobile/customactivity_mobile.svg";
+				SVGplaceholder.appendChild(newSvg);
 				var customActTitle = document.createElement("DIV");
 				customActTitle.id = "customActTitle";
 				customActTitle.innerHTML = saveActivities[index].name;
 				document.body.appendChild(customActTitle);
 			} else {
-				SVGplaceholder.data = "./assets/game/Tablet/customactivity_tablet.svg";
+				newSvg.data = "./assets/game/Tablet/customactivity_tablet.svg";
+				SVGplaceholder.appendChild(newSvg);
 				var customActTitle = document.createElement("DIV");
 				customActTitle.id = "customActTitle";
 				customActTitle.innerHTML = saveActivities[index].name;
@@ -130,7 +144,9 @@ function loadPic(){
 			customIcon = true;
 			//if both of those are untrue, show the pic associated with the activity 
 		} else {
-			SVGplaceholder.data = gameScenes[saveActivities[index].pic];
+			newSvg.data = gameScenes[saveActivities[index].pic];
+			SVGplaceholder.appendChild(newSvg);
+//			SVGplaceholder.data = gameScenes[saveActivities[index].pic];
 			customIcon = false;
 			
 		}
