@@ -44,7 +44,7 @@ var gameScenes = [];
 advanceGame();
 loadIcon();
 
-console.log("sunday");
+console.log("sunday 2");
 
 //either complete or skip activity depending on the button
 checkbox.addEventListener("click",function(){
@@ -87,6 +87,10 @@ function advanceGame(){
 
 function loadPic(){
 	
+	var newSvg = document.createElement('object');
+		newSvg.className = "SVGscenes";
+		SVGplaceholder.innerHTML= '';
+	
 	//set tablet or mobile display based on screen size 
 	if (window.innerWidth < 576){
 		var gameScenes = ["./assets/game/Mobile/teethbrush_mobile.svg",
@@ -108,10 +112,7 @@ function loadPic(){
 			freeTime.style.fontSize = "3vw";
 	}
 	
-		var newSvg = document.createElement('object');
 		
-		newSvg.className = "SVGscenes";
-		SVGplaceholder.innerHTML= '';
 		
 	
 //		window.addEventListener('load', function() {
@@ -235,7 +236,6 @@ function stopTimer(){
 //when the user clicks next, we want to store their time to see if they're ahead or behind schedule.
 function saveTime(){
 	timeDif.push(activityTime);
-	console.log(activityTime);
 	timeTaken.push(plannedTime - activityTime);
 	addTimeStorage();
 }
