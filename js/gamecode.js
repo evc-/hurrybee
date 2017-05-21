@@ -37,6 +37,7 @@ var customIcon = false;
 var plannedTime = 0;
 var timeTaken = [];
 var gameScenes = [];
+var newSvg;
 
 //FUNCTIONALITY 
 
@@ -128,7 +129,7 @@ function loadPic(){
 	
 		if (saveActivities[index].pic == "undefined"){
 			if (window.innerWidth < 576){
-				newSVG.data = "./assets/game/Mobile/customactivity_mobile.svg";
+				newSvg.data = "./assets/game/Mobile/customactivity_mobile.svg";
 				SVGplaceholder.appendChild(newSvg);
 				var customActTitle = document.createElement("DIV");
 				customActTitle.id = "customActTitle";
